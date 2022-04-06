@@ -49,3 +49,15 @@
     margin-bottom: 5px;
 
 }
+.navbar-nav{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    
+}
+
+.dropdown-toggle-blue{
+    background-image: url("Images/chevron\ dropdown\ menu.png");
+    background-repeat: no-repeat;
+}
+
