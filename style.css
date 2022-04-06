@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chivo&family=Fredoka&family=Karla:wght@500&display=swap');
+
 #contentSim{
     background-color: brown;
 }
@@ -6,4 +8,44 @@
 }
 #contentHowto{
     background-color: green;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Chivo";
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#languageIconDiv{
+    position: absolute;
+    right: 64px;
+    display: flex;
+    align-items: center;  
+    font-weight: bold;
+    font-size: 16px;
+    color: #004664;
+    text-align: center;
+}
+#languageText{
+    margin: 0%;
+    margin-left: 16px;
+}
+.logo{
+    width: 139px;
+    height: 104px;
+    margin-top: 14px;
+}
+#logoDiv{
+    background-image: url("/Images/Logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 100px;
+    margin-top: 22px;
+    margin-bottom: 5px;
+
 }
