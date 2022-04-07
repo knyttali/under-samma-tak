@@ -87,9 +87,7 @@
     font-size: 85px;
     font-weight: bold;
 }
-p{
-    color:#004664
-}
+
 .gradient-text {
     background-image: linear-gradient(89.43deg, #004664 0.25%, #489CB7 73.19%);
     -webkit-text-fill-color: transparent;
@@ -120,8 +118,69 @@ p{
 .content-div-right{
     margin-right: 64px;
 }
+
+.introContainer{
+    background-image: url(Images/family.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 573px;
+}
+.introTextContent{
+    max-width: 420px;
+    flex-direction: column;
+    padding-top: 5%;
+    margin-left: 7%;
+    color: white;
+
+
+}
+
+.introHeader{
+    border: #F2F2F2 8px solid;
+    border-radius: 6px ;
+    
+    padding: 2% 2%;
+}
+
+.introPara{
+    padding: 2% 2%;
+    font-size: 20px;
+}
+
+.introBtn button{
+    background-color: #489CB7;
+    color: white;
+    padding: 2.5%;
+    border-style: none;
+    border-radius: 5px;
+    margin-left: 2%;
+}
+.fastLinks{
+    flex-direction: column;
+    margin-left: 80%;
+    color: white;  
+}
+.fastLinks h4{
+    font-size: medium;
+}
+.fastLinks a{
+    text-decoration: none;
+    color: white;
+    font-size: small;
+}
+
+
+
+
+
 @media screen and (max-width: 800px) {
     #languageText {
+        display: none;
+    }
+    .fastLinks a{
+        display: none;
+    }
+    .fastLinks h4{
         display: none;
     }
 }
