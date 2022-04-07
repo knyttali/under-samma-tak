@@ -173,6 +173,7 @@
     flex-direction: row;
     justify-content: space-between;
     color: #004664;
+    margin: 2%;
 }
 
 .snake h1
@@ -206,6 +207,14 @@
 
 .snakebox p{
     font-size: small;
+}
+
+.snakebox-right{
+    margin-right: 4%;
+}
+
+.snakebox-left{
+    margin-left: 4%;
 }
 
 
