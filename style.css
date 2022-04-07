@@ -169,7 +169,7 @@
     font-size: small;
 }
 
-.snakes {
+.snakeboxes {
     flex-direction: row;
     justify-content: space-between;
     color: #004664;
@@ -190,7 +190,7 @@
 
 }
 
-.snakeboxes {
+.snakebox {
     background-color: white;
     border: #004664 4px solid;
     border-radius: 8px;
@@ -200,11 +200,11 @@
     padding-top: 1%;
 }
 
-.snakeboxes h2{
+.snakebox h2{
     font-size: 27px;
 }
 
-.snakeboxes p{
+.snakebox p{
     font-size: small;
 }
 
