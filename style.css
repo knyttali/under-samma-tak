@@ -1,18 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chivo&family=Fredoka&family=Karla:wght@500&display=swap');
 
-#contentSim{
-
-}
-#contentQA{
-
-}
-#contentHowto{
-
-}
 
 *{
     font-family: "Chivo";
 }
+
 #header{
     display: flex;
     align-items: center;
@@ -104,31 +96,62 @@
     justify-content: space-between;
     width: 100%;
     flex-direction: row;
-    height: 450px;
+    margin-bottom: 8%;
 }
 .mainContentButton {
-    width: 100%;
     background-color: #004664;
+    padding-left:2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
+
 .content-div{
     border-radius: 8px;
     box-shadow: 0px 4px 15px rgba(0, 70, 100, 0.3);
-    width: 35%;
     margin-top: 2%;
-    height: 70%;
+    flex-direction: column;
 }
-
-.content-div h4{
+#contentdiv-h4{
     font-weight: bold;
     color: #004664;
+    padding-left: 3%;
+    padding-top: 4%;
 }
-.content-div-left{
+.content-div-p{
+    margin-bottom: 8px;
+    margin-left: 3%;
+    font-family: "Chivo";
+    font-weight: bolder;
+    color: #004664;
+}
+
+ .content-div-left{
     margin-left: 13%;
+    margin-right: 2%;
+
 }
 
 .content-div-right{
     margin-right: 13%;
-} 
+    margin-left: 2%;
+}  
+.content-img img{
+    width: 100%;
+}
+.contentButtonPara{
+    margin-bottom: 0px;
+    margin-left: 3%;
+    color: #F2F2F2;
+    font-family: "Chivo";
+    font-weight: bolder;
+}
+.rightArrow{
+    border-style: solid;
+    border-color: #F2F2F2;
+    border-radius: 8px;
+}
+
+
 
 .introContainer{
     background-image: url(Images/family.png);
@@ -214,6 +237,7 @@
 
 .snakebox h2{
     font-size: 27px;
+    font-weight: bold;
 }
 
 .snakebox p{
@@ -228,6 +252,31 @@
     margin-left: 4%;
 }
 
+.stories-div{
+    background-color: #EDF0F2;
+    padding-top: 1.5%;
+    flex-direction: row;
+}
+.stories-div-h4{
+    text-align: center;
+    font-weight: bolder;
+}
+.story-h3{
+    text-align: center;
+    color: #004664;
+    font-weight: 900;
+    margin-top: 7%;
+}
+.story{
+    flex-direction: column;
+}
+.story-img{
+    max-width: 300px;
+}
+
+ .story-p{
+    padding-left: 8%;
+} 
 
 
 
@@ -240,5 +289,8 @@
     }
     .fastLinks h4{
         display: none;
+    }
+    .story-right{
+        display:none;
     }
 }

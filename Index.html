@@ -106,17 +106,23 @@
     </nav>
 
     <div class="introContainer">
-        <div class="introTextContent d-flex">
+        
+      <div class="introTextContent d-flex">
+
             <div class="introHeader">
                 <h1 id="introtext">För dig som vill erbjuda ditt boende</h1>
             </div>
+
             <div class="introPara">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores similique ex nihil velit voluptates ipsa .</p>
             </div>
+
             <div class="introBtn">
                 <button id="introBtn">Steg-för-steg guide</button>
             </div>
-        </div>
+
+      </div>
+
         <div class ="fastLinks d-flex">
             <h4>SNABBLÄNKAR </h4>
             <a href="http://">Vanliga frågor ></a>
@@ -145,41 +151,100 @@
 
     
 
-    <div class="d-flex" id="mainContent">
+    <div class="d-flex justify-content-evenly" id="mainContent">
 
-      <div class="content-div-left content-div" id="contentQA">
+      <div class="content-div-left content-div d-flex" id="contentSim">
+
         <div id="bild1"  class = "content-img">
           <img src="images/boardingTrain.png" alt="boardingTrain" />
         </div>
+
         <div id="textcontent1">
-          <h4>Vanliga frågor</h4>
-          <p>
+          <h4 id="contentdiv-h4">Se hur det skulle se ut i er familj</h4>
+        </div>
+        
+        <div id="textcontent1">
+          <p class="content-div-p">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
             sed architecto libero!
           </p>
         </div>
+
         <div class="mainContentButton" id="buttonqa">
-          <img src="images/Right-1.png" alt="buttonqa" /><button>
-            Vanliga frågor och svar
-          </button>
+          <a class="d-flex align-items-center w-100" href="#" role="button">
+            <img src="images/Right.png" class="rightArrow" alt="buttonqa" />
+           <p class="contentButtonPara">Testa vår simulator</p>  
+          </a>
         </div>
+
       </div>
 
-      <div class="content-div-right content-div" id="contentHowto">
-        <div id="bild2" class = "content-img"><img src="images/paper.png" alt="paper" /></div>
-        <div id="textcontent2">
-          <h4>Vi säkerställer</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            sed architecto.
-          </p>
+
+      <div class="content-div-right content-div d-flex" id="contentQA">
+
+        <div id="bild1"  class = "content-img">
+          <img src="images/paper.png" alt="paper" />
         </div>
-        <div  id="buttonpaper">
-          <button class="mainContentButton"><img src="images/Right-1.png" alt="buttonright" />
-            Så här fungerar det
-          </button>
+
+        <div id="textcontent1">
+          <h4 id ="contentdiv-h4">Vanliga frågor</h4>
         </div>
         
+        <div id="textcontent1">
+          <p class ="content-div-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            sed architecto libero!
+          </p>
+        </div>
+
+        <div class="mainContentButton" id="buttonqa">
+          <a class="d-flex align-items-center w-100" href="#" role="button">
+            <img src="images/Right.png" class="rightArrow" alt="buttonqa" />
+           <p class="contentButtonPara">Vanliga frågor och svar</p>  
+          </a>
+        </div>
+
+      </div>
+
+      </div>
+
+      <div class="stories-div pb-5">
+        <h4 class="stories-div-h4">Berättelser</h4>
+        
+        <div class="three-stories-div d-flex justify-content-between">
+
+          <div class="story d-flex justify-content-center">
+            <div class="d-flex justify-content-center">
+            <img class="story-img" src="images/single.png" alt="single">
+            </div>
+            <h3 class="story-h3">Lördag i Flen</h3>
+            <p class="story-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quisquam.</p>
+          </div>
+
+          <div class="story d-flex justify-content-center">
+
+            <div class="d-flex justify-content-center">
+              <img class="story-img" src="images/family-round.png"alt="family">
+            </div>
+
+            <h3 class="story-h3">Tisdag i Tumba</h3>
+            <p class="story-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint exercitationem illum iste quibusdam deleniti. Eius. </p>
+          </div>
+
+          <div class="story d-flex justify-content-center">
+
+            <div class="d-flex justify-content-center">
+              <img class="story-img" src="images/big-family.png" alt="big-family">
+            </div>
+
+            <h3 class="story-h3">Lördag i Flen</h3>
+            <p class="story-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quisquam.</p>
+          </div>
+
+
+      </div>
+
+        </div>
       </div>
 
     <script
