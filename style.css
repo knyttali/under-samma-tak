@@ -169,6 +169,44 @@
     font-size: small;
 }
 
+.snakes {
+    flex-direction: row;
+    justify-content: space-between;
+    color: #004664;
+}
+
+.snake h1
+{
+    text-align: center;
+    padding-top: 3%;
+    color: #004664;
+}
+
+.snake {
+    background-color: #fef2e7;
+    height: 380px;
+    padding-left: 6%;
+    padding-right: 6%;
+
+}
+
+.snakeboxes {
+    background-color: white;
+    border: #004664 4px solid;
+    border-radius: 8px;
+    width: 25%;
+    height: 160px;
+    padding-left: 2%;
+    padding-top: 1%;
+}
+
+.snakeboxes h2{
+    font-size: 27px;
+}
+
+.snakeboxes p{
+    font-size: small;
+}
 
 
 
