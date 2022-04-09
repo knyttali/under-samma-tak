@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="header">
+      <div id="logoDiv"></div>
+
+      <div id="languageIconDiv" class="">
+        <img src="images/Vector.png" alt="Jordglob" />
+        <p class="language" id="languageText">Language</p>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarWithDropdown"
+          aria-controls="navbarWithDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse hide" id="navbarWithDropdown">
+          <ul class="navbar-nav nav-fill w-100 ms-5 me-5">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link ms-5 d-flex justify-content-center align-items-center"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <p id="navbar-p">Så fungerar det</p>
+                <img
+                  src="Images/chevron dropdown menu.png"
+                  id="dropdownImg"
+                  alt=""
+                />
+              </a>
+
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link d-flex justify-content-center align-items-center"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <p id="navbar-p">Vårt uppdrag</p>
+                <img
+                  src="Images/chevron dropdown menu.png"
+                  id="dropdownImg"
+                  alt=""
+                />
+              </a>
+
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link d-flex justify-content-center align-items-center"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <p id="navbar-p">Vanliga frågor</p>
+                <img
+                  src="Images/chevron dropdown menu.png"
+                  id="dropdownImg"
+                  alt=""
+                />
+              </a>
+
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link me-5 d-flex justify-content-center align-items-center me-5"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <p id="navbar-p">Anmäl ditt intresse</p>
+                <img
+                  src="Images/chevron dropdown menu.png"
+                  id="dropdownImg"
+                  alt=""
+                />
+              </a>
+
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="d-flex align-items-center">
+              <img src="Images/searchBlue.png" alt="#" id="searchButtonImg" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-container row">
+
+
+      <div class="sidenav col-2">
+        <p class="side-p1">Personlig information</p>
+        <p class="side-p2">Boende</p>
+        <p class="side-p3">Gäster</p>
+        <p class="side-p4">Längd</p>
+        <p class="side-p5">Skicka</p>
+      </div>
+
+      <div class="col-1"></div>
+
+      <div class="content-container col-7">
+        <h1>Intresseanmälan</h1>
+        <p class ="desc-p">Via Under Samma Tak kan du skicka din intresseanmälan till din kommun
+            om att du vill erbjuda ditt boende till människor i nödsituationer,
+            t.ex. en naturkatastrof, en flyktingkris eller en global pandemi.
+        </p>
+
+
+
+        <form class="personal-info form-template">
+            <h4 class="form-header">Personlig information</h4>
+
+            <div class="name-row row">
+
+                <div class="col-6">
+                    <label for="fname">Förnamn</label><br>
+                    <input type="text" id="fname" name="fname" value="">
+                </div>
+
+                <div class="col-6">
+                    <label for="lname">Efternamn</label><br>
+                    <input type="text" id="lname" name="lname" value="">
+                </div>
+
+            </div>
+
+            <div class="adress-row row">
+                <div class="col-12">
+                    <label for="address">Gatuadress</label><br>
+                    <input type="text" id="address" name="address" value="">
+                </div>
+            </div>
+
+        </form>
+
+
+
+
+      </div>
+
+      <div class="col-2"></div>
+    </div>
+  </body>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+  <script src="main.js"></script>
+</html>
