@@ -187,28 +187,72 @@
 
 
 
-        <form class="personal-info form-template">
+        <form class="personal-info form-template p-4 rounded">
+
             <h4 class="form-header">Personlig information</h4>
 
-            <div class="name-row row">
+            <div class="name-row row pt-3">
 
                 <div class="col-6">
-                    <label for="fname">Förnamn</label><br>
-                    <input type="text" id="fname" name="fname" value="">
+                    <label for="fname" >Förnamn</label><br>
+                    <input type="text" class="col-12" id="fname" name="fname" value="">
                 </div>
 
                 <div class="col-6">
                     <label for="lname">Efternamn</label><br>
-                    <input type="text" id="lname" name="lname" value="">
+                    <input type="text" class="col-12" id="lname" name="lname" value="">
                 </div>
 
             </div>
 
-            <div class="adress-row row">
+            <div class="adress-row row pt-2">
                 <div class="col-12">
                     <label for="address">Gatuadress</label><br>
-                    <input type="text" id="address" name="address" value="">
+                    <input type="text" class="col-12" id="address" name="address" value="">
                 </div>
+            </div>
+
+
+            <div class="state-row row pt-2">
+
+                <div class="col-6">
+                    <label for="location">Ort</label><br>
+                    <input type="text" class="col-12" id="location" name="location" value="">
+                </div>
+
+                <div class="col-6">
+                    <label for="coventy">Kommun</label><br>
+                    <input type="text" class="col-12" id="coventy" name="coventy" value="">
+                </div>
+
+            </div>
+
+            <div class="numbers-row row pt-2">
+
+                <div class="col-6">
+                    <label for="postal">Postnummer</label><br>
+                    <input type="text" class="col-12" id="postal" name="postal" value="">
+                </div>
+
+                <div class="col-6">
+                    <label for="phone">Telefonnummer</label><br>
+                    <input type="text" class="col-12" id="phone" name="phone" value="">
+                </div>
+
+            </div>
+
+            <div class="save-button-row row pt-3">
+
+                <div class="col-12">
+                    <button class = "save-button pt-2 pb-2 ps-3 pe-3">
+                        Spara
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="direction-button-row row pt-3">
+                
             </div>
 
         </form>

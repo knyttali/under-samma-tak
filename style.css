@@ -274,12 +274,15 @@
 .form-template{
     box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);    
 }
-.personal-info{
-
-}
 
 .form-header{
     font-weight: 400
+}
+.save-button{
+    border-radius: 8px;
+    background-color: #004664;
+    color: white;
+    border-style: hidden;
 }
 
 @media screen and (max-width: 800px) {
