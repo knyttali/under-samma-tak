@@ -20,172 +20,121 @@
       <div id="logoDiv"></div>
 
       <div id="languageIconDiv" class="">
-        <img src="images/Vector.png" alt="Jordglob" />
+        <img src="images/white-globe.png" alt="Jordglob" />
         <p class="language" id="languageText">Language</p>
       </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarWithDropdown"
-          aria-controls="navbarWithDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse hide" id="navbarWithDropdown">
-          <ul class="navbar-nav nav-fill w-100 ms-5 me-5">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link ms-5 d-flex justify-content-center align-items-center"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <p id="navbar-p">Så fungerar det</p>
-                <img
-                  src="Images/chevron dropdown menu.png"
-                  id="dropdownImg"
-                  alt=""
-                />
-              </a>
-
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link d-flex justify-content-center align-items-center"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <p id="navbar-p">Vårt uppdrag</p>
-                <img
-                  src="Images/chevron dropdown menu.png"
-                  id="dropdownImg"
-                  alt=""
-                />
-              </a>
-
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link d-flex justify-content-center align-items-center"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <p id="navbar-p">Vanliga frågor</p>
-                <img
-                  src="Images/chevron dropdown menu.png"
-                  id="dropdownImg"
-                  alt=""
-                />
-              </a>
-
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link me-5 d-flex justify-content-center align-items-center me-5"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <p id="navbar-p">Anmäl ditt intresse</p>
-                <img
-                  src="Images/chevron dropdown menu.png"
-                  id="dropdownImg"
-                  alt=""
-                />
-              </a>
-
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="d-flex align-items-center">
-              <img src="Images/searchBlue.png" alt="#" id="searchButtonImg" />
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    
 
     <div class="main-container row">
-
-
       <div class="sidenav col-2">
-        <p class="side-p1">Personlig information</p>
-        <p class="side-p2">Boende</p>
-        <p class="side-p3">Gäster</p>
-        <p class="side-p4">Längd</p>
-        <p class="side-p5">Skicka</p>
+        <p id="side-p0">Personlig information</p>
+        <p id="side-p1">Boende</p>
+        <p id="side-p2">Gäster</p>
+        <p id="side-p3">Längd</p>
+        <p id="side-p4">Skicka</p>
       </div>
 
       <div class="col-1"></div>
 
       <div class="content-container col-7">
         <h1>Intresseanmälan</h1>
-        <p class ="desc-p">Via Under Samma Tak kan du skicka din intresseanmälan till din kommun
-            om att du vill erbjuda ditt boende till människor i nödsituationer,
-            t.ex. en naturkatastrof, en flyktingkris eller en global pandemi.
+        <p class="desc-p">
+          Via Under Samma Tak kan du skicka din intresseanmälan till din kommun
+          om att du vill erbjuda ditt boende till människor i nödsituationer,
+          t.ex. en naturkatastrof, en flyktingkris eller en global pandemi.
         </p>
 
+        <form class="personal-info form-template" id="personligInfo">
+          <h4 class="form-header">Personlig information</h4>
 
+          <div class="name-row row">
+            <div class="col-6">
+              <label for="fname">Förnamn</label><br />
+              <input type="text" id="fname" name="fname" value="" class="w-100"/>
+            </div>
+
+            <div class="col-6">
+              <label for="lname">Efternamn</label><br />
+              <input type="text" id="lname" name="lname" value="" class="w-100"/>
+            </div>
+          </div>
+
+          <div class="adress-row row">
+            <div class="col-12">
+              <label for="address">Gatuadress</label><br />
+              <input
+                type="text"
+                id="address"
+                name="address"
+                value=""
+                class="w-100"
+              />
+            </div>
+          </div>
+
+          <div class="kommun-row row">
+            <div class="col-6">
+              <label for="ort">Ort</label><br />
+              <input type="text" id="ort" name="ort" value="" class="w-100"/>
+            </div>
+
+            <div class="col-6">
+              <label for="kommun">Kommun</label><br />
+              <input
+                id="autoComplete"
+                type="text"
+                dir="ltr"
+                spellcheck="false"
+                autocorrect="off"
+                autocomplete="off"
+                autocapitalize="off"
+                class="w-100"
+              />
+            </div>
+          </div>
+          <div class="nummer-row row">
+            <div class="col-6">
+              <label for="postNum">Postnummer</label><br />
+              <input type="text" id="postNum" name="postNum" value="" class="w-100"/>
+            </div>
+
+            <div class="col-6">
+              <label for="phone">Telefonnummer</label><br />
+              <input type="text" id="phone" name="phone" value="" class="w-100"/>
+            </div>
+          </div>
+
+          <div class="email-row row">
+            <div class="col-6">
+              <label for="email">E-mail adress</label><br />
+              <input type="email" id="email" name="email" value="" class="w-100"/>
+            </div>
+
+            <div class="col-6"></div>
+
+          </div>
+
+          <div id = "buttonRow" class="row align-items-center justify-content-end">
+            <!-- <h4 onclick="nextForm()">Nästa</h4> -->
+            <button type="button" id="buttonNext" onclick="nextForm()">Nästa</button>
+          </div>
+        </form>
+
+        <!--VART SKULLE GÄSTERNA KUNNA BO?-->
+
+        <form class="guest-where-info form-template" id="guestWhereInfo">
+          <h4 class="form-header">Vart skulle gästerna kunna bo?</h4>
+          <p>
+            Alla människor har rätt till egen sovplats. Det kan vara en madrass
+            på golvet eller en riktig säng. Därför är det viktigt att du anger
+            hur era sovmöjöigheter ser ut. Välj gärna ut alla alternatic som
+            gäööer för boende du erbjuder
+          </p>
+
+          <div class="space-col">
+            <h4>Utrymme</h4>
 
         <form class="personal-info form-template p-4 rounded">
 
@@ -202,74 +151,450 @@
                     <label for="lname">Efternamn</label><br>
                     <input type="text" class="col-12" id="lname" name="lname" value="">
                 </div>
-
+            <div class="col-6">
+              <label for="apartment"> Lägenhet</label><br />
+              <input type="checkbox" id="apartment" name="apartment" value="" />
             </div>
 
-            <div class="adress-row row pt-2">
-                <div class="col-12">
-                    <label for="address">Gatuadress</label><br>
-                    <input type="text" class="col-12" id="address" name="address" value="">
-                </div>
+            <div class="col-6">
+              <label for="house">Hus</label><br />
+              <input type="checkbox" id="house" name="house" value="" />
             </div>
 
+            <div class="col-6">
+              <label for="secondarySpace">Sekundär enhet</label><br />
+              <input
+                type="checkbox"
+                id="secondarySpace"
+                name="secondarySpace"
+                value=""
+              />
+            </div>
+          </div>
 
-            <div class="state-row row pt-2">
+          <div class="space-col">
+            <h4>Typ av boende</h4>
 
-                <div class="col-6">
-                    <label for="location">Ort</label><br>
-                    <input type="text" class="col-12" id="location" name="location" value="">
-                </div>
-
-                <div class="col-6">
-                    <label for="coventy">Kommun</label><br>
-                    <input type="text" class="col-12" id="coventy" name="coventy" value="">
-                </div>
-
+            <div class="col-6">
+              <label for="selfOwned">Eget boende</label><br />
+              <input type="checkbox" id="selfOwned" name="selfOwned" value="" />
             </div>
 
-            <div class="numbers-row row pt-2">
-
-                <div class="col-6">
-                    <label for="postal">Postnummer</label><br>
-                    <input type="text" class="col-12" id="postal" name="postal" value="">
-                </div>
-
-                <div class="col-6">
-                    <label for="phone">Telefonnummer</label><br>
-                    <input type="text" class="col-12" id="phone" name="phone" value="">
-                </div>
-
+            <div class="col-6">
+              <label for="sharedSpace">Delat boende</label><br />
+              <input
+                type="checkbox"
+                id="sharedSpace"
+                name="sharedSpace"
+                value=""
+              />
             </div>
-
-            <div class="save-button-row row pt-3">
-
-                <div class="col-12">
-                    <button class = "save-button pt-2 pb-2 ps-3 pe-3">
-                        Spara
-                    </button>
-                </div>
-
-            </div>
-
-            <div class="direction-button-row row pt-3">
-                
-            </div>
-
+          </div>
+          <div id="btnNextAndBack">
+            <h4 onclick="backForm()">Tillbaka</h4>
+            <button type="button"  onclick="nextForm()">Nästa</button>
+          </div>
         </form>
 
+        <!--GÄSTER-->
 
+        <form class="guest-info form-template" id="guestInfo">
+          <h4 class="form-header">Gäster</h4>
+          <p>
+            Det är viktigt för oss att veta den här informationen ur ett
+            trygghetsperspektiv, för båda parter. Välj gärna ut alla alternativ
+            för gäster som du kan ta emot.
+          </p>
 
+          <div class="space-col">
+            <div class="col-6">
+              <label for="guest-With-Kids"> Gäster med barn</label><br />
+              <input
+                type="checkbox"
+                id="guest-With-Kids"
+                name="guest-With-Kids"
+                value=""
+              />
+            </div>
 
+            <div class="col-6">
+              <label for="guest-with-babys">Gäster med spädbarn</label><br />
+              <input
+                type="checkbox"
+                id="guest-with-babys"
+                name="guest-with-babys"
+                value=""
+              />
+            </div>
+
+            <div class="col-6">
+              <label for="guest-with-pet">Gäster med husdjur</label><br />
+              <input
+                type="checkbox"
+                id="guest-with-pet"
+                name="guest-with-pet"
+                value=""
+              />
+            </div>
+
+            <div class="col-6">
+              <label for="onlyWomen">Enbart kvinnor</label><br />
+              <input type="checkbox" id="onlyWomen" name="onlyWomen" value="" />
+            </div>
+
+            <div class="col-6">
+              <label for="max-guests">Max antal gäster</label><br />
+              <input type="text" id="max-guests" name="max-guests" value="" />
+            </div>
+          </div>
+
+          <div id="btnNextAndBack">
+            <h4 onclick="backForm()">Tillbaka</h4>
+            <button type="button"  onclick="nextForm()">Nästa</button>
+          </div>
+        </form>
+
+        <form class="length-info form-template" id="lengthInfo">
+          <h4 class="form-header">Längd</h4>
+
+          <div id="btnNextAndBack">
+            <h4 onclick="backForm()">Tillbaka</h4>
+            <button type="button"  onclick="nextForm()">Nästa</button>
+          </div>
+        </form>
+
+        <form class="send-info form-template" id="sendInfo">
+          <h4 class="form-header">Skicka formulär</h4>
+
+          <div id="btnNextAndBack">
+            <h4 onclick="backForm()">Tillbaka</h4>
+            <button type="button" onclick="">Skicka</button>
+          </div>
+        </form>
       </div>
 
-      <div class="col-2"></div>
+     <div class="col-2 p-0"></div>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+    <!--AutoComplete grej som jag försökte med lite, kunde inte få det att funka i main.js-->
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.6/dist/autoComplete.min.js"></script>
+    <script>
+      const autoCompleteJS = new autoComplete({
+        data: {
+          src: [
+            "Ale",
+            "Alingsås",
+            "Alvesta",
+            "Aneby",
+            "Arboga",
+            "Arjeplog",
+            "Arvidsjaur",
+            "Arvika",
+            "Askersund",
+            "Avesta",
+            "Bengtsfors",
+            "Berg",
+            "Bjurholm",
+            "Bjuv",
+            "Boden",
+            "Bollebygd",
+            "Bollnäs",
+            "Borgholm",
+            "Borlänge",
+            "Borås",
+            "Botkyrka",
+            "Boxholm",
+            "Bromölla",
+            "Bräcke",
+            "Burlöv",
+            "Båstad",
+            "Dals-Ed",
+            "Danderyd",
+            "Degerfors",
+            "Dorotea",
+            "Eda",
+            "Ekerö",
+            "Eksjö",
+            "Emmaboda",
+            "Enköping",
+            "Eskilstuna",
+            "Eslöv",
+            "Essunga",
+            "Fagersta",
+            "Falkenberg",
+            "Falköping",
+            "Falun",
+            "Filipstad",
+            "Finspång",
+            "Flen",
+            "Forshaga",
+            "Färgelanda",
+            "Gagnef",
+            "Gislaved",
+            "Gnesta",
+            "Gnosjö",
+            "Gotland",
+            "Grums",
+            "Grästorp",
+            "Gullspång",
+            "Gällivare",
+            "Gävle",
+            "Göteborg",
+            "Götene",
+            "Habo",
+            "Hagfors",
+            "Hallsberg",
+            "Hallstahammar",
+            "Halmstad",
+            "Hammarö",
+            "Haninge",
+            "Haparanda",
+            "Heby",
+            "Hedemora",
+            "Helsingborg",
+            "Herrljunga",
+            "Hjo",
+            "Hofors",
+            "Huddinge",
+            "Hudiksvall",
+            "Hultsfred",
+            "Hylte",
+            "Håbo",
+            "Hällefors",
+            "Härjedalen",
+            "Härnösand",
+            "Härryda",
+            "Hässleholm",
+            "Höganäs",
+            "Högsby",
+            "Hörby",
+            "Höör",
+            "Jokkmokk",
+            "Järfälla",
+            "Jönköping",
+            "Kalix",
+            "Kalmar",
+            "Karlsborg",
+            "Karlshamn",
+            "Karlskoga",
+            "Karlskrona",
+            "Karlstad",
+            "Katrineholm",
+            "Kil",
+            "Kinda",
+            "Kiruna",
+            "Klippan",
+            "Knivsta",
+            "Kramfors",
+            "Kristianstad",
+            "Kristinehamn",
+            "Krokom",
+            "Kumla",
+            "Kungsbacka",
+            "Kungsör",
+            "Kungälv",
+            "Kävlinge",
+            "Köping",
+            "Laholm",
+            "Landskrona",
+            "Laxå",
+            "Lekeberg",
+            "Leksand",
+            "Lerum",
+            "Lessebo",
+            "Lidingö",
+            "Lidköping",
+            "Lilla",
+            "Edet",
+            "Lindesberg",
+            "Linköping",
+            "Ljungby",
+            "Ljusdal",
+            "Ljusnarsberg",
+            "Lomma",
+            "Ludvika",
+            "Luleå",
+            "Lund",
+            "Lycksele",
+            "Lysekil",
+            "Malmö",
+            "Malung-Sälen",
+            "Malå",
+            "Mariestad",
+            "Mark",
+            "Markaryd",
+            "Mellerud",
+            "Mjölby",
+            "Mora",
+            "Motala",
+            "Mullsjö",
+            "Munkedal",
+            "Munkfors",
+            "Mölndal",
+            "Mönsterås",
+            "Mörbylånga",
+            "Nacka",
+            "Nora",
+            "Norberg",
+            "Nordanstig",
+            "Nordmaling",
+            "Norrköping",
+            "Norrtälje",
+            "Norsjö",
+            "Nybro",
+            "Nykvarn",
+            "Nyköping",
+            "Nynäshamn",
+            "Nässjö",
+            "Ockelbo",
+            "Olofström",
+            "Orsa",
+            "Orust",
+            "Osby",
+            "Oskarshamn",
+            "Ovanåker",
+            "Oxelösund",
+            "Pajala",
+            "Partille",
+            "Perstorp",
+            "Piteå",
+            "Ragunda",
+            "Robertsfors",
+            "Ronneby",
+            "Rättvik",
+            "Sala",
+            "Salem",
+            "Sandviken",
+            "Sigtuna",
+            "Simrishamn",
+            "Sjöbo",
+            "Skara",
+            "Skellefteå",
+            "Skinnskatteberg",
+            "Skurup",
+            "Skövde",
+            "Smedjebacken",
+            "Sollefteå",
+            "Sollentuna",
+            "Solna",
+            "Sorsele",
+            "Sotenäs",
+            "Staffanstorp",
+            "Stenungsund",
+            "Stockholm",
+            "Storfors",
+            "Storuman",
+            "Strängnäs",
+            "Strömstad",
+            "Strömsund",
+            "Sundbyberg",
+            "Sundsvall",
+            "Sunne",
+            "Surahammar",
+            "Svalöv",
+            "Svedala",
+            "Svenljunga",
+            "Säffle",
+            "Säter",
+            "Sävsjö",
+            "Söderhamn",
+            "Söderköping",
+            "Södertälje",
+            "Sölvesborg",
+            "Tanum",
+            "Tibro",
+            "Tidaholm",
+            "Tierp",
+            "Timrå",
+            "Tingsryd",
+            "Tjörn",
+            "Tomelilla",
+            "Torsby",
+            "Torsås",
+            "Tranemo",
+            "Tranås",
+            "Trelleborg",
+            "Trollhättan",
+            "Trosa",
+            "Tyresö",
+            "Täby",
+            "Töreboda",
+            "Uddevalla",
+            "Ulricehamn",
+            "Umeå",
+            "Upplands",
+            "Väsby",
+            "Upplands-Bro",
+            "Uppsala",
+            "Uppvidinge",
+            "Vadstena",
+            "Vaggeryd",
+            "Valdemarsvik",
+            "Vallentuna",
+            "Vansbro",
+            "Vara",
+            "Varberg",
+            "Vaxholm",
+            "Vellinge",
+            "Vetlanda",
+            "Vilhelmina",
+            "Vimmerby",
+            "Vindeln",
+            "Vingåker",
+            "Vårgårda",
+            "Vänersborg",
+            "Vännäs",
+            "Värmdö",
+            "Värnamo",
+            "Västervik",
+            "Västerås",
+            "Växjö",
+            "Ydre",
+            "Ystad",
+            "Åmål",
+            "Ånge",
+            "Åre",
+            "Årjäng",
+            "Åsele",
+            "Åstorp",
+            "Åtvidaberg",
+            "Älmhult",
+            "Älvdalen",
+            "Älvkarleby",
+            "Älvsbyn",
+            "Ängelholm",
+            "Öckerö",
+            "Ödeshög",
+            "Örebro",
+            "Örkelljunga",
+            "Örnsköldsvik",
+            "Östersund",
+            "Österåker",
+            "Östhammar",
+            "Östra",
+            "Göinge",
+            "Överkalix",
+            "Övertorneå",
+          ],
+          cache: true,
+        },
+        resultItem: {
+          highlight: false,
+        },
+        events: {
+          input: {
+            selection: (event) => {
+              const selection = event.detail.selection.value;
+              autoCompleteJS.input.value = selection;
+            },
+          },
+        },
+      });
+    </script>
   </body>
-
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"
-  ></script>
-  <script src="main.js"></script>
 </html>

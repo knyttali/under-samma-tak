@@ -4,14 +4,21 @@
 *{
     font-family: "Chivo";
 }
-.row{
-    padding: 0;
+body{
+    
 }
+form{
+    padding-left: 3%;
+    padding-right: 9%;
+    margin-bottom: 2%;
+}
+
 
 #header{
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
+    background-color: #004664;
 }
 
 #languageIconDiv{
@@ -21,8 +28,11 @@
     align-items: center;  
     font-weight: bold;
     font-size: 16px;
-    color: #004664;
+    color: white;
     text-align: center;
+}
+#languageIconDiv img {
+    height: 3vh;
 }
 #languageText{
     margin: 0%;
@@ -34,15 +44,15 @@
     margin-top: 14px;
 }
 #logoDiv{
-    background-image: url("/Images/Logo.png");
+    background-image: url("/Images/Logo_white.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 130px;
-    height: 100px;
-    margin-top: 22px;
-    margin-bottom: 5px;
-
+    height: 70px;
+    margin-top: 1%;
+    margin-left: 4%;
 }
+
 .dropdown-toggle-blue{
     background-image: url("Images/chevron\ dropdown\ menu.png");
     background-repeat: no-repeat;
@@ -111,7 +121,6 @@
 }
  
 .content-div{
-
     box-shadow: 0px 4px 15px rgba(0, 70, 100, 0.3);
     margin-top: 2%;
     flex-direction: column;
@@ -198,7 +207,9 @@
  .snakeboxes {
     color: #004664;
 }
-
+.content-container .row {
+    margin-top: 15px;
+}
 .snake h1
 {
     text-align: center;
@@ -272,11 +283,52 @@
 
 /*****************Form***************************/
 .form-template{
-    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);    
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 11px;    
+}
+#side-p0{
+    font-weight: bold;
+}
+#guestWhereInfo{
+    display: none;
+}
+#guestInfo{
+    display: none;
+}
+#lengthInfo{
+    display: none;
+}
+#sendInfo{
+    display: none;
 }
 
 .form-header{
-    font-weight: 400
+    font-weight: bold;
+    padding: 4% 0%;
+}
+form label{
+    font-size: 16px;
+}
+.personal-info input {
+    height: 6vh;
+    border-radius: 5px;
+    border: 1px solid rgb(219, 219, 219);
+    padding: 3%;
+}
+#buttonRow{
+    margin: 4% 0%;
+}
+#buttonNext{
+    padding: 1%;
+    width: 10%;
+    border-radius: 8px;
+    border-style: hidden;
+    margin-bottom: 3%;
+    color: #999999;
+}
+#buttonNext:hover{
+    background-color: #489CB7;
+    color: #FFFFFF;
 }
 .save-button{
     border-radius: 8px;
