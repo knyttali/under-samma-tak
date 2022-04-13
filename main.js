@@ -55,19 +55,27 @@ function backForm(){
     slideCounter = slideCounter - 1;
 
     if (slideCounter == 0) {
+        p0.style.fontWeight = "bold"
+        p1.style.fontWeight = "normal"
         personligInfo.style.display="block"
         guestWhere.style.display="none"
     }
     else if (slideCounter == 1) {
+        p1.style.fontWeight = "bold"
+        p2.style.fontWeight = "normal"
         guests.style.display="none"
         guestWhere.style.display="block"
     }
     else if (slideCounter == 2) {
         // I förts skede sliden style.display="none"
+        p2.style.fontWeight = "bold"
+        p3.style.fontWeight = "normal"
         guests.style.display="block"
         length.style.display="none"
     }
     else if (slideCounter == 3) {
+        p3.style.fontWeight = "bold"
+        p4.style.fontWeight = "normal"
         length.style.display="block"
         send.style.display="none"
         // I förts skede sliden style.display="block"
