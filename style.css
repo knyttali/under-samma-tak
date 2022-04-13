@@ -277,14 +277,16 @@ form{
 }
 /*****************Sidenav************************/
 .sidenav{
-    padding-left: 5%;
-    border-right: 1px solid black;
+    /* padding-left: 5%; */
+    border-left: 1px solid black;
+    margin-left: 3%;
+    height: 25%;
 }
 
 /*****************Form***************************/
 .form-template{
     box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
-    border-radius: 11px;    
+    border-radius: 11px;   
 }
 #side-p0{
     font-weight: bold;
