@@ -15,8 +15,6 @@ var p4 = document.getElementById("side-p4");
 
 var slideCounter = 0;
 
-document.getElementById("next").addEventListener("click", nextForm)
-
 function nextForm() {
     slideCounter = slideCounter + 1; 
 

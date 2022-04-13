@@ -283,7 +283,8 @@ form{
 
 /*****************Form***************************/
 .form-template{
-    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);    
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 11px;    
 }
 #side-p0{
     font-weight: bold;
@@ -312,8 +313,22 @@ form label{
     height: 6vh;
     border-radius: 5px;
     border: 1px solid rgb(219, 219, 219);
-     padding: 3%;
-
+    padding: 3%;
+}
+#buttonRow{
+    margin: 4% 0%;
+}
+#buttonNext{
+    padding: 1%;
+    width: 10%;
+    border-radius: 8px;
+    border-style: hidden;
+    margin-bottom: 3%;
+    color: #999999;
+}
+#buttonNext:hover{
+    background-color: #489CB7;
+    color: #FFFFFF;
 }
 
 @media screen and (max-width: 800px) {
