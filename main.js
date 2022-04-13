@@ -18,7 +18,6 @@ var slideCounter = 0;
 document.getElementById("next").addEventListener("click", nextForm)
 
 function nextForm() {
-
     slideCounter = slideCounter + 1; 
 
     if (slideCounter == 1) {
@@ -48,7 +47,6 @@ function nextForm() {
         // I förts skede sliden style.display="none"
         //Kontrolera uppgifter style.display="block"
     }
-    
 }
 
 function backForm(){

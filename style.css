@@ -201,7 +201,9 @@
  .snakeboxes {
     color: #004664;
 }
-
+.content-container .row {
+    margin-top: 15px;
+}
 .snake h1
 {
     text-align: center;
@@ -298,6 +300,12 @@
 
 .form-header{
     font-weight: 400
+}
+.personal-info input {
+    height: 6vh;
+    border-radius: 5px;
+    border: 1px solid rgb(219, 219, 219);
+    padding: 3%;
 }
 
 @media screen and (max-width: 800px) {
