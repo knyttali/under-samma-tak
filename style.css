@@ -286,8 +286,11 @@
 #guestInfo{
     display: none;
 }
-.personal-info{
-
+#lengthInfo{
+    display: none;
+}
+#sendInfo{
+    display: none;
 }
 
 .form-header{
