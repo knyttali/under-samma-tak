@@ -11,7 +11,8 @@
 #header{
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
+    background-color: #004664;
 }
 
 #languageIconDiv{
@@ -21,8 +22,11 @@
     align-items: center;  
     font-weight: bold;
     font-size: 16px;
-    color: #004664;
+    color: white;
     text-align: center;
+}
+#languageIconDiv img {
+    height: 3vh;
 }
 #languageText{
     margin: 0%;
@@ -34,15 +38,15 @@
     margin-top: 14px;
 }
 #logoDiv{
-    background-image: url("/Images/Logo.png");
+    background-image: url("/Images/Logo_white.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 130px;
-    height: 100px;
-    margin-top: 22px;
-    margin-bottom: 5px;
-
+    height: 70px;
+    margin-top: 1%;
+    margin-left: 4%;
 }
+
 .dropdown-toggle-blue{
     background-image: url("Images/chevron\ dropdown\ menu.png");
     background-repeat: no-repeat;
@@ -111,7 +115,6 @@
 }
  
 .content-div{
-
     box-shadow: 0px 4px 15px rgba(0, 70, 100, 0.3);
     margin-top: 2%;
     flex-direction: column;
