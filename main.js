@@ -15,7 +15,12 @@ var p4 = document.getElementById("side-p4");
 
 var slideCounter = 0;
 
-document.getElementById("next").addEventListener("click", nextForm)
+//document.getElementById("next").addEventListener("click", nextForm)
+
+function annanMetod(){
+    p0.style.fontWeight ="normal"
+    p1.style.fontWeight ="bold"
+}
 
 function nextForm() {
     slideCounter = slideCounter + 1; 
