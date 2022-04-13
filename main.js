@@ -39,6 +39,7 @@ function nextForm() {
 
 function backForm(){
     slideCounter = slideCounter - 1;
+
     if (slideCounter == 0) {
         personligInfo.style.display="block"
         guestWhere.style.display="none"
@@ -50,9 +51,11 @@ function backForm(){
     else if (slideCounter == 2) {
         // I förts skede sliden style.display="none"
         guests.style.display="block"
-
+        length.style.display="none"
     }
     else if (slideCounter == 3) {
+        length.style.display="block"
+        send.style.display="none"
         // I förts skede sliden style.display="block"
         //Kontrolera uppgifter style.display="none"
     }
