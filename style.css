@@ -280,6 +280,9 @@
 #personligInfo{
     
 }
+#side-p0{
+    font-weight: bold;
+}
 #guestWhereInfo{
     display: none;
 }
