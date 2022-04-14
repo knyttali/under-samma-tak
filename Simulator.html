@@ -13,11 +13,12 @@
     />
     <link rel="stylesheet" href="style.css" />
 
-    <title>Document</title>
+    <title>Under Samma Tak</title>
   </head>
   <body>
-    <div id="header">
-      <div id="logoDiv"></div>
+    <div id="headerSimulator">
+      <div id ="logoDiv"><a href="Index.html"><img src="/Images/Logo_white.png" alt="logo"></a>
+      </div>
 
       <div id="languageIconDiv" class="">
         <img src="images/white-globe.png" alt="Jordglob" />
@@ -47,7 +48,7 @@
         </p>
 
         <form class="personal-info form-template" id="personligInfo">
-          <h4 class="form-header">Personlig information</h4>
+          <h4 class="form-header ">Personlig information</h4>
 
           <div class="name-row row">
             <div class="col-6">
@@ -118,23 +119,23 @@
 
           <div id = "buttonRow" class="row align-items-center justify-content-end">
             <!-- <h4 onclick="nextForm()">Nästa</h4> -->
-            <button type="button" id="buttonNext" onclick="nextForm()">Nästa</button>
+            <button type="button" class="buttonNext" onclick="nextForm()">Nästa</button>
           </div>
         </form>
 
-        <!--VART SKULLE GÄSTERNA KUNNA BO?-->
+        <!--BOENDE-->
 
         <form class="guest-where-info form-template" id="guestWhereInfo">
-          <h4 class="form-header">Vart skulle gästerna kunna bo?</h4>
+          <h4 class="form-header ">Vart skulle gästerna kunna bo?</h4>
           <p>
             Alla människor har rätt till egen sovplats. Det kan vara en madrass
             på golvet eller en riktig säng. Därför är det viktigt att du anger
-            hur era sovmöjöigheter ser ut. Välj gärna ut alla alternatic som
-            gäööer för boende du erbjuder
+            hur era sovmöjligheter ser ut. Välj gärna ut alla alternativ som
+            gäller för boende du erbjuder
           </p>
 
-          <div class="space-col">
-            <h4>Utrymme</h4>
+          <div class="space-col utrymme">
+            <h6>Utrymme</h6>
 
         <form class="personal-info form-template p-4 rounded">
 
@@ -156,14 +157,15 @@
                   <input class="checkboxRight" type="checkbox" id="apartment" name="apartment" value="" />
             </div>
 
-            <div class="col-6">
-              <label for="house">Hus</label><br />
-              <input type="checkbox" id="house" name="house" value="" />
+            <div class="col-6 checkBoxarMedText">
+              <label for="house">Hus</label>
+              <input class="checkboxRight" type="checkbox" id="house" name="house" value="" />
             </div>
 
-            <div class="col-6">
-              <label for="secondarySpace">Sekundär enhet</label><br />
+            <div class="col-6 checkBoxarMedText">
+              <label for="secondarySpace">Sekundär enhet <small>(t.ex. stuga eller attefallshus)</small> </label>
               <input
+              class="checkboxRight"
                 type="checkbox"
                 id="secondarySpace"
                 name="secondarySpace"
@@ -172,17 +174,18 @@
             </div>
           </div>
 
-          <div class="space-col">
-            <h4>Typ av boende</h4>
+          <div class="space-col houseTypes">
+            <h6>Typ av boende</h6>
 
-            <div class="col-6">
-              <label for="selfOwned">Eget boende</label><br />
-              <input type="checkbox" id="selfOwned" name="selfOwned" value="" />
+            <div class="col-6 checkBoxarMedText">
+              <label for="selfOwned">Eget boende</label>
+              <input class="checkboxRight" type="checkbox" id="selfOwned" name="selfOwned" value="" />
             </div>
 
-            <div class="col-6">
-              <label for="sharedSpace">Delat boende</label><br />
+            <div class="col-6 checkBoxarMedText">
+              <label for="sharedSpace">Delat boende</label>
               <input
+              class="checkboxRight"
                 type="checkbox"
                 id="sharedSpace"
                 name="sharedSpace"
@@ -190,10 +193,11 @@
               />
             </div>
           </div>
-          <div id="btnNextAndBack">
-            <h4 onclick="backForm()">Tillbaka</h4>
-            <button type="button"  onclick="nextForm()">Nästa</button>
+          <div class="btnNextAndBack">
+            <button class="buttonBack" type="button" onclick="backForm()">Tillbaka</button>
+            <button class="buttonNext" type="button"  onclick="nextForm()">Nästa</button>
           </div>
+          
         </form>
 
         <!--GÄSTER-->
@@ -207,68 +211,71 @@
           </p>
 
           <div class="space-col">
-            <div class="col-6">
+            <div class="col-6 checkBoxarMedText">
               <label for="guest-With-Kids"> Gäster med barn</label><br />
               <input
                 type="checkbox"
                 id="guest-With-Kids"
                 name="guest-With-Kids"
                 value=""
+                class="checkboxRight"
               />
             </div>
 
-            <div class="col-6">
+            <div class="col-6 checkBoxarMedText">
               <label for="guest-with-babys">Gäster med spädbarn</label><br />
               <input
                 type="checkbox"
                 id="guest-with-babys"
                 name="guest-with-babys"
                 value=""
+                class="checkboxRight"
               />
             </div>
 
-            <div class="col-6">
+            <div class="col-6 checkBoxarMedText">
               <label for="guest-with-pet">Gäster med husdjur</label><br />
               <input
                 type="checkbox"
                 id="guest-with-pet"
                 name="guest-with-pet"
                 value=""
+                class="checkboxRight"
               />
             </div>
 
-            <div class="col-6">
+            <div class="col-6 checkBoxarMedText">
               <label for="onlyWomen">Enbart kvinnor</label><br />
-              <input type="checkbox" id="onlyWomen" name="onlyWomen" value="" />
+              <input type="checkbox" id="onlyWomen" name="onlyWomen" value="" class="checkboxRight"/>
             </div>
 
             <div class="col-6">
               <label for="max-guests">Max antal gäster</label><br />
-              <input type="text" id="max-guests" name="max-guests" value="" />
+              <input type="text" id="max-guests" name="max-guests" value="" class="checkboxRight"/>
             </div>
           </div>
 
-          <div id="btnNextAndBack">
-            <h4 onclick="backForm()">Tillbaka</h4>
-            <button type="button"  onclick="nextForm()">Nästa</button>
+          <div class="btnNextAndBack">
+            <button class="buttonBack" type="button" onclick="backForm()">Tillbaka</button>
+            <button class="buttonNext" type="button"  onclick="nextForm()">Nästa</button>
           </div>
         </form>
 
         <form class="length-info form-template" id="lengthInfo">
           <h4 class="form-header">Längd</h4>
 
-          <div id="btnNextAndBack">
-            <h4 onclick="backForm()">Tillbaka</h4>
-            <button type="button"  onclick="nextForm()">Nästa</button>
+          <div class="btnNextAndBack">
+            <button class="buttonBack" type="button" onclick="backForm()">Tillbaka</button>
+            <button class="buttonNext" type="button"  onclick="nextForm()">Nästa</button>
           </div>
         </form>
 
         <form class="send-info form-template" id="sendInfo">
           <h4 class="form-header">Skicka formulär</h4>
 
-          <div id="btnNextAndBack">
-            <h4 onclick="backForm()">Tillbaka</h4>
-            <button type="button" onclick="">Skicka</button>
+          <div class="btnNextAndBack">
+            <button class="buttonBack" type="button" onclick="backForm()">Tillbaka</button>
+            <button class="buttonNext" type="button" onclick="">Skicka</button>
           </div>
         </form>
       </div>

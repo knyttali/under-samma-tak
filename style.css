@@ -4,9 +4,7 @@
 *{
     font-family: "Chivo";
 }
-body{
-    
-}
+
 form{
     padding-left: 3%;
     padding-right: 9%;
@@ -14,20 +12,55 @@ form{
 }
 
 
-#header{
+#headerSimulator{
     display: flex;
     align-items: center;
     /* justify-content: center; */
     background-color: #004664;
 }
+#header {
 
-#languageIconDiv{
+}#headerStartsida{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#languageIconDivStartsida{
     position: absolute;
     right: 64px;
     display: flex;
     align-items: center;  
     font-weight: bold;
     font-size: 16px;
+    color: #004664;
+    text-align: center;
+}
+#languageTextStartsida{
+    margin: 0%;
+    margin-left: 16px;
+}
+.logoStartsida{
+    width: 139px;
+    height: 104px;
+    margin-top: 14px;
+}
+#logoDivStartsida{
+    background-image: url("/Images/Logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 100px;
+    margin-top: 22px;
+    margin-bottom: 5px;
+}
+#languageIconDiv{
+    position: absolute;
+    right: 4rem;
+    display: flex;
+    align-items: center;  
+    font-weight: bold;
+    font-size: 1rem;
     color: white;
     text-align: center;
 }
@@ -36,15 +69,11 @@ form{
 }
 #languageText{
     margin: 0%;
-    margin-left: 16px;
+    margin-left: 1rem;
 }
-.logo{
-    width: 139px;
-    height: 104px;
-    margin-top: 14px;
-}
+
 #logoDiv{
-    background-image: url("/Images/Logo_white.png");
+    /* background-image: url("/Images/Logo_white.png"); */
     background-size: contain;
     background-repeat: no-repeat;
     width: 130px;
@@ -52,6 +81,10 @@ form{
     margin-top: 1%;
     margin-left: 4%;
 }
+#logoDiv img {
+    height: 80%;
+}
+
 
 .dropdown-toggle-blue{
     background-image: url("Images/chevron\ dropdown\ menu.png");
@@ -271,6 +304,7 @@ form{
 /*****************Simulator page***************************/
 .main-container{
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 .desc-p{
     margin-top: 3%;
@@ -303,10 +337,12 @@ form{
 #sendInfo{
     display: none;
 }
-
 .form-header{
     font-weight: bold;
-    padding: 4% 0%;
+    padding: 4% 0 0 0;
+}
+#personligInfo h4 {
+    padding-bottom: 3%;
 }
 form label{
     font-size: 16px;
@@ -320,15 +356,16 @@ form label{
 #buttonRow{
     margin: 4% 0%;
 }
-#buttonNext{
+.buttonNext{
     padding: 1%;
     width: 10%;
     border-radius: 8px;
     border-style: hidden;
     margin-bottom: 3%;
     color: #999999;
+    float: right;
 }
-#buttonNext:hover{
+.buttonNext:hover{
     background-color: #489CB7;
     color: #FFFFFF;
 }
@@ -337,6 +374,50 @@ form label{
     background-color: #004664;
     color: white;
     border-style: hidden;
+}
+
+/* .buttonCushion
+{
+    height: 1.875rem;
+} */
+
+.buttonBack{
+    padding: 1%;
+    width: 10%;
+    border-radius: 8px;
+    border-style: hidden;
+    color: #999999; 
+    
+}
+.buttonBack:hover{
+    background-color: #489CB7;
+    color: #FFFFFF;
+}
+.btnNextAndBack {
+    padding: 1rem 0 1rem 0;
+}
+
+
+/* VAR SKULLE GÄSTERNA KUNNA BO */
+.utrymme {
+    margin: 1rem 0 2rem 0;
+}
+#guestWhereInfo h6 {
+    font-weight: bold;
+}
+.checkboxRight {
+    height: 20px;
+    width: 100px;
+    float: right;
+}
+.checkBoxarMedText {
+    padding: 0.1rem 0;
+}
+small {
+    font-size: x-small;
+}
+.houseTypes {
+    padding-bottom: 1rem;
 }
 
 @media screen and (max-width: 800px) {
