@@ -410,6 +410,12 @@ small {
 .houseTypes {
     padding-bottom: 1rem;
 }
+.dropdown-div{
+    margin-left: 5%;
+}
+#max-guests{
+    width: 90%;
+}
 
 @media screen and (max-width: 800px) {
     #languageText {
