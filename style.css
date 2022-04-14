@@ -304,6 +304,7 @@ form{
 /*****************Simulator page***************************/
 .main-container{
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 .desc-p{
     margin-top: 3%;
@@ -365,6 +366,11 @@ form label{
 .buttonNext:hover{
     background-color: #489CB7;
     color: #FFFFFF;
+}
+
+.buttonCushion
+{
+    height: 1.875rem;
 }
 
 .buttonBack{
