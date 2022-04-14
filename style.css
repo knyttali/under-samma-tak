@@ -366,6 +366,13 @@ form label{
     color: #FFFFFF;
 }
 
+/* VAR SKULLE GÄSTERNA KUNNA BO */
+
+.checkboxRight {
+    float: right;
+}
+
+
 @media screen and (max-width: 800px) {
     #languageText {
         display: none;
