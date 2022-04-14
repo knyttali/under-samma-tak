@@ -360,8 +360,23 @@ form label{
     border-style: hidden;
     margin-bottom: 3%;
     color: #999999;
+    float: right;
 }
 .buttonNext:hover{
+    background-color: #489CB7;
+    color: #FFFFFF;
+}
+
+.buttonBack{
+    padding: 1%;
+    width: 10%;
+    border-radius: 8px;
+    border-style: hidden;
+    margin-bottom: 0 1% 3% 0;
+    color: #999999;
+    float: left;
+}
+.buttonBack:hover{
     background-color: #489CB7;
     color: #FFFFFF;
 }
