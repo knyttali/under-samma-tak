@@ -353,7 +353,7 @@ form label{
 #buttonRow{
     margin: 4% 0%;
 }
-#buttonNext{
+.buttonNext{
     padding: 1%;
     width: 10%;
     border-radius: 8px;
@@ -361,7 +361,7 @@ form label{
     margin-bottom: 3%;
     color: #999999;
 }
-#buttonNext:hover{
+.buttonNext:hover{
     background-color: #489CB7;
     color: #FFFFFF;
 }
