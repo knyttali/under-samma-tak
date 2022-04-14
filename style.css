@@ -73,7 +73,7 @@ form{
 }
 
 #logoDiv{
-    background-image: url("/Images/Logo_white.png");
+    /* background-image: url("/Images/Logo_white.png"); */
     background-size: contain;
     background-repeat: no-repeat;
     width: 130px;
@@ -81,6 +81,10 @@ form{
     margin-top: 1%;
     margin-left: 4%;
 }
+#logoDiv img {
+    height: 80%;
+}
+
 
 .dropdown-toggle-blue{
     background-image: url("Images/chevron\ dropdown\ menu.png");
