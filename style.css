@@ -18,12 +18,10 @@ form{
     /* justify-content: center; */
     background-color: #004664;
 }
-#header {
-
-}#headerStartsida{
+#headerStartsida{
     display: flex;
     align-items: center;
-    justify-content: center;
+    background-color: #FFFFFF;
 }
 
 #languageIconDivStartsida{
