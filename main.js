@@ -44,6 +44,8 @@ function nextForm() {
         send.style.display="block"
         // I förts skede sliden style.display="none"
         //Kontrolera uppgifter style.display="block"
+        console.log(send.style.display)
+        send.get
     }
 }
 
