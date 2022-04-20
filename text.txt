@@ -1,8 +1,0 @@
-att göra: 
-- header
-  - Så fungerar det
-  - Vårt uppdrag
-  - vanliga frågor
-  - anmäl ditt intresse
-
-
