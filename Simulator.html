@@ -53,19 +53,19 @@
           <div class="name-row row">
             <div class="col-6">
               <label for="fname">Förnamn</label><br />
-              <input type="text" id="fname" name="fname" value="" class="w-100"/>
+              <input required type="text" id="fname" name="fname" value="" class="w-100"/>
             </div>
 
             <div class="col-6">
               <label for="lname">Efternamn</label><br />
-              <input type="text" id="lname" name="lname" value="" class="w-100"/>
+              <input required type="text" id="lname" name="lname" value="" class="w-100"/>
             </div>
           </div>
 
           <div class="adress-row row">
             <div class="col-12">
               <label for="address">Gatuadress</label><br />
-              <input
+              <input required
                 type="text"
                 id="address"
                 name="address"
@@ -78,12 +78,12 @@
           <div class="kommun-row row">
             <div class="col-6">
               <label for="ort">Ort</label><br />
-              <input type="text" id="ort" name="ort" value="" class="w-100"/>
+              <input required type="text" id="ort" name="ort" value="" class="w-100"/>
             </div>
 
             <div class="col-6">
               <label for="kommun">Kommun</label><br />
-              <input
+              <input required
                 id="autoComplete"
                 type="text"
                 dir="ltr"
@@ -98,19 +98,19 @@
           <div class="nummer-row row">
             <div class="col-6">
               <label for="postNum">Postnummer</label><br />
-              <input type="text" id="postNum" name="postNum" value="" class="w-100"/>
+              <input required type="text" id="postNum" name="postNum" value="" class="w-100"/>
             </div>
 
             <div class="col-6">
               <label for="phone">Telefonnummer</label><br />
-              <input type="text" id="phone" name="phone" value="" class="w-100"/>
+              <input required type="text" id="phone" name="phone" value="" class="w-100"/>
             </div>
           </div>
 
           <div class="email-row row">
             <div class="col-6">
               <label for="email">E-mail adress</label><br />
-              <input type="email" id="email" name="email" value="" class="w-100"/>
+              <input required type="email" id="email" name="email" value="" class="w-100"/>
             </div>
 
             <div class="col-6"></div>
@@ -243,7 +243,7 @@
             <div class="col-6 dropdown-div">
               <select name="max-guests" id="max-guests">
                 <option value="1">1-2</option>
-                <option value="2">2-4</option>
+                <option value="2">3-4</option>
                 <option value="5">5+</option>
               </select>
             </div>
