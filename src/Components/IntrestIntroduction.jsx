@@ -10,6 +10,7 @@ const IntrestIntroduction = () => {
           t.ex. en naturkatastrof, en flyktingkris eller en global pandemi.
         </p>
         <PersonalInfo />
+        
     </div>
   )
 }

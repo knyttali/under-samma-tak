@@ -1,5 +1,5 @@
 import React from 'react'
-
+import NextButton from './NextButton'
 const PersonalInfo = () => {
   return (
     <form className="personal-info form-template" id="personligInfo">
@@ -71,11 +71,8 @@ const PersonalInfo = () => {
       <div className="col-6"></div>
 
     </div>
-
-    {/* <div id = "buttonRow" class="row align-items-center justify-content-end">
-      <!-- <h4 onclick="nextForm()">Nästa</h4> -->
-      <button type="button" class="buttonNext" onclick="nextForm()">Nästa</button>
-    </div> */}
+    <NextButton />
+   
   </form>
   )
 }
