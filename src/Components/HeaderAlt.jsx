@@ -9,7 +9,7 @@ const HeaderAlt = () => {
       </div>
 
       <div id="languageIconDiv" class="">
-        <img src={globe} alt="Jordglob" />
+        <img src={globe} alt="Jordglob" id='whiteGlobe'/>
         <p class="language" id="languageText">Language</p>
       </div>
     </div>

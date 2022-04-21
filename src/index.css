@@ -218,6 +218,7 @@ p{
     /* justify-content: center; */
     background-color: #004664;
   }
+ 
   #languageIconDiv{
   position: absolute;
   right: 4rem;
@@ -227,6 +228,10 @@ p{
   font-size: 1rem;
   color: white;
   text-align: center;
+  }
+  #whiteGlobe{
+    width: 15%;
+    height: 15%;
   }
   /*Intruduction text */
   .content-container .row {
@@ -268,6 +273,24 @@ p{
   .form-header{
     font-weight: bold;
     padding: 4% 0 0 0;
+  }
+
+  /*Button*/
+  #buttonRow{
+    margin: 4% 0%;
+  }
+  .buttonNext{
+    padding: 1%;
+    width: 10%;
+    border-radius: 8px;
+    border-style: hidden;
+    margin-bottom: 3%;
+    color: #999999;
+    float: right;
+  }
+  .buttonNext:hover{
+    background-color: #489CB7;
+    color: #FFFFFF;
   }
 
   
