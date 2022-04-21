@@ -6,8 +6,8 @@ import FormPage from "./Pages/FormPage";
 function App() {
   return (
     <div className="App">
-      {/* <HomePage/> */}
-      <FormPage />
+       {/* <HomePage/>  */}
+      { <FormPage />}
     </div>
   );
 }

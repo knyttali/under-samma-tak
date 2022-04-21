@@ -1,8 +1,13 @@
 import React from 'react'
-import Header from '../Components/Header'
+import HeaderAlt from '../Components/HeaderAlt'
+import FormPageContainer from '../Components/FormPageContainer'
 const FormPage = () => {
   return (
-    <Header />
+    <>
+    <HeaderAlt />
+    <FormPageContainer />
+    
+    </>
   )
 }
 

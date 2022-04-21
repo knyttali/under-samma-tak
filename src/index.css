@@ -209,6 +209,64 @@ p{
   .story-p{
     padding-left: 8%;
   } 
+
+
+  /************Form********************/
+  #headerSimulator{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: #004664;
+  }
+  #languageIconDiv{
+  position: absolute;
+  right: 4rem;
+  display: flex;
+  align-items: center;  
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  }
+  /*Intruduction text */
+  .content-container .row {
+    margin-top: 15px;
+  } 
+
+  .desc-p{
+    margin-top: 3%;
+  }
+
+  .main-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .sidenav{
+    border-left: 1px solid black;
+    margin-left: 3%;
+    height: 25%;
+  }
+
+  /*Form Container*/
+  .form-template{
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 11px;   
+  }
+  .personal-info input {
+    height: 6vh;
+    border-radius: 5px;
+    border: 1px solid rgb(219, 219, 219);
+    padding: 3%;
+  }
+  #personligInfo h4 {
+    padding-bottom: 3%;
+}
+  .form-header{
+    font-weight: bold;
+    padding: 4% 0 0 0;
+  }
+
   
   /**********MEDIA ************************/
   @media screen and (max-width: 800px) {
