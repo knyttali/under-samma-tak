@@ -259,6 +259,9 @@ p{
     border: 1px solid rgb(219, 219, 219);
     padding: 3%;
   }
+  #personligInfo{
+    padding: 3%;
+  }
   #personligInfo h4 {
     padding-bottom: 3%;
 }
