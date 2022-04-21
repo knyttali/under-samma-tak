@@ -1,5 +1,6 @@
 import chevron from '../Images/chevron_dropdown_menu.png'
 import searchBlue from '../Images/searchBlue.png'
+import { Link } from "react-router-dom"
 
 
 const Navbar = () => {

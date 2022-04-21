@@ -1,12 +1,13 @@
 import globe from '../Images/Vector.png'
 import logo from '../Images/Logo_blue.png'
+import HomePage from '../Pages/HomePage';
 
 const Header = () => {
   return (
     <div id="header" className="d-flex align-items-center">
 
         <div id="logoDiv">
-            <a href="Index.html">
+            <a href={HomePage}>
                 <img src={logo}>
                 </img>
             </a>
