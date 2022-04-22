@@ -23,7 +23,7 @@ const IntrestIntroduction = () => {
           </div>
           </form>  
         
-          <form class="guest-where-info form-template" id="guestWhereInfo">
+          <form className="guest-where-info form-template" id="guestWhereInfo">
             <Living />
             <div onClick={next}>
             <NextButton />
