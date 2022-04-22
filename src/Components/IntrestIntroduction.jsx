@@ -4,6 +4,7 @@ import NextButton from "./NextButton";
 import Living from "./cards/Living";
 import Guests from "./cards/Guests";
 import LivingAmountOfTime from "./cards/LivingAmountOfTime";
+import BackButton from "./BackButton";
 
 const IntrestIntroduction = () => {
   function next() {
@@ -26,19 +27,25 @@ const IntrestIntroduction = () => {
 
       <form className="guest-where-info form-template" id="guestWhereInfo">
         <Living />
-        <div onClick={next}>
+        <div className="btnNextAndBack">
+          <BackButton />
+       {/*  <div onClick={next}> */}
           <NextButton />
         </div>
+       {/*  </div> */}
       </form>
       <form className="guest-info form-template" id="guestInfo">
         <Guests />
         <div onClick={next}>
+        <BackButton />
           <NextButton />
         </div>
+        
       </form>
       <form class="length-info form-template" id="lengthInfo">
         <LivingAmountOfTime />
         <div onClick={next}>
+        <BackButton />
           <NextButton />
         </div>
       </form>

@@ -13,7 +13,8 @@ const Living = () => {
           </p>
 
           <div className="space-col utrymme">
-            <h6>Utrymme</h6>
+           
+          <h6 style={{fontWeight: "Bold"}}>Utrymme</h6>
 
             <div className="col-6 checkBoxarMedText">
               <label htmlFor="apartment"> Lägenhet</label>
