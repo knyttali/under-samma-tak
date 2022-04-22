@@ -21,7 +21,8 @@ const IntrestIntroduction = () => {
       <form className="personal-info form-template" id="personligInfo">
         <PersonalInfo />
         <div onClick={next}>
-          <NextButton />
+        <div id = "buttonRow" className="row align-items-center justify-content-end"><NextButton /></div>
+          
         </div>
       </form>
 
