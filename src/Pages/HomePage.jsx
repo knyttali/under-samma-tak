@@ -1,10 +1,10 @@
 import React from 'react'
 import Header from '../Components/Header'
 import Navbar from '../Components/Navbar'
-import IntroContainer from '../Components/IntroContainer'
-import SnakeContainer from '../Components/SnakeContainer'
-import MainContentContainer from '../Components/MainContentContainer'
-import StoriesContainer from '../Components/StoriesContainer'
+import IntroContainer from '../Components/startsidan/IntroContainer'
+import SnakeContainer from '../Components/startsidan/SnakeContainer'
+import MainContentContainer from '../Components/startsidan/MainContentContainer'
+import StoriesContainer from '../Components/startsidan/StoriesContainer'
 
 const HomePage = () => {
   return (

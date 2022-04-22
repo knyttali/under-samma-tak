@@ -1,4 +1,4 @@
-import IntroButton from "./IntroButton"
+import IntroButton from "../IntroButton"
 
 const IntroContainer = () => {
   return (

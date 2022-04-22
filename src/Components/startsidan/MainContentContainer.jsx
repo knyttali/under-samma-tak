@@ -1,6 +1,6 @@
-import rightArrow from '../Images/Right.png'
-import paper from '../Images/paper.png'
-import train from '../Images/boardingTrain.png'
+import rightArrow from '../../Images/Right.png'
+import paper from '../../Images/paper.png'
+import train from '../../Images/boardingTrain.png'
 
 const MainContentContainer = () => {
   return (
