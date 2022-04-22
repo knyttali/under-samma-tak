@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import PersonalInfo from "./cards/PersonalInfo";
-import NextButton from "./NextButton";
 import Living from "./cards/Living";
 import Guests from "./cards/Guests";
 import LivingAmountOfTime from "./cards/LivingAmountOfTime";
-import BackButton from "./BackButton";
+import BackBtnArrow from "../Images/Arrow-left-Blue.png"
+
 
 const IntrestIntroduction = () => {
   var counter = 0
@@ -25,7 +25,11 @@ const IntrestIntroduction = () => {
       <form className="personal-info form-template" id="personligInfo">
         <PersonalInfo />
         <div onClick={next}>
-        <div id = "buttonRow" className="row align-items-center justify-content-end"><NextButton /></div>
+        <div id = "buttonRow" className="row align-items-center justify-content-end">
+        <button type="button" className="buttonNext" onClick={next}>
+              Nästa
+          </button>
+        </div>
           
         </div>
       </form>
@@ -37,6 +41,7 @@ const IntrestIntroduction = () => {
         <Living />
         <div className="btnNextAndBack">
         <button class="buttonBack " type="button" onClick={back}>
+          <img src={BackBtnArrow} />
             Tillbaka
         </button>
           
@@ -53,6 +58,7 @@ const IntrestIntroduction = () => {
       <form className="guest-info form-template" id="guestInfo">
         <Guests />
         <button class="buttonBack " type="button" onClick={back}>
+        <img src={BackBtnArrow} />
             Tillbaka
         </button>
         <button type="button" className="buttonNext" onClick={next}>
@@ -66,6 +72,7 @@ const IntrestIntroduction = () => {
       <form class="length-info form-template" id="lengthInfo">
         <LivingAmountOfTime />
         <button class="buttonBack " type="button" onClick={back}>
+        <img src={BackBtnArrow} />
             Tillbaka
         </button>
         <button type="button" className="buttonNext" onClick={next}>
@@ -84,7 +91,11 @@ const IntrestIntroduction = () => {
       <form className="personal-info form-template" id="personligInfo">
         <PersonalInfo />
         <div onClick={next}>
-        <div id = "buttonRow" className="row align-items-center justify-content-end"><NextButton /></div>
+        <div id = "buttonRow" className="row align-items-center justify-content-end">
+        <button type="button" className="buttonNext" onClick={next}>
+              Nästa
+          </button>
+        </div>
           
         </div>
       </form>
@@ -96,6 +107,7 @@ const IntrestIntroduction = () => {
         <Living />
         <div className="btnNextAndBack">
         <button class="buttonBack " type="button" onClick={back}>
+        <img src={BackBtnArrow} />
             Tillbaka
         </button>
           
@@ -112,6 +124,7 @@ const IntrestIntroduction = () => {
       <form className="guest-info form-template" id="guestInfo">
         <Guests />
         <button class="buttonBack " type="button" onClick={back}>
+        <img src={BackBtnArrow} />
             Tillbaka
         </button>
         <button type="button" className="buttonNext" onClick={next}>
@@ -125,6 +138,7 @@ const IntrestIntroduction = () => {
       <form class="length-info form-template" id="lengthInfo">
         <LivingAmountOfTime />
         <button class="buttonBack " type="button" onClick={back}>
+        <img src={BackBtnArrow} />
             Tillbaka
         </button>
         <button type="button" className="buttonNext" onClick={next}>
