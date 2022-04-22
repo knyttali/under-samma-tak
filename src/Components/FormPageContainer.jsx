@@ -10,8 +10,8 @@ const FormPageContainer = () => {
         <SideNav />
         <div className="col-1"></div>
         <IntrestIntroduction />
-        <Living />
-        <Guests />
+        {/* <Living />
+        <Guests /> */}
 
         
 

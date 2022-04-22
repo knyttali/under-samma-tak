@@ -1,6 +1,7 @@
 import React from 'react'
 import PersonalInfo from './PersonalInfo'
 import NextButton from './NextButton'
+import Living from './Living'
 
 
 const IntrestIntroduction = () => {
@@ -22,6 +23,13 @@ const IntrestIntroduction = () => {
           </div>
           </form>  
         
+          <form class="guest-where-info form-template" id="guestWhereInfo">
+            <Living />
+            <div onClick={next}>
+            <NextButton />
+            </div>
+
+          </form>
     </div>
   )
 }
