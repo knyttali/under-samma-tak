@@ -8,9 +8,9 @@ const HeaderAlt = () => {
       <div id ="logoDiv"><a href="Index.html"><img src={logo} alt="logo"/></a>
       </div>
 
-      <div id="languageIconDiv" class="">
+      <div id="languageIconDiv" className="">
         <img src={globe} alt="Jordglob" id='whiteGlobe'/>
-        <p class="language" id="languageText">Language</p>
+        <p className="language" id="languageText">Language</p>
       </div>
     </div>
   )
