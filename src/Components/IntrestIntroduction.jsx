@@ -40,7 +40,7 @@ const IntrestIntroduction = () => {
       <form className="guest-where-info form-template" id="guestWhereInfo">
         <Living />
         <div className="btnNextAndBack">
-        <button class="buttonBack " type="button" onClick={back}>
+        <button className="buttonBack " type="button" onClick={back}>
           <img src={BackBtnArrow} />
             Tillbaka
         </button>
@@ -69,9 +69,9 @@ const IntrestIntroduction = () => {
     }
     else if (counter === 3) {
       setForm(
-      <form class="length-info form-template" id="lengthInfo">
+      <form className="length-info form-template" id="lengthInfo">
         <LivingAmountOfTime />
-        <button class="buttonBack " type="button" onClick={back}>
+        <button className="buttonBack " type="button" onClick={back}>
         <img src={BackBtnArrow} />
             Tillbaka
         </button>
@@ -123,7 +123,7 @@ const IntrestIntroduction = () => {
       setForm(
       <form className="guest-info form-template" id="guestInfo">
         <Guests />
-        <button class="buttonBack " type="button" onClick={back}>
+        <button className="buttonBack " type="button" onClick={back}>
         <img src={BackBtnArrow} />
             Tillbaka
         </button>
@@ -135,7 +135,7 @@ const IntrestIntroduction = () => {
     }
     else if (counter === 3) {
       setForm(
-      <form class="length-info form-template" id="lengthInfo">
+      <form className="length-info form-template" id="lengthInfo">
         <LivingAmountOfTime />
         <button class="buttonBack " type="button" onClick={back}>
         <img src={BackBtnArrow} />
