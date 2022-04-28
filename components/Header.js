@@ -1,13 +1,12 @@
 import Image from "next/image"
 import logo from "../public/Images/Logo_blue.png"
 import globe from "../public/Images/Vector.png"
-import styles from "../styles/Header.module.css"
 
 const Header = () => {
   return (
     <div id="header" className="d-flex align-items-center">
 
-    <div id="logoDiv" className={styles.logoDiv}>
+    <div id="logoDiv">
         <a href=''>
             <Image src={logo}>
             </Image>
