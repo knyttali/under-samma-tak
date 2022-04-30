@@ -1,3 +1,4 @@
+import Link from "next/link"
 import IntroButton from "./IntroButton"
 
 const IntroContainer = () => {
@@ -25,7 +26,9 @@ const IntroContainer = () => {
           <h4>SNABBLÄNKAR </h4>
           <a href="http://">Vanliga frågor {">"}</a>
           <a href="http://">Ekonomi {">"}</a>
+          <Link href="FormPage">
           <a href="http://">Anmäl intresse {">"}</a>
+          </Link>
       </div>
   </div>
   )
