@@ -1,16 +1,19 @@
 import Image from "next/image"
 import logo from "../public/Images/Logo_blue.png"
 import globe from "../public/Images/Vector.png"
+import Link from "next/dist/client/link"
 
 const Header = () => {
   return (
     <div id="header" className="d-flex align-items-center">
 
     <div id="logoDiv">
-        <a href=''>
+      <Link href ="/">
+        <a>
             <Image src={logo}>
             </Image>
         </a>
+        </Link>
     </div>
 
     <div id="languageIconDiv" className="d-flex align-items-center">
