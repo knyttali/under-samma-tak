@@ -10,10 +10,8 @@ const MainContentContainer = () => {
 
     <div className="content-div-left content-div d-flex col-5" id="contentSim">
 
-      <div id="bild1"  className = "content-img">
-        <div className ="img-content">
+      <div id="bild1"  className = "content-img" >  
         <Image src={train} alt="boardingTrain" />
-        </div>
       </div>
 
       <div id="textcontent1">

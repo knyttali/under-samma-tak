@@ -70,7 +70,7 @@ p{
   background-image: url("../public/Images/family.png"); 
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  min-height: 50vh;
 }
 .introTextContent{
   max-width: 420px;
@@ -98,6 +98,7 @@ p{
 .fastLinks{
   margin-left: 85%;
   color: white;  
+  bottom: 0px;
 }
 .fastLinks h4{
   font-size: medium;
@@ -113,25 +114,28 @@ p{
   color: #004664;
 }
 
+
+
+.snake {
+  background-color: #fef2e7;
+  padding-left: 7%;
+   
+  min-height: 40vh;
+
+}
 .snake h1
 {
   text-align: center;
   padding-top: 3%;
   color: #004664;
-}
-
-.snake {
-  background-color: #fef2e7;
-   padding-left: 6%;
-  padding-right: 6%; 
-
+  margin-right:9% ;
 }
 
 .snakebox {
   background-color: white;
   border: #004664 4px solid;
   border-radius: 8px;
-
+  min-height: 20vh;
   padding-left: 2%;
   padding-top: 1%; 
 }
@@ -181,6 +185,7 @@ p{
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
+
 .contentButtonPara{
   margin-bottom: 0px;
   margin-left: 3%;

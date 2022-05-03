@@ -6,7 +6,7 @@ const IntroContainer = () => {
 
     <div className="introContainer">
         
-    <div className="introTextContent d-flex flex-column">
+      <div className="introTextContent d-flex flex-column">
 
           <div className="introHeader">
               <h1 id="introtext">För dig som vill erbjuda ditt boende</h1>
@@ -20,7 +20,7 @@ const IntroContainer = () => {
             <IntroButton/>
           </div>
 
-    </div>
+      </div>
 
       <div className ="fastLinks d-flex flex-column">
           <h4>SNABBLÄNKAR </h4>
