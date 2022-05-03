@@ -24,16 +24,12 @@ p{
   position: relative;
   align-items: center;
 }
-
-/* #logoDiv{
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 130px;
-  height: 70px;
-  margin-top: 0%;
-  margin-left: 0%;
-} */
+.menuItems {
+  width: 60%;
+  margin-left: 20%;
+}
 #logoimg {
+  background-color: #004664;
  position: absolute;
  height: 80px;
  width: auto;
