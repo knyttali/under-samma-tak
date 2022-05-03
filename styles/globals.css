@@ -16,22 +16,27 @@ p{
 .row{
   --bs-gutter-x: 0;
 }
+
 /************HEADER STYLING*********************/
-.logo{
-  width: 139px;
-  height: 104px;
-  margin-top: 14px;
+
+#header {
+  height: 14vh;
+  position: relative;
+  align-items: center;
 }
-#logoDiv{
+
+/* #logoDiv{
   background-size: contain;
   background-repeat: no-repeat;
   width: 130px;
   height: 70px;
-  margin-top: 1%;
-  margin-left: 4%;
-}
-#logoDiv img {
-  height: 80%;
+  margin-top: 0%;
+  margin-left: 0%;
+} */
+#logoimg {
+ position: absolute;
+ height: 80px;
+ width: auto;
 }
 #languageIconDiv{
   position: absolute;
@@ -52,21 +57,7 @@ p{
 }
 
 
-/************NAVBAR STYLING*********************/
-.navbar{
-  background-color: #F2F2F2;
-}
-#navbar-p{
-  margin-bottom: 0%;
-  margin-right: 3%;
-  font-family: "Chivo";
-  color: #004664;
-  font-weight: bolder;
-}
-#navbarDropdownMenuLink{
-  width: auto;
-  height: auto;
-}
+
 
 /************IntroContainer STYLING*********************/
 .introContainer{
