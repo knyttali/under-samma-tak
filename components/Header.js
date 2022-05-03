@@ -1,33 +1,44 @@
-import Image from "next/image"
-import logo from "../public/Images/Logo_blue.png"
-import globe from "../public/Images/Vector.png"
-import Link from "next/dist/client/link"
+import Image from "next/image";
+import logo from "../public/Images/Logo_blue.png";
+import globe from "../public/Images/Globe.png";
+import Link from "next/dist/client/link";
+import Logo from "../public/Images/Logo.svg";
+import search from "../public/Images/Search.svg";
 
 const Header = () => {
   return (
     <div id="header" className="d-flex align-items-center">
-
-    <div id="logoDiv">
-      <Link href ="/">
-        <a>
-            <Image src={logo}>
-            </Image>
-        </a>
+      <div id="logoimg">
+        <Link href="/">
+          <a>
+            <Image src={Logo}></Image>
+          </a>
         </Link>
-    </div>
+      </div>
 
-    <div id="languageIconDiv" className="d-flex align-items-center">
-      <div id = "globe">
-        <Image src={globe}></Image>
+      <div className="menuItems justify-content-between d-flex">
+        <Link href="/">
+          <a>Så fungerar det</a>
+        </Link>
+        <Link href="/">
+          <a>Vårt uppdrag</a>
+        </Link>
+        <Link href="/">
+          <a>Vanliga frågor</a>
+        </Link>
+        <Link href="/FormPage">
+          <a>Anmäl ditt intresse</a>
+        </Link>
+      </div>
+
+      <div id="languageIconDiv" className="d-flex align-items-center">
+        <Image src={search}></Image>
+        <div id="globe">
+          <Image src={globe}></Image>
         </div>
-        <div className="language" id="languageText">
-        <p>
-            Language
-        </p>
-        </div>
+      </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
 export default Header;
