@@ -51,12 +51,8 @@ p{
 }
 
 #languageIconDiv{
-  position: absolute;
-  right: 64px;
-  font-weight: bold;
-  font-size: 16px;
-  color: #004664;
-  text-align: center;
+  width: 95px;
+  justify-content: space-between;
 
 }
 #globe{
