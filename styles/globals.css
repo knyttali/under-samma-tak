@@ -31,9 +31,14 @@ p{
 #logoimg {
   background-color: #004664;
  position: absolute;
- height: 80px;
+ height: inherit;
  width: auto;
 }
+
+.logoImgImg {
+  position: absolute;
+}
+
 #languageIconDiv{
   position: absolute;
   right: 64px;
