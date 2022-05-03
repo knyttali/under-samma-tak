@@ -17,21 +17,22 @@ p{
   --bs-gutter-x: 0;
 }
 /************HEADER STYLING*********************/
-.logo{
-  width: 139px;
-  height: 104px;
-  margin-top: 14px;
+/************HEADER STYLING*********************/
+
+#header {
+  height: 14vh;
+  position: relative;
+  align-items: center;
 }
-#logoDiv{
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 130px;
-  height: 70px;
-  margin-top: 1%;
-  margin-left: 4%;
+.menuItems {
+  width: 60%;
+  margin-left: 20%;
 }
-#logoDiv img {
-  height: 80%;
+#logoimg {
+  background-color: #004664;
+ position: absolute;
+ height: 80px;
+ width: auto;
 }
 #languageIconDiv{
   position: absolute;
@@ -50,6 +51,7 @@ p{
   padding: 0%;
   margin-left: 16px;
 }
+
 
 
 /************NAVBAR STYLING*********************/
