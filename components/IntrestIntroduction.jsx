@@ -3,7 +3,7 @@ import PersonalInfo from "./cards/PersonalInfo";
 import Living from "./cards/Living";
 import Guests from "./cards/Guests";
 import LivingAmountOfTime from "./cards/LivingAmountOfTime";
-import BackBtnArrow from "../public/Images/Arrow-left-Blue.png"
+import BackBtnArrow from "../public/Images/Arrow-left.svg"
 
 
 const IntrestIntroduction = () => {
