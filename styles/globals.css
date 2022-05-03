@@ -30,13 +30,14 @@ p{
 }
 #logoimg {
   background-color: #004664;
- position: absolute;
- height: inherit;
- width: auto;
+  position: absolute;
+  height: inherit;
+  width: auto;
 }
 
 .logoImgImg {
   position: absolute;
+  width: 100px;
 }
 
 #languageIconDiv{
