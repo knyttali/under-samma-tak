@@ -166,6 +166,7 @@ p{
   padding-bottom: 2%;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  
 }
 
 .content-div{
@@ -175,6 +176,15 @@ p{
   flex-direction: column;
   padding: 0%;
 
+}
+
+.content-div-right{
+  position: relative;
+}
+.rightButtonSticky{
+  position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .textcontent1{

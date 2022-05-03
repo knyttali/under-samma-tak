@@ -53,7 +53,7 @@ const MainContentContainer = () => {
         </p>
       </div>
 
-      <div className="mainContentButton" id="buttonqa">
+      <div className="mainContentButton rightButtonSticky" id="buttonqa">
         <a className="d-flex align-items-center w-100" href="#" role="button">
           <Image src={rightArrow} className="rightArrow" alt="buttonqa" />
          <p className="contentButtonPara">Vanliga frågor och svar</p>  
