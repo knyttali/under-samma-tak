@@ -18,16 +18,16 @@ const Header = () => {
 
       <div className="menuItems justify-content-between d-flex">
         <Link href="/">
-          <a>Så fungerar det</a>
+          <a><p>Så fungerar det</p></a>
         </Link>
         <Link href="/">
-          <a>Vårt uppdrag</a>
+          <a><p>Vårt uppdrag</p></a>
         </Link>
         <Link href="/">
-          <a>Vanliga frågor</a>
+          <a><p>Vanliga frågor</p></a>
         </Link>
         <Link href="/FormPage">
-          <a>Anmäl ditt intresse</a>
+          <a><p>Anmäl ditt intresse</p></a>
         </Link>
       </div>
 
