@@ -13,6 +13,9 @@ p{
   padding: 0%;
   margin-bottom: 0%;
 }
+.row{
+  --bs-gutter-x: 0;
+}
 /************HEADER STYLING*********************/
 .logo{
   width: 139px;
