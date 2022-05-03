@@ -4,7 +4,7 @@ import Living from "./cards/Living";
 import Guests from "./cards/Guests";
 import LivingAmountOfTime from "./cards/LivingAmountOfTime";
 import BackBtnArrow from "../public/Images/Arrow-left.svg"
-
+import Image from "next/image"
 
 const IntrestIntroduction = () => {
   var counter = 0
@@ -41,7 +41,7 @@ const IntrestIntroduction = () => {
         <Living />
         <div className="btnNextAndBack">
         <button className="buttonBack " type="button" onClick={back}>
-          <img src={BackBtnArrow} />
+          <Image src={BackBtnArrow} allt ="back" />
             Tillbaka
         </button>
           
@@ -58,7 +58,7 @@ const IntrestIntroduction = () => {
       <form className="guest-info form-template" id="guestInfo">
         <Guests />
         <button className="buttonBack " type="button" onClick={back}>
-        <img src={BackBtnArrow} />
+        <Image src={BackBtnArrow} allt ="back" />
             Tillbaka
         </button>
         <button type="button" className="buttonNext" onClick={next}>
@@ -72,7 +72,7 @@ const IntrestIntroduction = () => {
       <form className="length-info form-template" id="lengthInfo">
         <LivingAmountOfTime />
         <button className="buttonBack " type="button" onClick={back}>
-        <img src={BackBtnArrow} />
+        <Image src={BackBtnArrow} allt ="back" />
             Tillbaka
         </button>
         <button type="button" className="buttonNext" onClick={next}>
@@ -107,7 +107,7 @@ const IntrestIntroduction = () => {
         <Living />
         <div className="btnNextAndBack">
         <button className="buttonBack " type="button" onClick={back}>
-        <img src={BackBtnArrow} />
+        <Image src={BackBtnArrow} allt ="back" />
             Tillbaka
         </button>
           
@@ -124,7 +124,7 @@ const IntrestIntroduction = () => {
       <form className="guest-info form-template" id="guestInfo">
         <Guests />
         <button className="buttonBack " type="button" onClick={back}>
-        <img src={BackBtnArrow} />
+        <Image src={BackBtnArrow} allt ="back" />
             Tillbaka
         </button>
         <button type="button" className="buttonNext" onClick={next}>
@@ -138,7 +138,7 @@ const IntrestIntroduction = () => {
       <form className="length-info form-template" id="lengthInfo">
         <LivingAmountOfTime />
         <button className="buttonBack " type="button" onClick={back}>
-        <img src={BackBtnArrow} />
+        <Image src={BackBtnArrow} allt ="back" />
             Tillbaka
         </button>
         <button type="button" className="buttonNext" onClick={next}>
