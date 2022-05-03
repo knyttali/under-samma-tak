@@ -70,7 +70,7 @@ p{
 
 /************IntroContainer STYLING*********************/
 .introContainer{
-  background-image: url("../public/Images/family.png"); 
+  background-color: #004664;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 50vh;
