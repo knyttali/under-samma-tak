@@ -37,11 +37,17 @@ p{
   font-size: 16px;
   color: #004664;
   text-align: center;
+
+}
+#globe{
+  width: 20px;
+  height: 20px;
 }
 .language{
   padding: 0%;
   margin-left: 16px;
 }
+
 
 /************NAVBAR STYLING*********************/
 .navbar{

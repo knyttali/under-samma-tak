@@ -17,10 +17,14 @@ const Header = () => {
     </div>
 
     <div id="languageIconDiv" className="d-flex align-items-center">
+      <div id = "globe">
         <Image src={globe}></Image>
-        <p className="language" id="languageText">
+        </div>
+        <div className="language" id="languageText">
+        <p>
             Language
         </p>
+        </div>
     </div>
     </div>
   )
