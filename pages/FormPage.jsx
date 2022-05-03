@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 
-import FormPageContainer from '../Components/FormPageContainer'
+import FormPageContainer from '../components/FormPageContainer'
 const FormPage = () => {
   return (
     <>
