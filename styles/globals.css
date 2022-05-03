@@ -17,11 +17,25 @@ p{
   --bs-gutter-x: 0;
 }
 
+/************TESTAR GÖRA BAKGRUNDBILD*********************/
+.testFamily {
+  display: block;
+  margin: 7vh;
+}
+.testFamilyImg{
+  z-index: -1;
+  object-fit: cover;       /*TODO*/
+  object-position: 50% 0%; /* vill se bäbisens panna */
+                           /* vill att bilden är interaktiv med fokus på HÖJD*/
+}
+
+
+
 /************HEADER STYLING*********************/
 
 #header {
+ background-color: white;
   height: 14vh;
-  position: relative;
   align-items: center;
 }
 .menuItems {
@@ -70,7 +84,6 @@ p{
 
 /************IntroContainer STYLING*********************/
 .introContainer{
-  background-color: #004664;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 50vh;

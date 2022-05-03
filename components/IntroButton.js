@@ -1,6 +1,6 @@
 const IntroButton = () => {
     return (
-      <button id="introBtn">Steg-för-steg guide</button>
+      <button id="introBtn">Till simulatorn</button>
     )
   }
   
