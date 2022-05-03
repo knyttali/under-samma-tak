@@ -1,14 +1,11 @@
 import Link from "next/link"
 import IntroButton from "./IntroButton"
-import Family from "../public/Images/family.png"
 
-const styling = {
-  backgroundImage: "url('../public/Images/family.png')"
-}
+
 
 const IntroContainer = () => {
   return (
-    <div className="introContainer" style={styling}>
+    <div className="introContainer">
         
       <div className="introTextContent d-flex flex-column">
 
