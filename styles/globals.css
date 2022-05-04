@@ -37,7 +37,8 @@ p{
   color: #004664;
 }
 .menuItems p:hover {
-  text-decoration: underline #489CB7 2px;
+  text-decoration: underline #489CB7 3px;
+  text-underline-offset: 10px;
 }
 
 #logoimg {
