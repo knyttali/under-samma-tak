@@ -7,15 +7,13 @@ import search from "../public/Images/Search.svg";
 
 
 const Header = () => {
-  
+
 
   return (
     <div id="header" className="d-flex align-items-center">
       <div id="logoimg">
-        <Link href="/">
-          <a>
+        <Link href="/">  
           <Image src={Logo} className="logoImgImg"></Image>
-          </a>
         </Link>
       </div>
 

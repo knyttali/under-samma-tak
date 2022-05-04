@@ -20,7 +20,7 @@ p{
 /************HEADER STYLING*********************/
 
 #header {
-  height: 14vh;
+  height: 90px;
   position: relative;
   align-items: center;
 }
@@ -41,10 +41,13 @@ p{
   text-underline-offset: 10px;
 }
 
+#logoimg :hover{
+  background-image:linear-gradient(to bottom right,#489CB7,#004664);
+}
 #logoimg {
-  background-color: #004664;
+ background-color: #004664;
  position: absolute;
- height: inherit;
+ height: 100%;
  width: auto;
 }
 .logoImgImg {
