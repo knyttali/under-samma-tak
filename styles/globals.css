@@ -73,9 +73,9 @@ p{
 
 /************IntroContainer STYLING*********************/
 .introContainer{
-  background-color: #4da5cb;
+  /* background-color: #4da5cb;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   min-height: 50vh;
 }
 .introTextContent{

@@ -1,10 +1,15 @@
 import Link from "next/link"
 import IntroButton from "./IntroButton"
-
+import family from "../public/Images/family.png"
 
 
 const IntroContainer = () => {
   return (
+    <div style={{ 
+      backgroundImage: 'url("https://i.postimg.cc/ZRpJgsJ9/family.png")',
+      backgroundRepeat: 'none',
+      backgroundSize: 'cover'
+      }}>
     <div className="introContainer">
         
       <div className="introTextContent d-flex flex-column">
@@ -20,7 +25,7 @@ const IntroContainer = () => {
           <div className="introBtn">
             <IntroButton/>
           </div>
-
+         
       </div>
 
       <div className ="fastLinks d-flex flex-column">
@@ -30,6 +35,7 @@ const IntroContainer = () => {
           <Link href="FormPage">
           <a href="http://">Anmäl intresse {">"}</a>
           </Link>
+      </div>
       </div>
   </div>
   )
