@@ -4,7 +4,11 @@ import Link from "next/dist/client/link";
 import Logo from "../public/Images/Logo.svg";
 import search from "../public/Images/Search.svg";
 
+
+
 const Header = () => {
+  
+
   return (
     <div id="header" className="d-flex align-items-center">
       <div id="logoimg">
@@ -17,16 +21,16 @@ const Header = () => {
 
       <div className="menuItems justify-content-between d-flex">
         <Link href="/">
-          <a><p>Så fungerar det</p></a>
+          <a><p className="how-it-works">Så fungerar det</p></a>
         </Link>
         <Link href="/">
-          <a><p>Vårt uppdrag</p></a>
+          <a><p id="our-mission">Vårt uppdrag</p></a>
         </Link>
         <Link href="/">
-          <a><p>Vanliga frågor</p></a>
+          <a><p id="usual-questions">Vanliga frågor</p></a>
         </Link>
         <Link href="/FormPage">
-          <a><p>Anmäl ditt intresse</p></a>
+          <a><p id="show-intrest">Anmäl ditt intresse</p></a>
         </Link>
       </div>
 
