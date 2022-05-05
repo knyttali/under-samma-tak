@@ -72,12 +72,18 @@ p{
 }
 
 .languageList{
-  width: 200px;
-  margin-left: 90%;
+  width: 120px;
+  direction: ltr;
+ 
 }
 
 .direction{
   direction: rtl;
+}
+
+.list-group-item{
+   color:#004664;
+   text-align: end;
 }
 
 
