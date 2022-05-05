@@ -71,6 +71,15 @@ p{
   margin-top: 10px;
 }
 
+.languageList{
+  width: 200px;
+  margin-left: 90%;
+}
+
+.direction{
+  direction: rtl;
+}
+
 
 
 

@@ -26,9 +26,9 @@ const Header = () => {
         <div id="searchIcon">
           <Image src={search}></Image>
         </div>
-        <div id="globe" onMouseLeave={globeNormal}>
+        <div id="globe" className="direction" onMouseLeave={globeNormal}>
           <Image src={hoverGlobe}></Image>
-          <div>
+          <div className="languageList">
             <ul className="list-group">
               <li className="list-group-item list-group-item-action">
                 English
