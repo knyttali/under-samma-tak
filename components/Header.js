@@ -193,7 +193,7 @@ const Header = () => {
           <div id="searchIcon" onMouseLeave={searchNormal}>
             <Image src={hoverSearch} onClick={searchClick}></Image>
           </div>
-          <div id="globe">
+          <div id="globe" onMouseOver={globeHover}>
             <Image src={globe}></Image>
           </div>
         </div>
