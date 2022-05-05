@@ -74,16 +74,39 @@ p{
 .languageList{
   width: 120px;
   direction: ltr;
- 
 }
-
 .direction{
   direction: rtl;
 }
-
 .list-group-item{
-   color:#004664;
-   text-align: end;
+  color:#004664;
+  text-align: end;
+}
+.searchbar{
+  height: 90px;
+  background-color: #004664;
+  padding-left: 4%;
+}
+#searchfield:focus{
+    outline: none;
+    border: none;
+    border-left: #FFFFFF 2px solid;
+    padding-left: 0.5%;
+    color: #FFFFFF;
+}
+#searchfield{
+  background-color: #004664;
+  outline: none;
+  border: none;
+  border-left: #FFFFFF 1px solid;
+  margin-left: 1%;
+  width: 93%;
+  height: 35%;
+  padding-left: 0.5%;
+}
+#searchfield::placeholder{
+  font-weight: bold;
+  color: #999999;
 }
 
 
