@@ -4,6 +4,7 @@ const PersonalInfo = () => {
   return (
     <>
     <h4 className="form-header ">Personlig information</h4>
+    
 
     <div className="name-row row">
       <div className="col-6">
