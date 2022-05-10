@@ -9,7 +9,7 @@ import Image from "next/image";
 const IntrestIntroduction = () => {
   var counter = 0;
   const [formCards, setForm] = useState(
-    <div className="content-container col-7">
+    <div className="content-container">
       <h1>Intresseanmälan</h1>
       <p className="desc-p">
         Via Under Samma Tak kan du skicka din intresseanmälan till din kommun om
@@ -35,7 +35,7 @@ const IntrestIntroduction = () => {
     counter = counter + 1;
     if (counter === 0) {
       setForm(
-        <div className="content-container col-7">
+        <div className="content-container">
           <h1>Intresseanmälan</h1>
           <p className="desc-p">
             Via Under Samma Tak kan du skicka din intresseanmälan till din
@@ -107,6 +107,14 @@ const IntrestIntroduction = () => {
     counter = counter - 1;
     if (counter === 0) {
       setForm(
+        <div className="content-container">
+          <h1>Intresseanmälan</h1>
+          <p className="desc-p">
+            Via Under Samma Tak kan du skicka din intresseanmälan till din
+            kommun om att du vill erbjuda ditt boende till människor i
+            nödsituationer, t.ex. en naturkatastrof, en flyktingkris eller en
+            global pandemi.
+          </p>
         <form className="personal-info form-template" id="personligInfo">
           <PersonalInfo />
           <div onClick={next}>
@@ -120,6 +128,7 @@ const IntrestIntroduction = () => {
             </div>
           </div>
         </form>
+        </div>
       );
     } else if (counter === 1) {
       setForm(
@@ -167,7 +176,7 @@ const IntrestIntroduction = () => {
   }
 
   return (
-      <div>{formCards}</div>
+      <div className="col-7">{formCards}</div>
   );
 };
 
