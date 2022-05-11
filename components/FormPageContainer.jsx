@@ -1,6 +1,6 @@
 import React from 'react'
 // import IntrestIntroduction from './IntrestIntroduction'
-import UserForm from './cards/userForm'
+import UserForm from './cards/UserForm'
 import SideNav from './SideNav'
 
 const FormPageContainer = () => {
