@@ -28,14 +28,7 @@ const IntroContainer = () => {
          
       </div>
 
-      <div className ="fastLinks d-flex flex-column">
-          <h4>SNABBLÄNKAR </h4>
-          <a href="http://">Vanliga frågor {">"}</a>
-          <a href="http://">Ekonomi {">"}</a>
-          <Link href="FormPage">
-          <a href="http://">Anmäl intresse {">"}</a>
-          </Link>
-      </div>
+      
       </div>
   </div>
   )
