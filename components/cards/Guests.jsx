@@ -1,9 +1,21 @@
-import React from "react";
+import React, { Component } from 'react'
+import BackBtnArrow from "../../public/Images/Arrow-left.svg"
+import Image from "next/image"
 
-const Guests = () => {
-  return (
-    <div>
-        <h4 className="form-header">Gäster</h4>
+export class Guests extends Component {
+  continue = e => {
+    e.preventDefault();
+    this.props.nextStep();
+  }
+  back = e => {
+    e.preventDefault();
+    this.props.prevStep();
+  }
+  render() {
+    const { values, handleChange } = this.props;
+    return (
+      <form className="guest-info form-template" id="guestInfo">
+      <h4 className="form-header">Gäster</h4>
         <p>
           Det är viktigt för oss att veta den här informationen ur ett
           trygghetsperspektiv, för båda parter. Välj gärna ut alla alternativ
@@ -67,14 +79,20 @@ const Guests = () => {
             </select>
           </div>
         </div>
+            <div className="btnNextAndBack">
+        <button className="buttonBack " type="button" onClick={this.back}>
+        <Image src={BackBtnArrow} allt ="back" />
+            Tillbaka
+        </button>
+          
+          <button type="button" className="buttonNext" onClick={this.continue}>
+              Nästa
+          </button>
+          
+         </div> 
+            </form>
+    )
+  }
+}
 
-        {/*  <div className="btnNextAndBack">
-            <button className="buttonBack" type="button" onclick="backForm()"> <img src="/Images/Arrow-left-Blue.png" alt="Left arrow"> Tillbaka</button>
-            <button className="buttonNext" type="button"  onclick="nexthtmlForm()">Nästa</button>
-          </div> */}
-     
-    </div>
-  );
-};
-
-export default Guests;
+export default Guests

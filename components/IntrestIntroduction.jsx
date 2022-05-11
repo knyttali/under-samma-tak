@@ -6,24 +6,29 @@ import LivingAmountOfTime from "./cards/LivingAmountOfTime";
 import BackBtnArrow from "../public/Images/Arrow-left.svg"
 import Image from "next/image"
 
+
 const IntrestIntroduction = () => {
   var counter = 0
-  const[formCards, setForm] = useState(<form className="personal-info form-template" id="personligInfo">
+  const[formCards, setForm] = useState(
+  <form className="personal-info form-template" id="personligInfo">
     <PersonalInfo />
-    
+    <button onClick={temp}>temp</button>
     <div id = "buttonRow" className="row align-items-center justify-content-end">
     <button type="button" className="buttonNext" onClick={next}>
       Nästa
     </button>
     </div>
   </form>)
-
+  function temp(){
+    alert()
+  }
   function next() {
     counter = counter + 1
     if (counter === 0) {
       setForm(
       <form className="personal-info form-template" id="personligInfo">
         <PersonalInfo />
+        <button onClick={temp}>temp</button>
         <div onClick={next}>
         <div id = "buttonRow" className="row align-items-center justify-content-end">
         <button type="button" className="buttonNext" onClick={next}>
@@ -90,6 +95,7 @@ const IntrestIntroduction = () => {
       setForm(
       <form className="personal-info form-template" id="personligInfo">
         <PersonalInfo />
+        <button onClick={temp}>temp</button>
         <div onClick={next}>
         <div id = "buttonRow" className="row align-items-center justify-content-end">
         <button type="button" className="buttonNext" onClick={next}>
@@ -163,7 +169,6 @@ const IntrestIntroduction = () => {
       </p>
 
       <div>{formCards}</div>
-      
     </div>
   );
 };
