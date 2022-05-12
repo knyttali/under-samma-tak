@@ -16,11 +16,11 @@ export class UserForm extends Component {
         postNum: "",
         phone: "",
         email: "",
-        apartment: "",
-        house: "",
-        secondarySpace: "",
-        selfOwned: "",
-        sharedSpace: "",
+        apartment: true,
+        house: false,
+        secondarySpace: false,
+        selfOwned: false,
+        sharedSpace: false,
     }
     //next step
     nextStep = () => {
@@ -38,7 +38,24 @@ export class UserForm extends Component {
     }
     //Field change
     handleChange = input => e => {
-        this.setState({[input]: e.target.value});
+        if(e.target.type === 'checkbox'){
+
+            if(e.target.checked){
+
+                this.setState({[input]: true});
+
+                console.log(e.target.value)
+
+            }
+            else{
+                console.log('not checked')
+            }
+
+        }
+        else{
+            this.setState({[input]: e.target.value});
+                            // firstname: 'andreas'
+        }
     }
   render() {
       const { step } = this.state;
