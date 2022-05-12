@@ -22,7 +22,20 @@ export class Guests extends Component {
           för gäster som du kan ta emot.
         </p>
 
-        <div className="space-col">
+        <div className="col-6">
+            <label htmlFor="typeOfGuests"></label><br /> 
+            <input
+              required
+              type="text"
+              id="typeOfGuests"
+              name="typeOfGuests"
+              defaultValue={values.typeOfGuests}
+              onChange={handleChange("typeOfGuests")}
+              className="w-100"
+            />
+          </div>
+
+       {/*  <div className="space-col">
           <div className="col-6 checkBoxarMedText">
             <label htmlFor="guest-With-Kids"> Gäster med barn</label>
             <input
@@ -77,8 +90,8 @@ export class Guests extends Component {
               <option value="2">3-4</option>
               <option value="5">5+</option>
             </select>
-          </div>
-        </div>
+          </div> 
+        </div>*/}
             <div className="btnNextAndBack">
         <button className="buttonBack " type="button" onClick={this.back}>
         <Image src={BackBtnArrow} allt ="back" />

@@ -21,6 +21,10 @@ export class UserForm extends Component {
         secondarySpace: "",
         selfOwned: "",
         sharedSpace: "",
+        howLongStay: "",
+        livingAlone:"",
+        kindOfHouse:"",
+        typeOfGuests: ""
     }
     //next step
     nextStep = () => {
@@ -42,8 +46,8 @@ export class UserForm extends Component {
     }
   render() {
       const { step } = this.state;
-      const {fname, lname, address, ort, kommun, postNum, phone, email, apartment, house, secondarySpace, selfOwned, sharedSpace } = this.state;
-      const values = {fname, lname, address, ort, kommun, postNum, phone, email, apartment, house, secondarySpace, selfOwned, sharedSpace }
+      const {fname, lname, address, ort, kommun, postNum, phone, email, apartment, house, secondarySpace, selfOwned, sharedSpace, howLongStay, kindOfHouse, livingAlone, typeOfGuests } = this.state;
+      const values = {fname, lname, address, ort, kommun, postNum, phone, email, apartment, house, secondarySpace, selfOwned, sharedSpace, howLongStay, kindOfHouse, livingAlone, typeOfGuests }
     switch(step){
         case 1:
             return(

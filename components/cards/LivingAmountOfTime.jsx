@@ -24,12 +24,16 @@ export class LivingAmountOfTime extends Component {
         ta emot människor på flykt. Detta förenklar processen i en eventuell
         matchning
       </p>
-
+      <div className="col-6">
+    <label htmlFor="howLongStay">I ett första skede, hur länge skulle du kunna erbjuda ditt boende?</label><br />
+    <input required type="text" id="howLongStay" name="howLongStay" defaultValue={values.howLongStay} onChange={handleChange('howLongStay')} className="w-100"/>
+  </div>
+{/*
       <div className="space-col">
         <div className="col-6 checkBoxarMedText">
           <label htmlFor="one-week">ca 1 vecka</label>
           <input
-            type="checkbox"
+            type="text"
             id="one-week"
             name="one-week"
             value=""
@@ -38,7 +42,7 @@ export class LivingAmountOfTime extends Component {
         </div>
       </div>
 
-      <div className="col-6 checkBoxarMedText">
+       <div className="col-6 checkBoxarMedText">
         <label htmlFor="two-weeks">ca 2 veckor</label>
         <input
           type="checkbox"
@@ -91,7 +95,7 @@ export class LivingAmountOfTime extends Component {
           value=""
           className="checkboxRight"
         />
-      </div>
+      </div> */}
             <div className="btnNextAndBack">
         <button className="buttonBack " type="button" onClick={this.back}>
         <Image src={BackBtnArrow} allt ="back" />

@@ -12,7 +12,7 @@ export class CollectedInfo extends Component {
     this.props.prevStep();
   }
   render() {
-    const { values: {fname, lname, address, ort, kommun, postNum, phone, email} } = this.props;
+    const { values: {fname, lname, address, ort, kommun, postNum, phone, email, howLongStay, kindOfHouse, livingAlone, typeOfGuests} } = this.props;
     return (
       <form className="guest-where-info form-template" id="guestWhereInfo">
           <p>{ fname }</p>
@@ -23,6 +23,10 @@ export class CollectedInfo extends Component {
           <p>{ postNum }</p>
           <p>{ phone }</p>
           <p>{ email }</p>
+          <p>{ howLongStay }</p>
+          <p>{ livingAlone }</p>
+          <p>{ kindOfHouse }</p>
+          <p>{ typeOfGuests }</p>
             <div className="btnNextAndBack">
         <button className="buttonBack " type="button" onClick={this.back}>
         <Image src={BackBtnArrow} allt ="back" />
