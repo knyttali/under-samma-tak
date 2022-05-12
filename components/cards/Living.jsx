@@ -1,10 +1,21 @@
-import React from 'react'
+import React, { Component } from 'react'
+import BackBtnArrow from "../../public/Images/Arrow-left.svg"
+import Image from "next/image"
 
-const Living = () => {
-  return (
-    <div>
-        
-          <h4 className="form-header ">Vart skulle gästerna kunna bo?</h4>
+export class Living extends Component {
+  continue = e => {
+    e.preventDefault();
+    this.props.nextStep();
+  }
+  back = e => {
+    e.preventDefault();
+    this.props.prevStep();
+  }
+  render() {
+    const { values, handleChange } = this.props;
+    return (
+      <form className="guest-where-info form-template" id="guestWhereInfo">
+      <h4 className="form-header ">Vart skulle gästerna kunna bo?</h4>
           <p>
             Alla människor har rätt till egen sovplats. Det kan vara en madrass
             på golvet eller en riktig säng. Därför är det viktigt att du anger
@@ -18,12 +29,12 @@ const Living = () => {
 
             <div className="col-6 checkBoxarMedText">
               <label htmlFor="apartment"> Lägenhet</label>
-              <input className="checkboxRight" type="checkbox" id="apartment" name="apartment" value="" />
+              <input className="checkboxRight" type="checkbox" id="apartment" name="apartment" defaultValue={values.apartment} onChange={handleChange('apartment')} />
             </div>
 
             <div className="col-6 checkBoxarMedText">
               <label htmlFor="house">Hus</label>
-              <input className="checkboxRight" type="checkbox" id="house" name="house" value="" />
+              <input className="checkboxRight" type="checkbox" id="house" name="house" defaultValue={values.house} onChange={handleChange('house')} />
             </div>
 
             <div className="col-6 checkBoxarMedText">
@@ -33,7 +44,8 @@ const Living = () => {
                 type="checkbox"
                 id="secondarySpace"
                 name="secondarySpace"
-                value=""
+                defaultValue={values.secondarySpace}
+                onChange={handleChange('secondarySpace')}
               />
             </div>
           </div>
@@ -43,7 +55,7 @@ const Living = () => {
 
             <div className="col-6 checkBoxarMedText">
               <label htmlFor="selfOwned">Eget boende</label>
-              <input className="checkboxRight" type="checkbox" id="selfOwned" name="selfOwned" value="" />
+              <input className="checkboxRight" type="checkbox" id="selfOwned" name="selfOwned" defaultValue={values.selfOwned} onChange={handleChange('selfOwned')} />
             </div>
 
             <div className="col-6 checkBoxarMedText">
@@ -53,19 +65,25 @@ const Living = () => {
                 type="checkbox"
                 id="sharedSpace"
                 name="sharedSpace"
-                value=""
+                defaultValue={values.sharedSpace}
+                onChange={handleChange('sharedSpace')}
               />
             </div>
-          </div>
-        {/*   <div class="btnNextAndBack">
-            <button class="buttonBack" type="button" onclick="backForm()"> <img src="/Images/Arrow-left-Blue.png" alt="Left arrow"> Tillbaka</button>
-            <button class="buttonNext" type="button"  onclick="nextForm()">Nästa</button>
-            
-          </div> */}
+            </div>
+            <div className="btnNextAndBack">
+        <button className="buttonBack " type="button" onClick={this.back}>
+        <Image src={BackBtnArrow} allt ="back" />
+            Tillbaka
+        </button>
           
-
-    </div>
-  )
+          <button type="button" className="buttonNext" onClick={this.continue}>
+              Nästa
+          </button>
+          
+         </div> 
+            </form>
+    )
+  }
 }
 
 export default Living

@@ -1,5 +1,6 @@
 import React from 'react'
-import IntrestIntroduction from './IntrestIntroduction'
+// import IntrestIntroduction from './IntrestIntroduction'
+import UserForm from './cards/UserForm'
 import SideNav from './SideNav'
 
 const FormPageContainer = () => {
@@ -7,7 +8,7 @@ const FormPageContainer = () => {
     <div className='main-container row'>
         <SideNav />
         <div className="col-1"></div>
-         <IntrestIntroduction /> 
+         <UserForm /> 
     </div>
   )
 }

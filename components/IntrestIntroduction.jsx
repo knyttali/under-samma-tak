@@ -6,57 +6,37 @@ import LivingAmountOfTime from "./cards/LivingAmountOfTime";
 import BackBtnArrow from "../public/Images/Arrow-left.svg";
 import Image from "next/image";
 
+
 const IntrestIntroduction = () => {
-  var counter = 0;
-  const [formCards, setForm] = useState(
-    <div className="content-container">
-      <h1>Intresseanmälan</h1>
-      <p className="desc-p">
-        Via Under Samma Tak kan du skicka din intresseanmälan till din kommun om
-        att du vill erbjuda ditt boende till människor i nödsituationer, t.ex.
-        en naturkatastrof, en flyktingkris eller en global pandemi.
-      </p>
-      <form className="personal-info form-template" id="personligInfo">
-        <PersonalInfo />
-
-        <div
-          id="buttonRow"
-          className="row align-items-center justify-content-end"
-        >
-          <button type="button" className="buttonNext" onClick={next}>
-            Nästa
-          </button>
-        </div>
-      </form>
+  var counter = 0
+  const[formCards, setForm] = useState(
+  <form className="personal-info form-template" id="personligInfo">
+    <PersonalInfo />
+    <button onClick={temp}>temp</button>
+    <div id = "buttonRow" className="row align-items-center justify-content-end">
+    <button type="button" className="buttonNext" onClick={next}>
+      Nästa
+    </button>
     </div>
-  );
-
+  </form>)
+  function temp(){
+    alert()
+  }
   function next() {
     counter = counter + 1;
     if (counter === 0) {
       setForm(
-        <div className="content-container">
-          <h1>Intresseanmälan</h1>
-          <p className="desc-p">
-            Via Under Samma Tak kan du skicka din intresseanmälan till din
-            kommun om att du vill erbjuda ditt boende till människor i
-            nödsituationer, t.ex. en naturkatastrof, en flyktingkris eller en
-            global pandemi.
-          </p>
-          <form className="personal-info form-template" id="personligInfo">
-            <PersonalInfo />
-            <div onClick={next}>
-              <div
-                id="buttonRow"
-                className="row align-items-center justify-content-end"
-              >
-                <button type="button" className="buttonNext" onClick={next}>
-                  Nästa
-                </button>
-              </div>
-            </div>
-          </form>
+      <form className="personal-info form-template" id="personligInfo">
+        <PersonalInfo />
+        <button onClick={temp}>temp</button>
+        <div onClick={next}>
+        <div id = "buttonRow" className="row align-items-center justify-content-end">
+        <button type="button" className="buttonNext" onClick={next}>
+              Nästa
+          </button>
         </div>
+        </div>
+        </form>
       );
     } else if (counter === 1) {
       setForm(
@@ -107,28 +87,17 @@ const IntrestIntroduction = () => {
     counter = counter - 1;
     if (counter === 0) {
       setForm(
-        <div className="content-container">
-          <h1>Intresseanmälan</h1>
-          <p className="desc-p">
-            Via Under Samma Tak kan du skicka din intresseanmälan till din
-            kommun om att du vill erbjuda ditt boende till människor i
-            nödsituationer, t.ex. en naturkatastrof, en flyktingkris eller en
-            global pandemi.
-          </p>
-        <form className="personal-info form-template" id="personligInfo">
-          <PersonalInfo />
-          <div onClick={next}>
-            <div
-              id="buttonRow"
-              className="row align-items-center justify-content-end"
-            >
-              <button type="button" className="buttonNext" onClick={next}>
-                Nästa
-              </button>
-            </div>
-          </div>
-        </form>
+      <form className="personal-info form-template" id="personligInfo">
+        <PersonalInfo />
+        <button onClick={temp}>temp</button>
+        <div onClick={next}>
+        <div id = "buttonRow" className="row align-items-center justify-content-end">
+        <button type="button" className="buttonNext" onClick={next}>
+              Nästa
+          </button>
         </div>
+        </div>
+      </form>
       );
     } else if (counter === 1) {
       setForm(
@@ -176,7 +145,16 @@ const IntrestIntroduction = () => {
   }
 
   return (
-      <div className="col-7">{formCards}</div>
+    <div className="content-container col-7">
+      <h1>Intresseanmälan</h1>
+      <p className="desc-p">
+        Via Under Samma Tak kan du skicka din intresseanmälan till din kommun om
+        att du vill erbjuda ditt boende till människor i nödsituationer, t.ex.
+        en naturkatastrof, en flyktingkris eller en global pandemi.
+      </p>
+
+      <div>{formCards}</div>
+    </div>
   );
 };
 
