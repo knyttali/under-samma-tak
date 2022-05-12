@@ -29,7 +29,7 @@ export class CollectedInfo extends Component {
       },
     } = this.props;
     return (
-      <form className="guest-where-info form-template" id="guestWhereInfo">
+      <form className="guest-where-info form-template col-6" id="guestWhereInfo">
         <p>{fname}</p>
         <p>{lname}</p>
         <p>{address}</p>

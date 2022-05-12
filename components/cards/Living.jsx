@@ -14,7 +14,7 @@ export class Living extends Component {
   render() {
     const { values, handleChange } = this.props;
     return (
-      <form className="guest-where-info form-template" id="guestWhereInfo">
+      <form className="guest-where-info form-template col-6" id="guestWhereInfo">
         <h4 className="form-header ">Vart skulle gästerna kunna bo?</h4>
         <p>
           Alla människor har rätt till egen sovplats. Det kan vara en madrass på
@@ -62,7 +62,7 @@ export class Living extends Component {
         </div>
 
         <div className="space-col houseTypes">
-          <h6>Bor du ensam?</h6>
+          <h6 style={{ fontWeight: "Bold" }}>Bor du ensam?</h6>
           <div className="col-6">
             {/* <label htmlFor="howLongStay">I ett första skede, hur länge skulle du kunna erbjuda ditt boende?</label><br /> */}
             <input
