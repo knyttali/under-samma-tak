@@ -16,15 +16,15 @@ export class UserForm extends Component {
         postNum: "",
         phone: "",
         email: "",
-        apartment: "",
+        /* apartment: "",
         house: "",
         secondarySpace: "",
         selfOwned: "",
-        sharedSpace: "",
-        howLongStay: "",
-        livingAlone:"",
+        sharedSpace: "", */
         kindOfHouse:"",
-        typeOfGuests: ""
+        livingAlone:"",
+        typeOfGuests: "",
+        howLongStay: ""
     }
     //next step
     nextStep = () => {
