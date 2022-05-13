@@ -5,10 +5,13 @@
 }
 
 body {
-  background-color: #FFF9F4;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.homepage {
+  background-color: #FFF9F4;
 }
 
 p {

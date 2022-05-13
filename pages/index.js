@@ -10,7 +10,7 @@ export default function Home() {
   //   logo.style.backgroundImage="linear-gradient(to bottom right,#489CB7,#004664)"
   // });
   return (
-    <div>
+    <div className='homepage'>
       <Header></Header>
       <IntroContainer></IntroContainer>
       <ToBeHoast></ToBeHoast>
