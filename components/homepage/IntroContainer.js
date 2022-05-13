@@ -1,6 +1,6 @@
 import Link from "next/link"
-import IntroButton from "./IntroButton"
-import family from "../public/Images/family.png"
+import IntroButton from "../IntroButton"
+import family from "../../public/Images/family.png"
 
 
 const IntroContainer = () => {
@@ -15,16 +15,16 @@ const IntroContainer = () => {
       <div className="introTextContent d-flex flex-column">
 
           <div className="introHeader">
-              <h1 id="introtext">För dig som vill erbjuda ditt boende</h1>
+              <h1 id="introtext">Erbjud ditt boende till människor på flykt</h1>
           </div>
 
           <div className="introPara">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores similique ex nihil velit voluptates ipsa .</p>
+              <p>Under Samma Tak har som uppdrag att hjälpa privatpersoner att kunna erbjuda sitt boende till inkommande flyktingar. Vi samlar tydlig och uppdaterad information och  samarbetar med kommuner och andra aktörer för att säkerställa en trygg upplevelse för båda parter. </p>
           </div>
 
-          <div className="introBtn">
+          
             <IntroButton/>
-          </div>
+          
          
       </div>
 

@@ -1,8 +1,7 @@
 import Header from '../components/Header'
-import IntroContainer from '../components/IntroContainer'
-import MainContentContainer from '../components/MainContentContainer'
+import IntroContainer from '../components/homepage/IntroContainer'
+import ToBeHoast from '../components/homepage/ToBeHoast'
 
-import StoriesContainer from '../components/StoriesContainer'
 import { useEffect } from 'react'
 
 export default function Home() {
@@ -14,9 +13,7 @@ export default function Home() {
     <div>
       <Header></Header>
       <IntroContainer></IntroContainer>
-    
-      <MainContentContainer></MainContentContainer>
-      <StoriesContainer></StoriesContainer>
+      <ToBeHoast></ToBeHoast>
     </div>
   )
 }
