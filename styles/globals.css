@@ -259,6 +259,9 @@ p {
   margin: 2% 0 10% 2%;
   width: 50%;
 }
+.introBtn:hover{
+  background-color: #004664;
+}
 
 .fastLinks {
   margin-left: 85%;
@@ -285,7 +288,8 @@ p {
   padding: 3%;
 }
 
-.toBeHoast-container h6 {
+.homepageH6 {
+  color: #004664;
   text-align: center;
   padding-bottom: 1%;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -315,78 +319,28 @@ p {
   font-size: small;
   border-radius: 8px;
   border-style: none;
-  
 }
 
-.btn-primary:hover {}
-
-/************MainContentContainer STYLING*********************/
-#mainContent {
-  justify-content: space-between;
-  width: 100%;
-  flex-direction: row;
-  margin-bottom: 8%;
+.btn-primary:hover {
+  background-color: #489CB7;
 }
 
-.mainContentButton {
-  background-color: #004664;
-  padding-left: 2%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-
-}
-
-.content-div {
-
-  box-shadow: 0px 4px 15px rgba(0, 70, 100, 0.3);
-  margin-top: 2%;
+.kommuner-container {
+  display: flex;
   flex-direction: column;
-  padding: 0%;
-
+  align-items: center;
+  margin: 3% 0;
 }
 
-.content-div-right {
-  position: relative;
+.kommunloggorna {
+  margin: 0.5% 0 3.5%;
 }
 
-.rightButtonSticky {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+/************Referencer STYLING*********************/
+.referencerH6 {
+  text-align: left;
 }
 
-.textcontent1 {
-  padding-left: 2%;
-  padding-top: 2%;
-}
-
-
-
-.content-img img {
-  width: 100%;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-#bild2 {
-  width: 100%;
-}
-
-.contentButtonPara {
-  margin-bottom: 0px;
-  margin-left: 3%;
-  color: #F2F2F2;
-  font-family: "Chivo";
-  font-weight: bolder;
-}
-
-.rightArrow {
-  border-style: solid;
-  border-color: #F2F2F2;
-  border-radius: 8px;
-}
 
 /*************StoryContainer STYLING*********************/
 .stories-div {
