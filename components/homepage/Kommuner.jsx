@@ -10,8 +10,9 @@ function Kommuner() {
         <div className="kommunloggorna">
           <Image src={Kommunloggor}></Image>
         </div>
-
-        <Image src={sleepingChild}></Image>
+        <div className="sleepingChild">
+          <Image src={sleepingChild}></Image>
+        </div>
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import ToBeHoast from "../components/homepage/ToBeHoast";
 import Kommuner from "../components/homepage/Kommuner";
 import Referencer from "../components/homepage/Referencer";
 import { useEffect } from "react";
+import FAQ from "../components/homepage/FAQ";
 
 export default function Home() {
   // useEffect(()=>{
@@ -15,9 +16,10 @@ export default function Home() {
       <Header></Header>
       <IntroContainer></IntroContainer>
       <div className="homepage-body">
-        <ToBeHoast></ToBeHoast>
-        <Kommuner></Kommuner>
-        <Referencer></Referencer>
+        <ToBeHoast />
+        <Kommuner />
+        <Referencer />
+        <FAQ />
       </div>
     </div>
   );

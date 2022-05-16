@@ -249,7 +249,7 @@ p {
 }
 
 .introPara {
-  padding: 3% 0% 3% 0.2%; 
+  padding: 3% 0% 3% 0.2%;
   font-size: 13px;
 }
 
@@ -320,8 +320,13 @@ p {
   margin: 3% 0;
 }
 
+.sleepingChild {
+  text-align: center;
+}
+
 .kommunloggorna {
   margin: 0.5% 0 3.5%;
+  text-align: center;
 }
 
 /************Referencer STYLING*********************/
@@ -331,9 +336,9 @@ p {
   color: #004664;
   display: flex;
   flex-direction: column;
- /*  align-items: left; */
-  padding-right: 0%; 
-  margin-left: 12.5%;
+  /*  align-items: left; */
+  padding-right: 0%;
+  align-items: center;
 }
 
 .referencer-container h6 {
@@ -359,55 +364,70 @@ p {
   justify-content: space-evenly;
   margin-right: -1%;
 }
+
 .referencer-family {
-  width: 25%;
   transition: transform .2s;
 }
+
 .referencer-family:hover {
   transform: scale(0.99);
 }
+
 .familyNames {
   color: black;
   padding-bottom: 4px;
 }
+
 .familyKommun {
   color: #999999;
   font-size: 13px;
   margin-bottom: 0;
 }
+
 .familyInfo {
   margin-left: 3.6%;
 }
 
-
-/*************StoryContainer STYLING*********************/
-.stories-div {
-  background-color: #EDF0F2;
-  padding-top: 1.5%;
+.seAllaBtn {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 14%;
+  margin-top: 20px;
+  padding-bottom: 40px;
 }
 
-.stories-div-h4 {
-  text-align: center;
-  font-weight: bolder;
-}
-
-.story-h3 {
-  text-align: center;
+.seAllaBtnActualBtn {
   color: #004664;
-  font-weight: 900;
-  margin-top: 7%;
+  border: #004664 solid 1px;
+  border-radius: 8px;
+  background-color: #FFF9F4;
+  width: 83px;
+  height: 40px;
 }
 
-.story {
-  flex-direction: column;
+/************FAQ*********************/
+.FAQToTheSide {
 }
 
-.story-img {
-  max-width: 300px;
+.FAQCentered-container {}
+
+.FAQActualQuestions {
+  display: flex;
+  flex-direction: row;
 }
 
-.story-p {
-  padding-left: 8%;
+.twoQuestions {
+}
+
+.question {
+  Width: 421px;
+  Height: 182px;
+}
+
+.FAQBtn {
+  width: 200px;
+  padding: 0 10px 0 10px;
+  align-self: center;
 }
 
 /************Form********************/
