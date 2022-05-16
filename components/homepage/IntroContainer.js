@@ -6,7 +6,7 @@ import family from "../../public/Images/family.png"
 const IntroContainer = () => {
   return (
     <div style={{ 
-      backgroundImage: 'url("https://i.postimg.cc/ZRpJgsJ9/family.png")',
+      backgroundImage: 'url("https://i.imgur.com/v7MeGwv_d.webp?maxwidth=760&fidelity=grand")',
       backgroundRepeat: 'none',
       backgroundSize: 'cover'
       }}>

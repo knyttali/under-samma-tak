@@ -226,10 +226,11 @@ p {
 
 /************IntroContainer STYLING*********************/
 .introContainer {
-  /* background-color: #4da5cb;
-  background-repeat: no-repeat;
-  background-size: cover; */
+  /* background-repeat: no-repeat;
+  background-size: cover;  */
   min-height: 50vh;
+  padding-bottom: 6%;
+  padding-top: -1%;
 }
 
 .introTextContent {
@@ -243,10 +244,12 @@ p {
   /* border: #F2F2F2 8px solid;
   border-radius: 6px ; */
   padding: 2% 2% 0 0;
+  text-align: left;
+  margin-top: 5%;
 }
 
 .introPara {
-  /* padding: 2% 1%; */
+  padding: 3% 0% 3% 0.2%; 
   font-size: 13px;
 }
 
@@ -256,28 +259,14 @@ p {
   padding: 2.5%;
   border-style: none;
   border-radius: 5px;
-  margin: 2% 0 10% 2%;
+  margin: 5% 0 5% 0.2%;
   width: 50%;
 }
-.introBtn:hover{
+
+.introBtn:hover {
   background-color: #004664;
 }
 
-.fastLinks {
-  margin-left: 85%;
-  color: white;
-  bottom: 0px;
-}
-
-.fastLinks h4 {
-  font-size: medium;
-}
-
-.fastLinks a {
-  text-decoration: none;
-  color: white;
-  font-size: small;
-}
 
 /************ToBeHoast styling********************************/
 .toBeHoast-container {
@@ -292,7 +281,6 @@ p {
   color: #004664;
   text-align: center;
   padding-bottom: 1%;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-weight: 400;
   font-size: smaller;
 }
@@ -310,7 +298,7 @@ p {
 .toBeHoast-container p {
   text-align: center;
   font-size: small;
-  font-weight:normal ;
+  font-weight: normal;
 }
 
 .btn-primary {
@@ -337,8 +325,58 @@ p {
 }
 
 /************Referencer STYLING*********************/
-.referencerH6 {
+
+
+.referencer-container {
+  color: #004664;
+  display: flex;
+  flex-direction: column;
+ /*  align-items: left; */
+  padding-right: 0%; 
+  margin-left: 12.5%;
+}
+
+.referencer-container h6 {
   text-align: left;
+}
+
+.referencer-container h2 {
+  margin-bottom: 1%;
+  padding-right: 10rem;
+  font-weight: 700;
+  width: 550px;
+}
+
+.referencer-container .referencer-paragraph {
+  width: 530px;
+  margin-bottom: 26px;
+}
+
+.referencer-families {
+  display: flex;
+  flex-direction: row;
+  margin-left: -1%;
+  justify-content: space-evenly;
+  margin-right: -1%;
+}
+.referencer-family {
+  width: 25%;
+  transition: transform .2s;
+}
+.referencer-family:hover {
+  transform: scale(0.99);
+}
+.familyNames {
+  color: black;
+  padding-bottom: 4px;
+}
+.familyKommun {
+  color: #999999;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+.familyInfo {
+  margin-left: 3.6%;
 }
 
 
