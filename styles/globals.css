@@ -411,6 +411,7 @@ p {
   width: 83px;
   height: 40px;
 }
+
 .seAllaBtnActualBtn:hover {
   border-color: #FFF9F4;
 }
@@ -433,6 +434,7 @@ p {
   display: flex;
   flex-direction: row;
 }
+
 .question h4 {
   font-weight: 900;
 }
@@ -448,7 +450,8 @@ p {
   padding: 0 10px 0 10px;
   align-self: center;
 }
-.FAQBtn:hover{
+
+.FAQBtn:hover {
   border-color: #FFF9F4;
 }
 
@@ -469,6 +472,10 @@ p {
   font-size: 1rem;
   color: white;
   text-align: center;
+}
+
+.errorRed {
+  color: red;
 }
 
 #whiteGlobe {
