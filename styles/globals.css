@@ -422,7 +422,6 @@ p {
   padding-bottom: 10px;
 }
 
-
 .FAQ-content {
   color: #004664;
   padding: 0 20px 30px 0;
@@ -454,6 +453,46 @@ p {
 .FAQBtn:hover {
   border-color: #FFF9F4;
 }
+/************NewsLetter********************/
+.newsLetter {
+  background-color: #004664;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  height: 330px;
+  padding: 30px;
+}
+.newsLetter h3{
+  font-weight: 900;
+  height: 40px ;
+  font-size: 32px;
+}
+.newsLetter p {
+  font-size: 16px;
+}
+.newsLetter input {
+  width: 336px;
+  height: 48px;
+  border: #DDDDDD 1px solid;
+  font-size: 13px;
+  padding-left: 16px;
+}
+.newsLetter button {
+  width: 94px;
+height: 40px;
+border-style: none;
+background-color: white;
+border-radius: 8px;
+color: #004664;
+}
+.newsLetter button:hover {
+  color: white;
+  background-color: #489CB7;
+}
+
+
 
 /************Form********************/
 #headerSimulator {

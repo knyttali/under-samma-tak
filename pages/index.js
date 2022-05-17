@@ -5,6 +5,7 @@ import Kommuner from "../components/homepage/Kommuner";
 import Referencer from "../components/homepage/Referencer";
 import { useEffect } from "react";
 import FAQ from "../components/homepage/FAQ";
+import NewsLetter from "../components/homepage/NewsLetter";
 
 export default function Home() {
   // useEffect(()=>{
@@ -20,6 +21,7 @@ export default function Home() {
         <Kommuner />
         <Referencer />
         <FAQ />
+        <NewsLetter />
       </div>
     </div>
   );
