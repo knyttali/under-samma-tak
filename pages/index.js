@@ -1,9 +1,10 @@
-import Header from '../components/Header'
-import IntroContainer from '../components/IntroContainer'
-import MainContentContainer from '../components/MainContentContainer'
-
-import StoriesContainer from '../components/StoriesContainer'
-import { useEffect } from 'react'
+import Header from "../components/Header";
+import IntroContainer from "../components/homepage/IntroContainer";
+import ToBeHoast from "../components/homepage/ToBeHoast";
+import Kommuner from "../components/homepage/Kommuner";
+import Referencer from "../components/homepage/Referencer";
+import { useEffect } from "react";
+import FAQ from "../components/homepage/FAQ";
 
 export default function Home() {
   // useEffect(()=>{
@@ -11,12 +12,15 @@ export default function Home() {
   //   logo.style.backgroundImage="linear-gradient(to bottom right,#489CB7,#004664)"
   // });
   return (
-    <div>
+    <div className="homepage">
       <Header></Header>
       <IntroContainer></IntroContainer>
-    
-      <MainContentContainer></MainContentContainer>
-      <StoriesContainer></StoriesContainer>
+      <div className="homepage-body">
+        <ToBeHoast />
+        <Kommuner />
+        <Referencer />
+        <FAQ />
+      </div>
     </div>
-  )
+  );
 }
