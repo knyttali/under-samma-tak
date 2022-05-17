@@ -24,6 +24,11 @@ p {
 
 }
 
+.sameSides {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+}
+
 
 /************HEADER STYLING*********************/
 
@@ -221,7 +226,9 @@ p {
   color: #999999;
 }
 
-
+.sida {
+  visibility: hidden;
+}
 
 
 /************IntroContainer STYLING*********************/
@@ -236,7 +243,6 @@ p {
 .introTextContent {
   max-width: 420px;
   padding-top: 5%;
-  margin-left: 7%;
   color: white;
 }
 
@@ -269,7 +275,7 @@ p {
 
 
 /************ToBeHoast styling********************************/
-.toBeHoast-container {
+.toBeHoastContent {
   color: #004664;
   display: flex;
   flex-direction: column;
@@ -307,6 +313,7 @@ p {
   font-size: small;
   border-radius: 8px;
   border-style: none;
+  margin: 15px;
 }
 
 .btn-primary:hover {
@@ -318,14 +325,17 @@ p {
   flex-direction: column;
   align-items: center;
   margin: 3% 0;
+  width: 100%;
 }
 
 .sleepingChild {
+  width: 100%;
+  height: auto;
   text-align: center;
 }
 
 .kommunloggorna {
-  margin: 0.5% 0 3.5%;
+  margin: 0.5% 0 3.5% 0;
   text-align: center;
 }
 
@@ -338,18 +348,16 @@ p {
   flex-direction: column;
   /*  align-items: left; */
   padding-right: 0%;
-  align-items: center;
 }
 
 .referencer-container h6 {
   text-align: left;
 }
 
-.referencer-container h2 {
+.smaller-headline {
   margin-bottom: 1%;
   padding-right: 10rem;
   font-weight: 700;
-  width: 550px;
 }
 
 .referencer-container .referencer-paragraph {
@@ -391,7 +399,6 @@ p {
 .seAllaBtn {
   display: flex;
   justify-content: flex-end;
-  margin-right: 14%;
   margin-top: 20px;
   padding-bottom: 40px;
 }
@@ -406,22 +413,31 @@ p {
 }
 
 /************FAQ*********************/
+
 .FAQToTheSide {
+  padding-bottom: 10px;
 }
 
-.FAQCentered-container {}
+
+.FAQ-content {
+  color: #004664;
+  padding: 0 20px 30px 0;
+  display: flex;
+  flex-direction: column;
+}
 
 .FAQActualQuestions {
   display: flex;
   flex-direction: row;
 }
-
-.twoQuestions {
+.question h4 {
+  font-weight: 900;
 }
 
 .question {
-  Width: 421px;
-  Height: 182px;
+  width: 85%;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 .FAQBtn {
