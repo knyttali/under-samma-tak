@@ -33,11 +33,11 @@ export class PersonalInfo extends Component {
       type="text"
       id="address"
       name="address"
-      defaultValue={values.address}
-      onChange={handleChange('address')}
+      defaultValue={values.adress}
+      onChange={handleChange('adress')}
       className="w-100"
     />
-    <p className='errorRed'>{values.validAddress}</p>
+    <p className='errorRed'>{values.validAdress}</p>
   </div>
 </div>
 
@@ -64,11 +64,13 @@ export class PersonalInfo extends Component {
   <div className="col-6">
     <label htmlFor="postNum">Postnummer</label><br />
     <input required type="text" id="postNum" name="postNum" defaultValue={values.postNum} onChange={handleChange('postNum')} className="w-100"/>
+    <p className='errorRed'>{values.validPostNum}</p>
   </div>
 
   <div className="col-6">
     <label htmlFor="phone">Telefonnummer</label><br />
     <input required type="text" id="phone" name="phone" defaultValue={values.phone} onChange={handleChange('phone')} className="w-100"/>
+    <p className='errorRed'>{values.validPhone}</p>
   </div>
 </div>
 
@@ -76,6 +78,7 @@ export class PersonalInfo extends Component {
   <div className="col-6">
     <label htmlFor="email">E-mail adress</label><br />
     <input required type="email" id="email" name="email" defaultValue={values.email} onChange={handleChange('email')} className="w-100"/>
+    <p className='errorRed'>{values.validEmail}</p>
   </div>
 
   <div className="col-6"></div>

@@ -10,7 +10,7 @@ export class UserForm extends Component {
         step: 1,
         fname: "",
         lname: "",
-        address: "",
+        adress: "",
         ort: "",
         kommun: "",
         postNum: "",
@@ -27,33 +27,39 @@ export class UserForm extends Component {
         howLongStay: "",
         validFname:"",
         validLname:"",
-        validAddress:"",
+        validAdress:"",
         validOrt:"",
         validKommun:"",
+        validPostNum: "",
+        validPhone: "",
+        validEmail:"",
     }
     //next step
     nextStep = () => {
-        const {fname} = this.state
-        const {lname} = this.state
-        const {address} = this.state
-        const {ort} = this.state
-        const {kommun} = this.state
+        const {fname, lname, adress, ort, kommun, postNum, phone, email} = this.state
         const {step} = this.state;
-        if (fname=="" || lname =="" || address =="" || ort=="" || kommun=="") {
+        var validation = "good"
+        
+        
             //FirstName
             if (fname =="") {
                 this.setState({validFname: "Fyll i här!"})
+                validation ="bad"
             }
             else{
                 this.setState({validFname: ""})
             }
             if (this.isNum(fname)) {
                 console.log("number in name")
+                console.log("hej")
                 this.setState({validFname: "Kan inte ha nummer i ditt namn!"})
+                validation ="bad"
+                
             }
             //LastName
             if (lname =="") {
                 this.setState({validLname: "Fyll i här!"})
+                validation ="bad"
             }
             else{
                 this.setState({validLname: ""})
@@ -61,17 +67,20 @@ export class UserForm extends Component {
             if (this.isNum(lname)) {
                 console.log("number in name")
                 this.setState({validLname: "Kan inte ha nummer i ditt namn!"})
+                validation ="bad"
             }
             //Adress
-            if (address =="") {
-                this.setState({validAddress: "Fyll i här!"})
+            if (adress =="") {
+                this.setState({validAdress: "Fyll i här!"})
+                validation ="bad"
             }
             else{
-                this.setState({validAddress: ""})
+                this.setState({validAdress: ""})
             }
             //Ort
             if (ort =="") {
                 this.setState({validOrt: "Fyll i här!"})
+                validation ="bad"
             }
             else{
                 this.setState({validOrt: ""})
@@ -79,24 +88,64 @@ export class UserForm extends Component {
             //Kommun
             if (kommun =="") {
                 this.setState({validKommun: "Fyll i här!"})
+                validation ="bad"
             }
             else{
                 this.setState({validKommun: ""})
             }
-        }
-        else{
-            if (!fname == "" && !lname=="" && !address =="" && !ort =="" && !kommun =="") {
+            //PostNummer
+            if (postNum =="") {
+                this.setState({validPostNum: "Fyll i här"})
+                console.log("bruh")
+                validation ="bad"
+            }
+            else if (this.isNotNum(postNum)) {
+                this.setState({validPostNum: "ange giltigt postNummer"})
+                validation ="bad"
+            }
+            else{
+                this.setState({validPostNum: ""})
+                
+            }
+            //Phone
+            if (phone =="") {
+                this.setState({validPhone: "Fyll i här!"})
+                validation ="bad"
+            }
+            else if (this.isNotNum(phone)) {
+                this.setState({validPhone: "Ange giltigt telefonnummer"})
+                validation ="bad"
+            }
+            else{
+                this.setState({validPhone: ""})
+            }
+            //Email
+            if (email == "") {
+                this.setState({validEmail: "Fyll i här!"})
+                validation ="bad"
+            }
+            else{
+                this.setState({validEmail: ""})
+            }
+
+               if (validation === "good") {
                 this.setState({validFname: ""})
                 this.setState({validLname: ""})
-                this.setState({validAddress: ""})
+                this.setState({validAdress: ""})
                 this.setState({validOrt: ""})
                 this.setState({validKommun: ""})
-            }
-           
-            this.setState({
-                step: step + 1
-            })
-        }
+
+
+                this.setState({
+                    step: step + 1
+                })
+               }
+               
+            
+        
+        
+            
+        
 
        
     }
@@ -141,19 +190,51 @@ export class UserForm extends Component {
         }
         return false
     }
+
+    isNotNum(value){
+        for (let i = 0; i < value.length; i++){
+          var char = value.charAt(i)
+          var noNumber = 0
+          switch (char) {
+            case '0':
+              break;
+            case '1':
+                break;
+            case '2':
+                break;
+            case '3':
+                break;
+            case '4':
+                break;
+            case '5':
+                break;
+            case '6':
+                break;
+            case '7':
+                break;
+            case '8':
+                break;
+            case '9':
+                break;
+            default:
+                return true
+        }
+        }
+        return false
+    }
     
    
 
   render() {
       const { step } = this.state;
-      const {fname, lname, address, ort, kommun, postNum, phone, email, apartment,
+      const {fname, lname, adress, ort, kommun, postNum, phone, email, apartment,
         house, secondarySpace, selfOwned, sharedSpace, howLongStay, kindOfHouse,
-        livingAlone, typeOfGuests, validFname, validLname, validAddress, validKommun,
-        validOrt } = this.state;
-      const values = {fname, lname, address, ort, kommun, postNum, phone, email,
+        livingAlone, typeOfGuests, validFname, validLname, validAdress, validKommun,
+        validOrt, validPostNum, validPhone, validEmail } = this.state;
+      const values = {fname, lname, adress, ort, kommun, postNum, phone, email,
         apartment, house, secondarySpace, selfOwned, sharedSpace, howLongStay,
-        kindOfHouse, livingAlone, typeOfGuests, validFname, validLname, validAddress,
-        validKommun, validOrt }
+        kindOfHouse, livingAlone, typeOfGuests, validFname, validLname, validAdress,
+        validKommun, validOrt, validPostNum, validPhone, validEmail }
     switch(step){
         case 1:
             return(
