@@ -55,21 +55,21 @@ export class UserForm extends Component {
                 this.setState({validLname: ""})
             }
             //Adress
-            if (lname =="") {
+            if (address =="") {
                 this.setState({validAddress: "Fyll i här!"})
             }
             else{
                 this.setState({validAddress: ""})
             }
             //Ort
-            if (lname =="") {
+            if (ort =="") {
                 this.setState({validOrt: "Fyll i här!"})
             }
             else{
                 this.setState({validOrt: ""})
             }
             //Kommun
-            if (lname =="") {
+            if (kommun =="") {
                 this.setState({validKommun: "Fyll i här!"})
             }
             else{
