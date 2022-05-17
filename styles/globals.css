@@ -321,6 +321,10 @@ p{
   background-color: #004664;
 }
 
+.errorRed{
+  color: red;
+}
+
 #languageIconDiv{
 position: absolute;
 right: 4rem;

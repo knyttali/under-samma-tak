@@ -16,11 +16,13 @@ export class PersonalInfo extends Component {
   <div className="col-6">
     <label htmlFor="fname">Förnamn</label><br />
     <input required type="text" id="fname" name="fname" defaultValue={values.fname} onChange={handleChange('fname')} className="w-100"/>
+    <p className='errorRed'>{values.validFname}</p>
   </div>
 
   <div className="col-6">
     <label htmlFor="lname">Efternamn</label><br />
     <input required type="text" id="lname" name="lname" defaultValue={values.lname} onChange={handleChange('lname')} className="w-100"/>
+    <p className='errorRed'>{values.validLname}</p>
   </div>
 </div>
 
@@ -35,6 +37,7 @@ export class PersonalInfo extends Component {
       onChange={handleChange('address')}
       className="w-100"
     />
+    <p className='errorRed'>{values.validAddress}</p>
   </div>
 </div>
 
@@ -42,6 +45,7 @@ export class PersonalInfo extends Component {
   <div className="col-6">
     <label htmlFor="ort">Ort</label><br />
     <input required type="text" id="ort" name="ort" defaultValue={values.ort} onChange={handleChange('ort')} className="w-100" />
+    <p className='errorRed'>{values.validOrt}</p>
   </div>
 
   <div className="col-6">
@@ -53,6 +57,7 @@ export class PersonalInfo extends Component {
       onChange={handleChange('kommun')}
       className="w-100"
     />
+    <p className='errorRed'>{values.validKommun}</p>
   </div>
 </div>
 <div className="nummer-row row">
