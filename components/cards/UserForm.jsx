@@ -36,8 +36,20 @@ export class UserForm extends Component {
     }
     //next step
     nextStep = () => {
-        const {fname, lname, adress, ort, kommun, postNum, phone, email} = this.state
+        
         const {step} = this.state;
+        
+
+               if (this.validationPersonalInfo() && step == 1) {
+                this.setState({
+                    step: step + 1
+                })
+               }
+  
+    }
+
+    validationPersonalInfo(){
+        const {fname, lname, adress, ort, kommun, postNum, phone, email} = this.state
         var validation = "good"
         
         
@@ -128,26 +140,10 @@ export class UserForm extends Component {
                 this.setState({validEmail: ""})
             }
 
-               if (validation === "good") {
-                this.setState({validFname: ""})
-                this.setState({validLname: ""})
-                this.setState({validAdress: ""})
-                this.setState({validOrt: ""})
-                this.setState({validKommun: ""})
-
-
-                this.setState({
-                    step: step + 1
-                })
-               }
-               
-            
-        
-        
-            
-        
-
-       
+            if (validation === "good") {
+                return true
+            }
+            else return false
     }
     //go back one step
     prevStep = () => {
