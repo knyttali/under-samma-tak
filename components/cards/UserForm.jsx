@@ -146,8 +146,14 @@ export class UserForm extends Component {
 
   render() {
       const { step } = this.state;
-      const {fname, lname, address, ort, kommun, postNum, phone, email, apartment, house, secondarySpace, selfOwned, sharedSpace, howLongStay, kindOfHouse, livingAlone, typeOfGuests, validFname, validLname, validAddress, validKommun, validOrt } = this.state;
-      const values = {fname, lname, address, ort, kommun, postNum, phone, email, apartment, house, secondarySpace, selfOwned, sharedSpace, howLongStay, kindOfHouse, livingAlone, typeOfGuests, validFname, validLname, validAddress, validKommun, validOrt }
+      const {fname, lname, address, ort, kommun, postNum, phone, email, apartment,
+        house, secondarySpace, selfOwned, sharedSpace, howLongStay, kindOfHouse,
+        livingAlone, typeOfGuests, validFname, validLname, validAddress, validKommun,
+        validOrt } = this.state;
+      const values = {fname, lname, address, ort, kommun, postNum, phone, email,
+        apartment, house, secondarySpace, selfOwned, sharedSpace, howLongStay,
+        kindOfHouse, livingAlone, typeOfGuests, validFname, validLname, validAddress,
+        validKommun, validOrt }
     switch(step){
         case 1:
             return(
