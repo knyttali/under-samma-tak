@@ -411,6 +411,9 @@ p {
   width: 83px;
   height: 40px;
 }
+.seAllaBtnActualBtn:hover {
+  border-color: #FFF9F4;
+}
 
 /************FAQ*********************/
 
@@ -444,6 +447,9 @@ p {
   width: 200px;
   padding: 0 10px 0 10px;
   align-self: center;
+}
+.FAQBtn:hover{
+  border-color: #FFF9F4;
 }
 
 /************Form********************/
