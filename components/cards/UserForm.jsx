@@ -47,12 +47,20 @@ export class UserForm extends Component {
             else{
                 this.setState({validFname: ""})
             }
+            if (this.isNum(fname)) {
+                console.log("number in name")
+                this.setState({validFname: "Kan inte ha nummer i ditt namn!"})
+            }
             //LastName
             if (lname =="") {
                 this.setState({validLname: "Fyll i här!"})
             }
             else{
                 this.setState({validLname: ""})
+            }
+            if (this.isNum(lname)) {
+                console.log("number in name")
+                this.setState({validLname: "Kan inte ha nummer i ditt namn!"})
             }
             //Adress
             if (address =="") {
@@ -89,6 +97,7 @@ export class UserForm extends Component {
                 step: step + 1
             })
         }
+
        
     }
     //go back one step
@@ -102,6 +111,38 @@ export class UserForm extends Component {
     handleChange = input => e => {
         this.setState({[input]: e.target.value});
     }
+
+    //check if something has a number
+    isNum(value){
+        for (let i = 0; i < value.length; i++){
+          var char = value.charAt(i)
+          switch (char) {
+            case '0':
+                return true
+            case '1':
+                return true
+            case '2':
+                return true
+            case '3':
+                return true
+            case '4':
+                return true
+            case '5':
+                return true
+            case '6':
+                return true
+            case '7':
+                return true
+            case '8':
+                return true
+            case '9':
+                return true
+        }
+        }
+        return false
+    }
+    
+   
 
   render() {
       const { step } = this.state;
