@@ -521,6 +521,12 @@ color: #004664;
   height: 1000px;
 }
 
+.footer-left-right h4 {
+  margin: 30px 0 20px 0;
+}
+.footer-left p {
+  padding-right: 20px;
+}
 .footer-left {
   background-color: #003850;
   padding-left: 50px;
@@ -534,15 +540,36 @@ color: #004664;
 
 .footer-right {
   background-color:#004664;
-  padding-left: 30px;
   padding-top: 30px;
   padding-bottom: 50px;
+  display: flex;
 }
+.footer-right .footer-item {
+  margin-left: 40px;
+  margin-right: 40px;
+} 
 
 .footer-bottom {
   z-index: 9;
-position: relative;
+  position: relative;
   bottom: 0;
+}
+
+.footer-bottom-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 50px; 
+  border-bottom: #FFFFFF 1px solid;
+}
+
+.footer-image{
+  margin-bottom: 8px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
 }
 
 

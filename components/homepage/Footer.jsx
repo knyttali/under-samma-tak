@@ -19,7 +19,7 @@ function Footer() {
           </div>
           <div>
             <h4>Hitta snabbt</h4>
-            <div>
+            <div className="footer-links">
               <a>Link 1</a>
               <a>Link 2</a>
               <a>Link 3</a>
@@ -36,9 +36,9 @@ function Footer() {
           </div>
         </div>
         <div className="footer-right col-7">
-          <div>
+          <div className="col-2 footer-item">
             <h4>KOMMUNER</h4>
-            <div>
+            <div className="footer-links">
               <a>Link 1</a>
               <a>Link 2</a>
               <a>Link 3</a>
@@ -51,9 +51,9 @@ function Footer() {
               <a>Link 5</a>
             </div>
           </div>
-          <div>
+          <div className="col-2 footer-item">
             <h4>PARTNERS</h4>
-            <div>
+            <div className="footer-links">
               <a>Link 1</a>
               <a>Link 2</a>
               <a>Link 3</a>
@@ -61,9 +61,9 @@ function Footer() {
               <a>Link 5</a>
             </div>
           </div>
-          <div>
+          <div className="col-3 footer-item">
             <h4>SAMARBETSAKTÖRER</h4>
-            <div>
+            <div className="footer-links">
               <a>Link 1</a>
               <a>Link 2</a>
               <a>Link 3</a>
@@ -75,7 +75,7 @@ function Footer() {
       </div>
       <div className="mellanrum">Mellanrum</div>
       <div className="footer-bottom">
-        <div><h3>Under Samma Tak</h3><Image src={logos}></Image></div>
+        <div className="footer-bottom-top"><h3>Under Samma Tak</h3><div className="footer-image"><Image src={logos}></Image></div></div>
         <div></div>
       </div>
     </div>
