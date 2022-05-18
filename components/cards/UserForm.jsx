@@ -35,6 +35,7 @@ export class UserForm extends Component {
         validEmail:"",
         validKindOfHouse:"",
         validLivingAlone:"",
+        validTypeOfGuest:"",
         validHowLongStay:"",
     }
     //next step
@@ -49,6 +50,16 @@ export class UserForm extends Component {
                 })
                }
                else if (this.validationLiving() && step == 2) {
+                   this.setState({
+                       step: step + 1
+                   })
+               }
+               else if (this.validationGuests() && step == 3) {
+                   this.setState({
+                       step: step + 1
+                   })
+               }
+               else if (this.validationLivingAmount() && step == 4) {
                    this.setState({
                        step: step + 1
                    })
@@ -188,6 +199,45 @@ export class UserForm extends Component {
         else return false
 
     }
+
+    validationGuests(){
+        const { typeOfGuests } = this.state
+        var validation = "good"
+        if (typeOfGuests == "") {
+            this.setState({validTypeOfGuest: "Fyll i här!"})
+            validation = "bad"
+        }
+        else if (this.isNum(typeOfGuests)) {
+            this.setState({validTypeOfGuest: "skriv inte med siffror!"})
+            validation = "bad"
+        }
+        else{
+            this.setState({validTypeOfGuest: ""})
+        }
+
+        if (validation === "good") {
+            return true
+        }
+        else return false
+    }
+    validationLivingAmount(){
+        const{howLongStay} = this.state
+        var validation = "good"
+        if (howLongStay == "") {
+            this.setState({validHowLongStay: "Fyll i här!"})
+            validation = "bad"
+        }
+        else{
+            this.setState({validHowLongStay: ""})
+        }
+
+        if (validation === "good") {
+            return true
+        }
+        else return false
+
+
+    }
     //go back one step
     prevStep = () => {
         const {step} = this.state;
@@ -269,11 +319,13 @@ export class UserForm extends Component {
       const {fname, lname, adress, ort, kommun, postNum, phone, email, apartment,
         house, secondarySpace, selfOwned, sharedSpace, howLongStay, kindOfHouse,
         livingAlone, typeOfGuests, validFname, validLname, validAdress, validKommun,
-        validOrt, validPostNum, validPhone, validEmail, validKindOfHouse, validLivingAlone, } = this.state;
+        validOrt, validPostNum, validPhone, validEmail, validKindOfHouse,
+        validTypeOfGuest, validLivingAlone, validHowLongStay } = this.state;
       const values = {fname, lname, adress, ort, kommun, postNum, phone, email,
         apartment, house, secondarySpace, selfOwned, sharedSpace, howLongStay,
         kindOfHouse, livingAlone, typeOfGuests, validFname, validLname, validAdress,
-        validKommun, validOrt, validPostNum, validPhone, validEmail, validKindOfHouse, validLivingAlone }
+        validKommun, validOrt, validPostNum, validPhone, validEmail, validKindOfHouse,
+        validTypeOfGuest, validLivingAlone, validHowLongStay }
     switch(step){
         case 1:
             return(

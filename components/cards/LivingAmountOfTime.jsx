@@ -27,6 +27,7 @@ export class LivingAmountOfTime extends Component {
       <div className="col-6">
     <label htmlFor="howLongStay">I ett första skede, hur länge skulle du kunna erbjuda ditt boende?</label><br />
     <input required type="text" id="howLongStay" name="howLongStay" defaultValue={values.howLongStay} onChange={handleChange('howLongStay')} className="w-100"/>
+    <p className='errorRed'>{values.validHowLongStay}</p>
   </div>
 {/*
       <div className="space-col">

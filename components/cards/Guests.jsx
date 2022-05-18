@@ -33,6 +33,7 @@ export class Guests extends Component {
               onChange={handleChange("typeOfGuests")}
               className="w-100"
             />
+            <p className='errorRed'>{values.validTypeOfGuest}</p>
           </div>
 
        {/*  <div className="space-col">
