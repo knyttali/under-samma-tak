@@ -508,6 +508,37 @@ color: #004664;
   background-color: #489CB7;
 }
 
+/************Footer********************/
+.footer {
+  color: #FFFFFF;
+  margin-top: 40px;
+  position: relative;
+}
+
+.footer-left-right {
+  display: flex;
+  position: absolute;
+}
+
+.footer-left {
+  background-color: #004664;
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 200px;
+}
+
+.footer-right {
+  background-color: #489CB7;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 200px;
+}
+
+.footer-bottom {
+  z-index: 9;
+  bottom: 0;
+  position: absolute;
+}
 
 
 /************Form********************/
