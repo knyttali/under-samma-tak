@@ -537,7 +537,7 @@ color: #004664;
 .footer-bottom {
   z-index: 9;
   bottom: 0;
-  position: absolute;
+  position: fixed;
 }
 
 
