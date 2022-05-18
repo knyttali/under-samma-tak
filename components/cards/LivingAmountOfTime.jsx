@@ -14,22 +14,23 @@ export class LivingAmountOfTime extends Component {
   render() {
     const { values, handleChange } = this.props;
     return (
-      <form className="length-info form-template" id="lengthInfo">
+      <form className="length-info form-template col-6" id="lengthInfo" onSubmit={this.continue}>
       <h4 className="form-header">
-        I ett första skede, hur länge skulle du kunna erbjuda ditt boende?
+        Längd
       </h4>
-
-      <p>
-        Det är viktigt för att vi ska förstå när och hur länge man är villig att
-        ta emot människor på flykt. Detta förenklar processen i en eventuell
-        matchning
-      </p>
-
+      <br />
+      <h6 style={{ fontWeight: "Bold" }}>Ungefär hur länge skulle du kunna erbjuda ditt boende?</h6>
+   
+    <label htmlFor="howLongStay">T.ex.: Jag är helt flexibel, ca. 1vecka, 2 veckor, en månad, 6 månader, längre än 6 månader etc.</label>
+    <textarea required type="text" id="howLongStay" name="howLongStay" defaultValue={values.howLongStay} onChange={handleChange('howLongStay')} maxLength={200}/>
+    <p>max 200 tecken</p>
+  
+{/*
       <div className="space-col">
         <div className="col-6 checkBoxarMedText">
           <label htmlFor="one-week">ca 1 vecka</label>
           <input
-            type="checkbox"
+            type="text"
             id="one-week"
             name="one-week"
             value=""
@@ -38,7 +39,7 @@ export class LivingAmountOfTime extends Component {
         </div>
       </div>
 
-      <div className="col-6 checkBoxarMedText">
+       <div className="col-6 checkBoxarMedText">
         <label htmlFor="two-weeks">ca 2 veckor</label>
         <input
           type="checkbox"
@@ -91,7 +92,7 @@ export class LivingAmountOfTime extends Component {
           value=""
           className="checkboxRight"
         />
-      </div>
+      </div> */}
             <div className="btnNextAndBack">
         <button className="buttonBack " type="button" onClick={this.back}>
         <Image src={BackBtnArrow} allt ="back" />

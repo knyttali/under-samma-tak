@@ -14,15 +14,51 @@ export class Guests extends Component {
   render() {
     const { values, handleChange } = this.props;
     return (
-      <form className="guest-info form-template" id="guestInfo">
+      <form className="guest-info form-template col-6" id="guestInfo" onSubmit={this.continue}>
       <h4 className="form-header">Gäster</h4>
+      <h6 style={{ fontWeight: "Bold" }}>Har du några preferense angående vilka gäster du vill ta emot?</h6>
         <p>
-          Det är viktigt för oss att veta den här informationen ur ett
-          trygghetsperspektiv, för båda parter. Välj gärna ut alla alternativ
-          för gäster som du kan ta emot.
+          T.ex.: Endast gäster utan barn, endast kvinnot med barn, endast gäster utan husdjur etc.
         </p>
 
-        <div className="space-col">
+       
+            <label htmlFor="typeOfGuests"></label><br /> 
+            <textarea
+              required
+              type="text"
+              id="typeOfGuests"
+              name="typeOfGuests"
+              defaultValue={values.typeOfGuests}
+              onChange={handleChange("typeOfGuests")}
+              maxLength={200}
+            />
+            <p>max 200 tecken</p>
+            <p className='errorRed'>{values.validTypeOfGuest}</p>
+            <br />
+
+
+            <h6 style={{ fontWeight: "Bold" }}>Max antar gäster</h6>
+        <p>
+          Hur många gäster ryms i boendet som du erbjuder?
+        </p>
+
+       
+            <label htmlFor="howManyGuests"></label><br /> 
+            <input
+              required
+              type="text"
+              id="howManyGuests"
+              name="howManyGuests"
+              defaultValue={values.howManyGuests}
+              onChange={handleChange("howManyGuests")}
+              maxLength={200}
+              className="w-100"
+            />
+             <p style={{color: "white"}}>.</p> {/*Idk but the site goes crazy if this isn't here */}
+         
+          
+
+       {/*  <div className="space-col">
           <div className="col-6 checkBoxarMedText">
             <label htmlFor="guest-With-Kids"> Gäster med barn</label>
             <input
@@ -77,8 +113,8 @@ export class Guests extends Component {
               <option value="2">3-4</option>
               <option value="5">5+</option>
             </select>
-          </div>
-        </div>
+          </div> 
+        </div>*/}
             <div className="btnNextAndBack">
         <button className="buttonBack " type="button" onClick={this.back}>
         <Image src={BackBtnArrow} allt ="back" />
