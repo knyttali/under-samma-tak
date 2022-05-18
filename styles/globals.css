@@ -8,6 +8,11 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FFF9F4;
+}
+
+form {
+  background-color: white;
 }
 
 .homepage {
@@ -27,6 +32,17 @@ p {
 .sameSides {
   display: grid;
   grid-template-columns: 10% 80% 10%;
+}
+
+.placement-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+.placement {
+  width: 48%;
+}
+.placement input {
+  width: 100%;
 }
 
 
@@ -608,11 +624,12 @@ small {
 
 .buttonNext {
   padding: 1%;
-  width: 10%;
+  width: 70px;
   border-radius: 8px;
   border-style: hidden;
   margin-bottom: 3%;
-  color: #999999;
+  background-color: #004664;
+  color: white;
   float: right;
 }
 
