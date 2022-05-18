@@ -6,6 +6,7 @@ import Referencer from "../components/homepage/Referencer";
 import { useEffect } from "react";
 import FAQ from "../components/homepage/FAQ";
 import NewsLetter from "../components/homepage/NewsLetter";
+import Footer from "../components/homepage/Footer";
 
 export default function Home() {
   // useEffect(()=>{
@@ -22,6 +23,7 @@ export default function Home() {
         <Referencer />
         <FAQ />
         <NewsLetter />
+        <Footer />
       </div>
     </div>
   );
