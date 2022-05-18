@@ -20,11 +20,11 @@ function Footer() {
           <div>
             <h4>Hitta snabbt</h4>
             <div className="footer-links">
-              <a>Link 1</a>
-              <a>Link 2</a>
-              <a>Link 3</a>
-              <a>Link 4</a>
-              <a>Link 5</a>
+              <a>Sitmap link 1</a>
+              <a>Sitmap link 2</a>
+              <a>Sitmap link 3</a>
+              <a>Sitmap link 4</a>
+              <a>Sitmap link 5</a>
             </div>
           </div>
           <div>
@@ -39,36 +39,50 @@ function Footer() {
           <div className="col-2 footer-item">
             <h4>KOMMUNER</h4>
             <div className="footer-links">
-              <a>Link 1</a>
-              <a>Link 2</a>
-              <a>Link 3</a>
-              <a>Link 4</a>
-              <a>Link 5</a>
-              <a>Link 1</a>
-              <a>Link 2</a>
-              <a>Link 3</a>
-              <a>Link 4</a>
-              <a>Link 5</a>
+              <a>Sitmap link 1</a>
+              <a>Sitmap link 2</a>
+              <a>Sitmap link 3</a>
+              <a>Sitmap link 4</a>
+              <a>Sitmap link 5</a>
+              <a>Sitmap link 5</a>
+              <a>Sitmap link 5</a>
+              <a>Sitmap link 5</a>
+              <a>Sitmap link 5</a>
+              <a>Sitmap link 5</a>
+              <a>Sitmap link 5</a>
+              <a>Sitmap link 5</a>
+              <a>Sitmap link 5</a>             
+              <a>Sitmap link 5</a>
+              <a>Sitmap link 5</a>
+              <a>Sitmap link 5</a>
+              <a>Sitmap link 5</a>
             </div>
           </div>
           <div className="col-2 footer-item">
             <h4>PARTNERS</h4>
             <div className="footer-links">
-              <a>Link 1</a>
-              <a>Link 2</a>
-              <a>Link 3</a>
-              <a>Link 4</a>
-              <a>Link 5</a>
+              <a>Airbnb.org</a>
+              <a>Beredskapslyftet</a>
+              <a>Rädda Barnen</a>
+              <a>Stadsmissionen</a>
+              <a>Sitmap link 5</a>
+              <a>Sitmap link 5</a>
+              <a>Sitmap link 5</a>
+              <a>Sitmap link 5</a>
+              <a>Sitmap link 5</a>
             </div>
           </div>
           <div className="col-3 footer-item">
             <h4>SAMARBETSAKTÖRER</h4>
             <div className="footer-links">
-              <a>Link 1</a>
-              <a>Link 2</a>
-              <a>Link 3</a>
-              <a>Link 4</a>
-              <a>Link 5</a>
+              <a>UNICEF Sverige</a>
+              <a>UNHCR</a>
+              <a>World Childhood Foundation</a>
+              <a>Sitmap link 4</a>
+              <a>Sitmap link 5</a>
+              <a>Sitmap link 5</a>
+              <a>Sitmap link 5</a>
+              <a>Sitmap link 5</a>
             </div>
           </div>
         </div>
