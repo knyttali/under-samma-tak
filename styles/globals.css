@@ -643,6 +643,7 @@ color: #004664;
 .form-header {
   font-weight: bold;
   padding: 4% 0 0 0;
+  color: #004664
 }
 
 .utrymme {
@@ -699,8 +700,22 @@ textarea{
   color: white;
   float: right;
 }
+.sendInInformation{
+  padding: 1%;
+  width: 250px;
+  border-radius: 8px;
+  border-style: hidden;
+  margin-bottom: 3%;
+  background-color: #004664;
+  color: white;
+  float: right;
+}
 
 .buttonNext:hover {
+  background-color: #489CB7;
+  color: #FFFFFF;
+}
+.sendInInformation:hover {
   background-color: #489CB7;
   color: #FFFFFF;
 }

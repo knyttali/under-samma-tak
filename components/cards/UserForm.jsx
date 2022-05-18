@@ -4,6 +4,7 @@ import Living from './Living'
 import Guests from './Guests'
 import LivingAmountOfTime from './LivingAmountOfTime'
 import CollectedInfo from './CollectedInfo'
+import SentIntrest from './SentIntrest'
 
 export class UserForm extends Component {
     state = {
@@ -365,7 +366,10 @@ export class UserForm extends Component {
             return <CollectedInfo 
                     prevStep={this.prevStep}
                     values = {values}
+                    nextStep={this.nextStep}
                     />
+        case 6:
+            return <SentIntrest />
     }
   }
 }

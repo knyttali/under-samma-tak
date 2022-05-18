@@ -10,7 +10,7 @@ export class PersonalInfo extends Component {
     const { values, handleChange } = this.props;
     return (
       <form className="personal-info form-template col-6" id="personligInfo">
-       <h4 className="form-header ">Personlig information</h4>
+       <h4 className="form-header">Personlig information</h4>
 
 <div className="name-row placement-inputs">
   <div className="placement">
