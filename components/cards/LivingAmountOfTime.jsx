@@ -16,19 +16,15 @@ export class LivingAmountOfTime extends Component {
     return (
       <form className="length-info form-template col-6" id="lengthInfo" onSubmit={this.continue}>
       <h4 className="form-header">
-        I ett första skede, hur länge skulle du kunna erbjuda ditt boende?
+        Längd
       </h4>
-
-      <p>
-        Det är viktigt för att vi ska förstå när och hur länge man är villig att
-        ta emot människor på flykt. Detta förenklar processen i en eventuell
-        matchning
-      </p>
-      <div className="col-6">
-    <label htmlFor="howLongStay">I ett första skede, hur länge skulle du kunna erbjuda ditt boende?</label><br />
-    <input required type="text" id="howLongStay" name="howLongStay" defaultValue={values.howLongStay} onChange={handleChange('howLongStay')} className="w-100"/>
-    <p className='errorRed'>{values.validHowLongStay}</p>
-  </div>
+      <br />
+      <h6 style={{ fontWeight: "Bold" }}>Ungefär hur länge skulle du kunna erbjuda ditt boende?</h6>
+   
+    <label htmlFor="howLongStay">T.ex.: Jag är helt flexibel, ca. 1vecka, 2 veckor, en månad, 6 månader, längre än 6 månader etc.</label>
+    <textarea required type="text" id="howLongStay" name="howLongStay" defaultValue={values.howLongStay} onChange={handleChange('howLongStay')} maxLength={200}/>
+    <p>max 200 tecken</p>
+  
 {/*
       <div className="space-col">
         <div className="col-6 checkBoxarMedText">

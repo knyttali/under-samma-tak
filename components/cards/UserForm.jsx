@@ -24,6 +24,7 @@ export class UserForm extends Component {
         kindOfHouse:"",
         livingAlone:"",
         typeOfGuests: "",
+        howManyGuests: "",
         howLongStay: "",
         validFname:"",
         validLname:"",
@@ -322,12 +323,12 @@ export class UserForm extends Component {
       const { step } = this.state;
       const {fname, lname, adress, ort, kommun, postNum, phone, email, apartment,
         house, secondarySpace, selfOwned, sharedSpace, howLongStay, kindOfHouse,
-        livingAlone, typeOfGuests, validFname, validLname, validAdress, validKommun,
+        livingAlone, typeOfGuests, howManyGuests, validFname, validLname, validAdress, validKommun,
         validOrt, validPostNum, validPhone, validEmail, validKindOfHouse,
         validTypeOfGuest, validLivingAlone, validHowLongStay } = this.state;
       const values = {fname, lname, adress, ort, kommun, postNum, phone, email,
         apartment, house, secondarySpace, selfOwned, sharedSpace, howLongStay,
-        kindOfHouse, livingAlone, typeOfGuests, validFname, validLname, validAdress,
+        kindOfHouse, livingAlone, typeOfGuests, howManyGuests, validFname, validLname, validAdress,
         validKommun, validOrt, validPostNum, validPhone, validEmail, validKindOfHouse,
         validTypeOfGuest, validLivingAlone, validHowLongStay }
     switch(step){

@@ -15,17 +15,12 @@ export class Living extends Component {
     const { values, handleChange } = this.props;
     return (
       <form className="guest-where-info form-template col-6" id="guestWhereInfo">
-        <h4 className="form-header ">Vart skulle gästerna kunna bo?</h4>
-        <p>
-          Alla människor har rätt till egen sovplats. Det kan vara en madrass på
-          golvet eller en riktig säng. Därför är det viktigt att du anger hur
-          era sovmöjligheter ser ut. Välj gärna ut alla alternativ som gäller
-          för boende du erbjuder
-        </p>
-
+        <h4 className="form-header ">Boende</h4>
+        
         <div className="space-col utrymme">
-          <h6 style={{ fontWeight: "Bold" }}>Vilken typ av boende har du?</h6>
-          <div className="col-6">
+          <h6 style={{ fontWeight: "Bold" }}>Typ av boende</h6>
+          <p>Vilken typ av boende skulle du kunna erbjuda? <br /> Ex. Lägenhet, hus, sekundär enhet (exepelsvis attenfallshus)</p>
+          
             {/* <label htmlFor="howLongStay">I ett första skede, hur länge skulle du kunna erbjuda ditt boende?</label><br /> */}
             <input
               required
@@ -37,7 +32,7 @@ export class Living extends Component {
               className="w-100"
             />
             <p className='errorRed'>{values.validKindOfHouse}</p>
-          </div>
+         
 
           {/* <div className="col-6 checkBoxarMedText">
               <label htmlFor="apartment"> Lägenhet</label>
@@ -63,10 +58,11 @@ export class Living extends Component {
         </div>
 
         <div className="space-col houseTypes">
-          <h6 style={{ fontWeight: "Bold" }}>Bor du ensam?</h6>
-          <div className="col-6">
+          <h6 style={{ fontWeight: "Bold" }}>Eget eller delat boende</h6>
+          <p>Beskriv hur boendesituationen skulle kunna se ut för de som kommer. Eget eller detal <br /> boende? Tillgång till toalett, kök och andra utrymmen?</p>
+          
             {/* <label htmlFor="howLongStay">I ett första skede, hur länge skulle du kunna erbjuda ditt boende?</label><br /> */}
-            <input
+            <textarea
               required
               type="text"
               id="livingAlone"
@@ -74,9 +70,11 @@ export class Living extends Component {
               defaultValue={values.livingAlone}
               onChange={handleChange("livingAlone")}
               className="w-100"
+              maxLength={200}
             />
+            <p>Max 200 tecken</p>
             <p className='errorRed'>{values.validLivingAlone}</p>
-          </div>
+          
           {/* <div className="col-6 checkBoxarMedText">
               <label htmlFor="selfOwned">Eget boende</label>
               <input className="checkboxRight" type="checkbox" id="selfOwned" name="selfOwned" defaultValue={values.selfOwned} onChange={handleChange('selfOwned')} />
