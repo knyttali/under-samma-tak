@@ -44,32 +44,33 @@ export class UserForm extends Component {
         const {step} = this.state;
         
 
-               if (this.validationPersonalInfo() && step == 1) {
+               if (this.validationPersonalInfo()) {
                 this.setState({
                     step: step + 1,
-                    validKindOfHouse: "",
-                    validLivingAlone: "",
+                    // validKindOfHouse: "",
+                    // validLivingAlone: "",
                 })
                }
-               else if (this.validationLiving() && step == 2) {
-                   this.setState({
-                       step: step + 1,
-                       validTypeOfGuest: ""
+              
+            //    else if (this.validationLiving() && step == 2) {
+            //        this.setState({
+            //            step: step + 1,
+            //            validTypeOfGuest: ""
 
-                   })
-               }
-               else if (this.validationGuests() && step == 3) {
-                   this.setState({
-                       step: step + 1,
-                       validHowLongStay: ""
+            //        })
+            //    }
+            //    else if (this.validationGuests() && step == 3) {
+            //        this.setState({
+            //            step: step + 1,
+            //            validHowLongStay: ""
                     
-                   })
-               }
-               else if (this.validationLivingAmount() && step == 4) {
-                   this.setState({
-                       step: step + 1
-                   })
-               }
+            //        })
+            //    }
+            //    else if (this.validationLivingAmount() && step == 4) {
+            //        this.setState({
+            //            step: step + 1
+            //        })
+            //    }
   
     }
 
@@ -80,22 +81,20 @@ export class UserForm extends Component {
         
             //FirstName
             if (fname =="") {
-                this.setState({validFname: "Fyll i här!"})
+                this.setState({validFname: "Du måste fylla i ett förnamn"})
                 validation ="bad"
             }
             else{
                 this.setState({validFname: ""})
             }
             if (this.isNum(fname)) {
-                console.log("number in name")
-                console.log("hej")
-                this.setState({validFname: "Kan inte ha nummer i ditt namn!"})
+                this.setState({validFname: "Kan inte ha nummer i ditt förnamn"})
                 validation ="bad"
                 
             }
             //LastName
             if (lname =="") {
-                this.setState({validLname: "Fyll i här!"})
+                this.setState({validLname: "Du måste fylla i ett efternamn"})
                 validation ="bad"
             }
             else{
@@ -103,12 +102,12 @@ export class UserForm extends Component {
             }
             if (this.isNum(lname)) {
                 console.log("number in name")
-                this.setState({validLname: "Kan inte ha nummer i ditt namn!"})
+                this.setState({validLname: "Kan inte ha nummer i ditt efternamn"})
                 validation ="bad"
             }
             //Adress
             if (adress =="") {
-                this.setState({validAdress: "Fyll i här!"})
+                this.setState({validAdress: "Du måste fylla i en gatuadress"})
                 validation ="bad"
             }
             else{
@@ -116,7 +115,7 @@ export class UserForm extends Component {
             }
             //Ort
             if (ort =="") {
-                this.setState({validOrt: "Fyll i här!"})
+                this.setState({validOrt: "Du måste fylla i ort"})
                 validation ="bad"
             }
             else{
@@ -124,7 +123,7 @@ export class UserForm extends Component {
             }
             //Kommun
             if (kommun =="") {
-                this.setState({validKommun: "Fyll i här!"})
+                this.setState({validKommun: "Du måste fylla i en kommun"})
                 validation ="bad"
             }
             else{
@@ -132,12 +131,11 @@ export class UserForm extends Component {
             }
             //PostNummer
             if (postNum =="") {
-                this.setState({validPostNum: "Fyll i här"})
-                console.log("bruh")
+                this.setState({validPostNum: "Du måste fylla i postnummer"})
                 validation ="bad"
             }
             else if (this.isNotNum(postNum)) {
-                this.setState({validPostNum: "ange giltigt postNummer"})
+                this.setState({validPostNum: "Ange giltigt postNummer"})
                 validation ="bad"
             }
             else{
@@ -146,7 +144,7 @@ export class UserForm extends Component {
             }
             //Phone
             if (phone =="") {
-                this.setState({validPhone: "Fyll i här!"})
+                this.setState({validPhone: "Du måste ange ett telefonnummer"})
                 validation ="bad"
             }
             else if (this.isNotNum(phone)) {
@@ -158,7 +156,7 @@ export class UserForm extends Component {
             }
             //Email
             if (email == "") {
-                this.setState({validEmail: "Fyll i här!"})
+                this.setState({validEmail: "Du måste fylla i en email adress"})
                 validation ="bad"
             }
             else{
@@ -171,79 +169,79 @@ export class UserForm extends Component {
             else return false
     }
 
-    validationLiving(){
-        const { kindOfHouse, livingAlone } = this.state
-        var validation = "good"
-        //Typ av boende
-        if(kindOfHouse == ""){
-            this.setState({validKindOfHouse: "Fyll i här!"})
-            validation = "bad"
-        }
-        else if (this.isNum(kindOfHouse)) {
-            this.setState({validKindOfHouse: "skriv en valid hus sort!"})
-            validation = "bad"
-        }
-        else{
-            this.setState({validKindOfHouse: ""})
-        }
-        //bor du ensam
-        if (livingAlone == "") {
-            this.setState({validLivingAlone: "Fyll i här!"})
-            validation = "bad"
-        }
-        else if (livingAlone.toLowerCase() == "ja" || livingAlone.toLowerCase() == "nej") {
-            this.setState({validLivingAlone: ""})
-        }
-        else{
-            this.setState({validLivingAlone: 'Svara "ja" eller "nej"'})
-            validation = "bad"
-        }
+    // validationLiving(){
+    //     const { kindOfHouse, livingAlone } = this.state
+    //     var validation = "good"
+    //     //Typ av boende
+    //     if(kindOfHouse == ""){
+    //         this.setState({validKindOfHouse: "Fyll i här!"})
+    //         validation = "bad"
+    //     }
+    //     else if (this.isNum(kindOfHouse)) {
+    //         this.setState({validKindOfHouse: "skriv en valid hus sort!"})
+    //         validation = "bad"
+    //     }
+    //     else{
+    //         this.setState({validKindOfHouse: ""})
+    //     }
+    //     //bor du ensam
+    //     if (livingAlone == "") {
+    //         this.setState({validLivingAlone: "Fyll i här!"})
+    //         validation = "bad"
+    //     }
+    //     else if (livingAlone.toLowerCase() == "ja" || livingAlone.toLowerCase() == "nej") {
+    //         this.setState({validLivingAlone: ""})
+    //     }
+    //     else{
+    //         this.setState({validLivingAlone: 'Svara "ja" eller "nej"'})
+    //         validation = "bad"
+    //     }
 
-        if (validation === "good") {
-            return true
-        }
-        else return false
+    //     if (validation === "good") {
+    //         return true
+    //     }
+    //     else return false
 
-    }
+    // }
 
-    validationGuests(){
-        const { typeOfGuests } = this.state
-        var validation = "good"
-        if (typeOfGuests == "") {
-            this.setState({validTypeOfGuest: "Fyll i här!"})
-            validation = "bad"
-        }
-        else if (this.isNum(typeOfGuests)) {
-            this.setState({validTypeOfGuest: "skriv inte med siffror!"})
-            validation = "bad"
-        }
-        else{
-            this.setState({validTypeOfGuest: ""})
-        }
+    // validationGuests(){
+    //     const { typeOfGuests } = this.state
+    //     var validation = "good"
+    //     if (typeOfGuests == "") {
+    //         this.setState({validTypeOfGuest: "Fyll i här!"})
+    //         validation = "bad"
+    //     }
+    //     else if (this.isNum(typeOfGuests)) {
+    //         this.setState({validTypeOfGuest: "skriv inte med siffror!"})
+    //         validation = "bad"
+    //     }
+    //     else{
+    //         this.setState({validTypeOfGuest: ""})
+    //     }
 
-        if (validation === "good") {
-            return true
-        }
-        else return false
-    }
-    validationLivingAmount(){
-        const{howLongStay} = this.state
-        var validation = "good"
-        if (howLongStay == "") {
-            this.setState({validHowLongStay: "Fyll i här!"})
-            validation = "bad"
-        }
-        else{
-            this.setState({validHowLongStay: ""})
-        }
+    //     if (validation === "good") {
+    //         return true
+    //     }
+    //     else return false
+    // }
+    // validationLivingAmount(){
+    //     const{howLongStay} = this.state
+    //     var validation = "good"
+    //     if (howLongStay == "") {
+    //         this.setState({validHowLongStay: "Fyll i här!"})
+    //         validation = "bad"
+    //     }
+    //     else{
+    //         this.setState({validHowLongStay: ""})
+    //     }
 
-        if (validation === "good") {
-            return true
-        }
-        else return false
+    //     if (validation === "good") {
+    //         return true
+    //     }
+    //     else return false
 
 
-    }
+    // }
     //go back one step
     prevStep = () => {
         const {step} = this.state;

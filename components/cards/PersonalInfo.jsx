@@ -64,11 +64,13 @@ export class PersonalInfo extends Component {
   <div className="placement">
     <label htmlFor="postNum">Postnummer</label><br />
     <input required type="text" id="postNum" name="postNum" defaultValue={values.postNum} onChange={handleChange('postNum')} />
+    <p className='errorRed'>{values.validPostNum}</p>
   </div>
 
   <div className="placement">
     <label htmlFor="phone">Telefonnummer</label><br />
     <input required type="text" id="phone" name="phone" defaultValue={values.phone} onChange={handleChange('phone')} />
+    <p className='errorRed'>{values.validPhone}</p>
   </div>
 </div>
 
@@ -76,6 +78,7 @@ export class PersonalInfo extends Component {
   <div className="placement">
     <label htmlFor="email">E-mail adress</label><br />
     <input required type="email" id="email" name="email" defaultValue={values.email} onChange={handleChange('email')} />
+    <p className='errorRed'>{values.validEmail}</p>
   </div>
 
   <div className="placement-right"></div>
