@@ -518,7 +518,7 @@ color: #004664;
 .footer-left-right {
   display: flex;
   position: absolute;
-  height: 1000px;
+  height: 800px;
 }
 
 .footer-left-right h4 {
@@ -535,7 +535,7 @@ color: #004664;
 }
 .mellanrum {
   background-color: #489CB7;
-  height: 900px;
+  height: 700px;
 }
 
 .footer-right {
@@ -563,6 +563,15 @@ color: #004664;
   border-bottom: #FFFFFF 1px solid;
 }
 
+.footer-bottom-top h3{
+  font-weight: 900;
+}
+
+.footer-bottom p {
+  margin: 10px 50px;
+  font-size: small;
+}
+
 .footer-image{
   margin-bottom: 8px;
 }
@@ -570,6 +579,7 @@ color: #004664;
 .footer-links {
   display: flex;
   flex-direction: column;
+  text-decoration: underline;
 }
 
 

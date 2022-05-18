@@ -76,7 +76,7 @@ function Footer() {
       <div className="mellanrum">Mellanrum</div>
       <div className="footer-bottom">
         <div className="footer-bottom-top"><h3>Under Samma Tak</h3><div className="footer-image"><Image src={logos}></Image></div></div>
-        <div></div>
+        <div><p>© Copyright Under Samma Tak AB</p></div>
       </div>
     </div>
   );
