@@ -8,14 +8,14 @@ import CollectedInfo from './CollectedInfo'
 export class UserForm extends Component {
     state = {
         step: 1,
-        fname: "",
-        lname: "",
-        adress: "",
-        ort: "",
-        kommun: "",
-        postNum: "",
-        phone: "",
-        email: "",
+        fname: "g",
+        lname: "g",
+        adress: "g",
+        ort: "g",
+        kommun: "g",
+        postNum: "3",
+        phone: "3",
+        email: "g",
         /* apartment: "",
         house: "",
         secondarySpace: "",
@@ -33,6 +33,9 @@ export class UserForm extends Component {
         validPostNum: "",
         validPhone: "",
         validEmail:"",
+        validKindOfHouse:"",
+        validLivingAlone:"",
+        validHowLongStay:"",
     }
     //next step
     nextStep = () => {
@@ -44,6 +47,11 @@ export class UserForm extends Component {
                 this.setState({
                     step: step + 1
                 })
+               }
+               else if (this.validationLiving() && step == 2) {
+                   this.setState({
+                       step: step + 1
+                   })
                }
   
     }
@@ -145,6 +153,41 @@ export class UserForm extends Component {
             }
             else return false
     }
+
+    validationLiving(){
+        const { kindOfHouse, livingAlone } = this.state
+        var validation = "good"
+        //Typ av boende
+        if(kindOfHouse == ""){
+            this.setState({validKindOfHouse: "Fyll i här!"})
+            validation = "bad"
+        }
+        else if (this.isNum(kindOfHouse)) {
+            this.setState({validKindOfHouse: "skriv en valid hus sort!"})
+            validation = "bad"
+        }
+        else{
+            this.setState({validKindOfHouse: ""})
+        }
+        //bor du ensam
+        if (livingAlone == "") {
+            this.setState({validLivingAlone: "Fyll i här!"})
+            validation = "bad"
+        }
+        else if (livingAlone.toLowerCase() == "ja" || livingAlone.toLowerCase() == "nej") {
+            this.setState({validLivingAlone: ""})
+        }
+        else{
+            this.setState({validLivingAlone: 'Svara "ja" eller "nej"'})
+            validation = "bad"
+        }
+
+        if (validation === "good") {
+            return true
+        }
+        else return false
+
+    }
     //go back one step
     prevStep = () => {
         const {step} = this.state;
@@ -226,11 +269,11 @@ export class UserForm extends Component {
       const {fname, lname, adress, ort, kommun, postNum, phone, email, apartment,
         house, secondarySpace, selfOwned, sharedSpace, howLongStay, kindOfHouse,
         livingAlone, typeOfGuests, validFname, validLname, validAdress, validKommun,
-        validOrt, validPostNum, validPhone, validEmail } = this.state;
+        validOrt, validPostNum, validPhone, validEmail, validKindOfHouse, validLivingAlone, } = this.state;
       const values = {fname, lname, adress, ort, kommun, postNum, phone, email,
         apartment, house, secondarySpace, selfOwned, sharedSpace, howLongStay,
         kindOfHouse, livingAlone, typeOfGuests, validFname, validLname, validAdress,
-        validKommun, validOrt, validPostNum, validPhone, validEmail }
+        validKommun, validOrt, validPostNum, validPhone, validEmail, validKindOfHouse, validLivingAlone }
     switch(step){
         case 1:
             return(
