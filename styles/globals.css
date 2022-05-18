@@ -414,16 +414,16 @@ p {
 
 .seAllaBtn {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   margin-top: 20px;
   padding-bottom: 40px;
 }
 
 .seAllaBtnActualBtn {
-  color: #004664;
+  color: white;
   border: #004664 solid 1px;
   border-radius: 8px;
-  background-color: #FFF9F4;
+  background-color:#004664;
   width: 83px;
   height: 40px;
 }
