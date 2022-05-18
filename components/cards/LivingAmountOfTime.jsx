@@ -14,7 +14,7 @@ export class LivingAmountOfTime extends Component {
   render() {
     const { values, handleChange } = this.props;
     return (
-      <form className="length-info form-template col-6" id="lengthInfo">
+      <form className="length-info form-template col-6" id="lengthInfo" onSubmit={this.continue}>
       <h4 className="form-header">
         I ett första skede, hur länge skulle du kunna erbjuda ditt boende?
       </h4>

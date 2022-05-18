@@ -8,14 +8,14 @@ import CollectedInfo from './CollectedInfo'
 export class UserForm extends Component {
     state = {
         step: 1,
-        fname: "g",
-        lname: "g",
-        adress: "g",
-        ort: "g",
-        kommun: "g",
-        postNum: "3",
-        phone: "3",
-        email: "g",
+        fname: "",
+        lname: "",
+        adress: "",
+        ort: "",
+        kommun: "",
+        postNum: "",
+        phone: "",
+        email: "",
         /* apartment: "",
         house: "",
         secondarySpace: "",
@@ -46,17 +46,23 @@ export class UserForm extends Component {
 
                if (this.validationPersonalInfo() && step == 1) {
                 this.setState({
-                    step: step + 1
+                    step: step + 1,
+                    validKindOfHouse: "",
+                    validLivingAlone: "",
                 })
                }
                else if (this.validationLiving() && step == 2) {
                    this.setState({
-                       step: step + 1
+                       step: step + 1,
+                       validTypeOfGuest: ""
+
                    })
                }
                else if (this.validationGuests() && step == 3) {
                    this.setState({
-                       step: step + 1
+                       step: step + 1,
+                       validHowLongStay: ""
+                    
                    })
                }
                else if (this.validationLivingAmount() && step == 4) {
