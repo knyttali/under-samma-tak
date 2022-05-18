@@ -518,26 +518,31 @@ color: #004664;
 .footer-left-right {
   display: flex;
   position: absolute;
+  height: 1000px;
 }
 
 .footer-left {
-  background-color: #004664;
+  background-color: #003850;
   padding-left: 50px;
   padding-top: 30px;
-  padding-bottom: 200px;
+  padding-bottom: 50px;
+}
+.mellanrum {
+  background-color: #489CB7;
+  height: 900px;
 }
 
 .footer-right {
-  background-color: #489CB7;
+  background-color:#004664;
   padding-left: 30px;
   padding-top: 30px;
-  padding-bottom: 200px;
+  padding-bottom: 50px;
 }
 
 .footer-bottom {
   z-index: 9;
+position: relative;
   bottom: 0;
-  position: fixed;
 }
 
 

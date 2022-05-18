@@ -6,6 +6,7 @@ function Footer() {
     <div className="footer">
       <div className="footer-left-right">
         <div className="footer-left col-5">
+      
           <div>
             <h4>Vision &amp; Mission </h4>
             <p>
@@ -72,7 +73,7 @@ function Footer() {
           </div>
         </div>
       </div>
-
+      <div className="mellanrum">Mellanrum</div>
       <div className="footer-bottom">
         <div><h3>Under Samma Tak</h3><Image src={logos}></Image></div>
         <div></div>
