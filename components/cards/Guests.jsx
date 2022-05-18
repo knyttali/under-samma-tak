@@ -14,7 +14,7 @@ export class Guests extends Component {
   render() {
     const { values, handleChange } = this.props;
     return (
-      <form className="guest-info form-template col-6" id="guestInfo">
+      <form className="guest-info form-template col-6" id="guestInfo" onSubmit={this.continue}>
       <h4 className="form-header">Gäster</h4>
         <p>
           Det är viktigt för oss att veta den här informationen ur ett
