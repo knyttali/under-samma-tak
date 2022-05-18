@@ -36,6 +36,7 @@ export class Living extends Component {
               onChange={handleChange("kindOfHouse")}
               className="w-100"
             />
+            <p className='errorRed'>{values.validKindOfHouse}</p>
           </div>
 
           {/* <div className="col-6 checkBoxarMedText">
@@ -74,6 +75,7 @@ export class Living extends Component {
               onChange={handleChange("livingAlone")}
               className="w-100"
             />
+            <p className='errorRed'>{values.validLivingAlone}</p>
           </div>
           {/* <div className="col-6 checkBoxarMedText">
               <label htmlFor="selfOwned">Eget boende</label>

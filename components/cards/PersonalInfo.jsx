@@ -33,11 +33,11 @@ export class PersonalInfo extends Component {
       type="text"
       id="address"
       name="address"
-      defaultValue={values.address}
-      onChange={handleChange('address')}
+      defaultValue={values.adress}
+      onChange={handleChange('adress')}
       className="w-100"
     />
-    <p className='errorRed'>{values.validAddress}</p>
+    <p className='errorRed'>{values.validAdress}</p>
   </div>
 </div>
 
