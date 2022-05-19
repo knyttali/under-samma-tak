@@ -38,23 +38,15 @@ function Footer() {
           <div className="col-2 footer-item">
             <h4>KOMMUNER</h4>
             <div className="footer-links">
-              <a>Stockholm</a>
-              <a>Göteborg</a>
-              <a>Malmö</a>
-              <a>Uppsala</a>
-              <a>Linköpings</a>
-              <a>Örebro</a>
-              <a>Västerås</a>
-              <a>Helsingborgs</a>
-              <a>Norrköpings</a>
-              <a>Jönköpings</a>
               <a>Umeå</a>
-              <a>Lunds</a>
-              <a>Borås</a>             
-              <a>Huddinge</a>
-              <a>Eskilstuna</a>
-              <a>Gävle</a>
-              <a>Halmstad</a>
+              <a>Växjö</a>
+              <a>Skellefteå</a>
+              <a>Göteborg</a>
+              <a>Oskarshamn</a>
+              <a>Linköping</a>
+              <a>Klippan</a>
+              <a>Falun</a>
+              <a>Västervik</a>
             </div>
           </div>
           <div className="col-2 footer-item">
