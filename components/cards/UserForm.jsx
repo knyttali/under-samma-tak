@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react'
+import validator from 'validator';
 import PersonalInfo from "./PersonalInfo"
 import Living from './Living'
 import Guests from './Guests'
@@ -6,6 +7,7 @@ import LivingAmountOfTime from './LivingAmountOfTime'
 import CollectedInfo from './CollectedInfo'
 import SentIntrest from './SentIntrest'
 import SideNav from '../SideNav'
+
 
 export class UserForm extends Component {
     state = {
@@ -160,6 +162,10 @@ export class UserForm extends Component {
             //Email
             if (email == "") {
                 this.setState({validEmail: "Du måste fylla i en email adress"})
+                validation ="bad"
+            }
+            else if (!validator.isEmail(email)){
+                this.setState({validEmail: "Du måste fylla i en giltig email adress"})
                 validation ="bad"
             }
             else{
@@ -353,16 +359,11 @@ export class UserForm extends Component {
     switch(step){
         case 1:
             return(
-                <Fragment>
-                <SideNav 
-                step = {this.step}/>
-                <div className="col-1"></div>
                 <PersonalInfo 
                 nextStep={this.nextStep}
                 handleChange= {this.handleChange}
                 values = {values}
                 />
-                </Fragment>
             )
         case 2:
             return <Living 

@@ -20,11 +20,10 @@ function Footer() {
           <div>
             <h4>Hitta snabbt</h4>
             <div className="footer-links">
-              <a>Sitmap link 1</a>
-              <a>Sitmap link 2</a>
-              <a>Sitmap link 3</a>
-              <a>Sitmap link 4</a>
-              <a>Sitmap link 5</a>
+              <a>Så fungerar det</a>
+              <a>Vårt uppdrag</a>
+              <a>Vanliga frågor</a>
+              <a>Anmäl ditt intresse</a>
             </div>
           </div>
           <div>
@@ -39,23 +38,15 @@ function Footer() {
           <div className="col-2 footer-item">
             <h4>KOMMUNER</h4>
             <div className="footer-links">
-              <a>Sitmap link 1</a>
-              <a>Sitmap link 2</a>
-              <a>Sitmap link 3</a>
-              <a>Sitmap link 4</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>             
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
+              <a>Umeå</a>
+              <a>Växjö</a>
+              <a>Skellefteå</a>
+              <a>Göteborg</a>
+              <a>Oskarshamn</a>
+              <a>Linköping</a>
+              <a>Klippan</a>
+              <a>Falun</a>
+              <a>Västervik</a>
             </div>
           </div>
           <div className="col-2 footer-item">
@@ -65,11 +56,6 @@ function Footer() {
               <a>Beredskapslyftet</a>
               <a>Rädda Barnen</a>
               <a>Stadsmissionen</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
             </div>
           </div>
           <div className="col-3 footer-item">
@@ -78,11 +64,6 @@ function Footer() {
               <a>UNICEF Sverige</a>
               <a>UNHCR</a>
               <a>World Childhood Foundation</a>
-              <a>Sitmap link 4</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import BackBtnArrow from "../../public/Images/Arrow-left.svg"
 import Image from "next/image"
-
+import InfoCircle from "../../public/Images/Info-circle.svg";
 export class Guests extends Component {
   continue = e => {
     e.preventDefault();
@@ -14,8 +14,26 @@ export class Guests extends Component {
   render() {
     const { values, handleChange } = this.props;
     return (
+      <div className='main-container row'>
+        <div className='col-2 sidenavPlacement'>
+        <p className='sidenavStep'>Steg 3/5</p>
+        <div className="sidenav">
+        
+        <p id="side-p0">Personlig information</p>
+        <p id="side-p1">Boende</p>
+        <p id="side-p2" style={{fontWeight: "Bold"}}>Gäster</p>
+        <p id="side-p3">Längd</p>
+        <p id="side-p4">Skicka</p>
+      </div>
+      </div>
+        <div className="col-1"></div>
       <form className="guest-info form-template col-6" id="guestInfo" onSubmit={this.continue}>
-      <h4 className="form-header">Gäster</h4>
+      <div className="formTitle flex-row d-flex">
+        <h4 className="form-header ">Gäster</h4>
+        <div className="infoCircle">
+        <Image src={InfoCircle}></Image>
+        </div>
+        </div>
       <h6 style={{ fontWeight: "Bold" }}>Har du några preferense angående vilka gäster du vill ta emot?</h6>
         <p>
           T.ex.: Endast gäster utan barn, endast kvinnot med barn, endast gäster utan husdjur etc.
@@ -32,7 +50,7 @@ export class Guests extends Component {
               onChange={handleChange("typeOfGuests")}
               maxLength={200}
             />
-            <p>max 200 tecken</p>
+            <p className="maxChar">max 200 tecken</p>
             <p className='errorRed'>{values.validTypeOfGuest}</p>
             <br />
 
@@ -127,6 +145,7 @@ export class Guests extends Component {
           
          </div> 
             </form>
+            </div>
     )
   }
 }
