@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import BackBtnArrow from "../../public/Images/Arrow-left.svg"
 import Image from "next/image"
-
+import InfoCircle from "../../public/Images/Info-circle.svg";
 export class Guests extends Component {
   continue = e => {
     e.preventDefault();
@@ -28,7 +28,12 @@ export class Guests extends Component {
       </div>
         <div className="col-1"></div>
       <form className="guest-info form-template col-6" id="guestInfo" onSubmit={this.continue}>
-      <h4 className="form-header">Gäster</h4>
+      <div className="formTitle flex-row d-flex">
+        <h4 className="form-header ">Gäster</h4>
+        <div className="infoCircle">
+        <Image src={InfoCircle}></Image>
+        </div>
+        </div>
       <h6 style={{ fontWeight: "Bold" }}>Har du några preferense angående vilka gäster du vill ta emot?</h6>
         <p>
           T.ex.: Endast gäster utan barn, endast kvinnot med barn, endast gäster utan husdjur etc.

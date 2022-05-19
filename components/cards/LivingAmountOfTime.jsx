@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import BackBtnArrow from "../../public/Images/Arrow-left.svg"
 import Image from "next/image"
-
+import InfoCircle from "../../public/Images/Info-circle.svg";
 export class LivingAmountOfTime extends Component {
   continue = e => {
     e.preventDefault();
@@ -28,9 +28,12 @@ export class LivingAmountOfTime extends Component {
       </div>
         <div className="col-1"></div>
       <form className="length-info form-template col-6" id="lengthInfo" onSubmit={this.continue}>
-      <h4 className="form-header">
-        Längd
-      </h4>
+      <div className="formTitle flex-row d-flex">
+        <h4 className="form-header ">Längd</h4>
+        <div className="infoCircle">
+        <Image src={InfoCircle}></Image>
+        </div>
+        </div>
       <br />
       <h6 style={{ fontWeight: "Bold" }}>Ungefär hur länge skulle du kunna erbjuda ditt boende?</h6>
    

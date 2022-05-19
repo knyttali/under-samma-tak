@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import BackBtnArrow from "../../public/Images/Arrow-left.svg";
 import Image from "next/image";
+import InfoCircle from "../../public/Images/Info-circle.svg";
 
 export class Living extends Component {
   continue = (e) => {
@@ -28,7 +29,12 @@ export class Living extends Component {
       </div>
         <div className="col-1"></div>
       <form className="guest-where-info form-template col-6" id="guestWhereInfo">
+        <div className="formTitle flex-row d-flex">
         <h4 className="form-header ">Boende</h4>
+        <div className="infoCircle">
+        <Image src={InfoCircle}></Image>
+        </div>
+        </div>
         
         <div className="space-col utrymme">
           <h6 style={{ fontWeight: "Bold" }}>Typ av boende</h6>

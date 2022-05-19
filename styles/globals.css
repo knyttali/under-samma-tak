@@ -653,6 +653,11 @@ color: #004664;
 }
 
 /*Form Container*/
+
+.infoCircle{
+  margin-left: 80%;
+  margin-top: 3%;
+}
 .form-template {
   box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
   border-radius: 11px;
