@@ -14,6 +14,19 @@ export class Guests extends Component {
   render() {
     const { values, handleChange } = this.props;
     return (
+      <div className='main-container row'>
+        <div className='col-2 sidenavPlacement'>
+        <p className='sidenavStep'>Steg 3/5</p>
+        <div className="sidenav">
+        
+        <p id="side-p0">Personlig information</p>
+        <p id="side-p1">Boende</p>
+        <p id="side-p2" style={{fontWeight: "Bold"}}>Gäster</p>
+        <p id="side-p3">Längd</p>
+        <p id="side-p4">Skicka</p>
+      </div>
+      </div>
+        <div className="col-1"></div>
       <form className="guest-info form-template col-6" id="guestInfo" onSubmit={this.continue}>
       <h4 className="form-header">Gäster</h4>
       <h6 style={{ fontWeight: "Bold" }}>Har du några preferense angående vilka gäster du vill ta emot?</h6>
@@ -127,6 +140,7 @@ export class Guests extends Component {
           
          </div> 
             </form>
+            </div>
     )
   }
 }

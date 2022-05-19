@@ -30,6 +30,19 @@ export class CollectedInfo extends Component {
       },
     } = this.props;
     return (
+      <div className='main-container row'>
+        <div className='col-2 sidenavPlacement'>
+        <p className='sidenavStep'>Steg 5/5</p>
+        <div className="sidenav">
+        
+        <p id="side-p0" >Personlig information</p>
+        <p id="side-p1">Boende</p>
+        <p id="side-p2">Gäster</p>
+        <p id="side-p3">Längd</p>
+        <p id="side-p4" style={{fontWeight: "Bold"}}>Skicka</p>
+      </div>
+      </div>
+        <div className="col-1"></div>
       <form className="guest-where-info form-template col-6" id="guestWhereInfo">
         <h6 style={{ fontWeight: "Bold" }}>Personlig Information</h6>
         <p>{fname}</p>
@@ -66,6 +79,7 @@ export class CollectedInfo extends Component {
           </button>
         </div>
       </form>
+      </div>
     );
   }
 }

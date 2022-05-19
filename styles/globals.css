@@ -632,17 +632,23 @@ color: #004664;
 
 
 .main-container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.main-container-Personal{
   margin-bottom: 5%;
 }
 
+.sidenavPlacement{
+  margin-left: 3%;
+}
 .sidenav {
   border-left: 1px solid black;
   margin-left: 3%;
-  height: 25%;
 }
 .sidenavStep{
   margin-left: 3%;
-  margin-bottom: 0.5%;
+  margin-bottom: 5%;
   font-weight: bold;
 }
 

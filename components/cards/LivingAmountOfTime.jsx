@@ -14,6 +14,19 @@ export class LivingAmountOfTime extends Component {
   render() {
     const { values, handleChange } = this.props;
     return (
+      <div className='main-container row'>
+        <div className='col-2 sidenavPlacement'>
+        <p className='sidenavStep'>Steg 4/5</p>
+        <div className="sidenav">
+        
+        <p id="side-p0">Personlig information</p>
+        <p id="side-p1">Boende</p>
+        <p id="side-p2">Gäster</p>
+        <p id="side-p3"  style={{fontWeight: "Bold"}}>Längd</p>
+        <p id="side-p4">Skicka</p>
+      </div>
+      </div>
+        <div className="col-1"></div>
       <form className="length-info form-template col-6" id="lengthInfo" onSubmit={this.continue}>
       <h4 className="form-header">
         Längd
@@ -105,6 +118,7 @@ export class LivingAmountOfTime extends Component {
           
          </div> 
             </form>
+            </div>
     )
   }
 }

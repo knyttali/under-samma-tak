@@ -20,15 +20,17 @@ export class PersonalInfo extends Component {
         </p>
       </div>
       </div>
-      <div className='main-container row'>
+      <div className='main-container-Personal row'>
+        <div className='col-2 sidenavPlacement'>
         <p className='sidenavStep'>Steg 1/5</p>
-        <div className="sidenav col-2">
+        <div className="sidenav">
         
         <p id="side-p0" style={{fontWeight: "Bold"}}>Personlig information</p>
         <p id="side-p1">Boende</p>
         <p id="side-p2">Gäster</p>
         <p id="side-p3">Längd</p>
         <p id="side-p4">Skicka</p>
+      </div>
       </div>
         <div className="col-1"></div>
 
