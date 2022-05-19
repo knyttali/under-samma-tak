@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import FormPageContainer from '../components/FormPageContainer'
+import UserForm from '../components/cards/UserForm'
 import { useEffect } from 'react'
 
 
@@ -20,7 +21,7 @@ const FormPage = () => {
   return (
     <>
     <Header></Header>
-    <FormPageContainer />
+    <UserForm />
     
     </>
   )
