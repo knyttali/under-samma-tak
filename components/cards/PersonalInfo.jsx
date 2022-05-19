@@ -39,13 +39,13 @@ export class PersonalInfo extends Component {
 
 <div className="name-row placement-inputs">
   <div className="placement">
-    <label htmlFor="fname">Förnamn</label><br />
+    <label htmlFor="fname">Förnamn *</label><br />
     <input required type="text" id="fname" name="fname" defaultValue={values.fname} onChange={handleChange('fname')} />
     <p className='errorRed'>{values.validFname}</p>
   </div>
 
   <div className="placement">
-    <label htmlFor="lname">Efternamn</label><br />
+    <label htmlFor="lname">Efternamn *</label><br />
     <input required type="text" id="lname" name="lname" defaultValue={values.lname} onChange={handleChange('lname')} />
     <p className='errorRed'>{values.validLname}</p>
   </div>
@@ -53,7 +53,7 @@ export class PersonalInfo extends Component {
 
 <div className="adress-row row">
   <div className="col-12">
-    <label htmlFor="address">Gatuadress</label><br />
+    <label htmlFor="address">Gatuadress *</label><br />
     <input required
       type="text"
       id="address"
@@ -68,13 +68,13 @@ export class PersonalInfo extends Component {
 
 <div className="kommun-row placement-inputs">
   <div className="placement">
-    <label htmlFor="ort">Ort</label><br />
+    <label htmlFor="ort">Ort *</label><br />
     <input required type="text" id="ort" name="ort" defaultValue={values.ort} onChange={handleChange('ort')}  />
     <p className='errorRed'>{values.validOrt}</p>
   </div>
 
   <div className="placement">
-    <label htmlFor="kommun">Kommun</label><br />
+    <label htmlFor="kommun">Kommun *</label><br />
     <input required
       id="kommun"
       type="text"
@@ -87,13 +87,13 @@ export class PersonalInfo extends Component {
 </div>
 <div className="nummer-row placement-inputs">
   <div className="placement">
-    <label htmlFor="postNum">Postnummer</label><br />
+    <label htmlFor="postNum">Postnummer *</label><br />
     <input required type="text" id="postNum" name="postNum" defaultValue={values.postNum} onChange={handleChange('postNum')} />
     <p className='errorRed'>{values.validPostNum}</p>
   </div>
 
   <div className="placement">
-    <label htmlFor="phone">Telefonnummer</label><br />
+    <label htmlFor="phone">Telefonnummer *</label><br />
     <input required type="text" id="phone" name="phone" defaultValue={values.phone} onChange={handleChange('phone')} />
     <p className='errorRed'>{values.validPhone}</p>
   </div>
@@ -101,7 +101,7 @@ export class PersonalInfo extends Component {
 
 <div className="email-row placement-inputs">
   <div className="placement">
-    <label htmlFor="email">E-mail adress</label><br />
+    <label htmlFor="email">E-mail adress *</label><br />
     <input required type="email" id="email" name="email" defaultValue={values.email} onChange={handleChange('email')} />
     <p className='errorRed'>{values.validEmail}</p>
   </div>
