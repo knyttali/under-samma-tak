@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Link from "next/dist/client/link";
-import Skelleftea from "../../public/Images/skellefteaKommun.svg"
+import Skelleftea from "../../public/Images/skellefteaKommun.png"
 import Image from "next/image";
 export class SentIntrest extends Component {
   
