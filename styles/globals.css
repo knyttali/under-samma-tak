@@ -645,6 +645,7 @@ color: #004664;
 .sidenav {
   border-left: 1px solid black;
   margin-left: 3%;
+  padding-left: 5%;
 }
 .sidenavStep{
   margin-left: 3%;
@@ -652,10 +653,11 @@ color: #004664;
   font-weight: bold;
 }
 
+
 /*Form Container*/
 
 .infoCircle{
-  margin-left: 80%;
+  margin-left: 85%;
   margin-top: 3%;
 }
 .form-template {
