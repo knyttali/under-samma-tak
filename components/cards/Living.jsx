@@ -38,7 +38,7 @@ export class Living extends Component {
         
         <div className="space-col utrymme">
           <h6 style={{ fontWeight: "Bold" }}>Typ av boende</h6>
-          <p>Vilken typ av boende skulle du kunna erbjuda? <br /> Ex. Lägenhet, hus, sekundär enhet (exepelsvis attenfallshus)</p>
+          <p>Vilken typ av boende skulle du kunna erbjuda? <br /> Ex. Lägenhet, hus, sekundär enhet (exempelvis attenfallshus)</p>
           
             {/* <label htmlFor="howLongStay">I ett första skede, hur länge skulle du kunna erbjuda ditt boende?</label><br /> */}
             <input
@@ -78,7 +78,7 @@ export class Living extends Component {
 
         <div className="space-col houseTypes">
           <h6 style={{ fontWeight: "Bold" }}>Eget eller delat boende</h6>
-          <p>Beskriv hur boendesituationen skulle kunna se ut för de som kommer. Eget eller detal <br /> boende? Tillgång till toalett, kök och andra utrymmen?</p>
+          <p>Beskriv hur boendesituationen skulle kunna se ut för de som kommer. Eget eller delat boende? Tillgång till toalett, kök och andra utrymmen?</p>
           
             {/* <label htmlFor="howLongStay">I ett första skede, hur länge skulle du kunna erbjuda ditt boende?</label><br /> */}
             <textarea
