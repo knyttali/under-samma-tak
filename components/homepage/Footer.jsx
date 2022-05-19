@@ -38,23 +38,23 @@ function Footer() {
           <div className="col-2 footer-item">
             <h4>KOMMUNER</h4>
             <div className="footer-links">
-              <a>Stockholms kommun</a>
-              <a>Göteborgs kommun</a>
-              <a>Malmö kommun</a>
-              <a>Uppsala kommun</a>
-              <a>Linköpings kommun</a>
-              <a>Örebro kommun</a>
-              <a>Västerås kommun</a>
-              <a>Helsingborgs kommun</a>
-              <a>Norrköpings kommun</a>
-              <a>Jönköpings kommun</a>
-              <a>Umeå kommun</a>
-              <a>Lunds kommun</a>
-              <a>Borås kommun</a>             
-              <a>Huddinge kommun</a>
-              <a>Eskilstuna kommun</a>
-              <a>Gävle kommun</a>
-              <a>Halmstads kommun</a>
+              <a>Stockholm</a>
+              <a>Göteborg</a>
+              <a>Malmö</a>
+              <a>Uppsala</a>
+              <a>Linköpings</a>
+              <a>Örebro</a>
+              <a>Västerås</a>
+              <a>Helsingborgs</a>
+              <a>Norrköpings</a>
+              <a>Jönköpings</a>
+              <a>Umeå</a>
+              <a>Lunds</a>
+              <a>Borås</a>             
+              <a>Huddinge</a>
+              <a>Eskilstuna</a>
+              <a>Gävle</a>
+              <a>Halmstad</a>
             </div>
           </div>
           <div className="col-2 footer-item">
@@ -64,11 +64,6 @@ function Footer() {
               <a>Beredskapslyftet</a>
               <a>Rädda Barnen</a>
               <a>Stadsmissionen</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
             </div>
           </div>
           <div className="col-3 footer-item">
@@ -77,11 +72,6 @@ function Footer() {
               <a>UNICEF Sverige</a>
               <a>UNHCR</a>
               <a>World Childhood Foundation</a>
-              <a>Sitmap link 4</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
             </div>
           </div>
         </div>
