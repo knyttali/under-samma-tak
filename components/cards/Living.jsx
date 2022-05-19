@@ -91,7 +91,7 @@ export class Living extends Component {
               className="w-100"
               maxLength={200}
             />
-            <p>Max 200 tecken</p>
+            <p className="maxChar">Max 200 tecken</p>
             <p className='errorRed'>{values.validLivingAlone}</p>
           
           {/* <div className="col-6 checkBoxarMedText">

@@ -39,7 +39,7 @@ export class LivingAmountOfTime extends Component {
    
     <label htmlFor="howLongStay">T.ex.: Jag är helt flexibel, ca. 1vecka, 2 veckor, en månad, 6 månader, längre än 6 månader etc.</label>
     <textarea required type="text" id="howLongStay" name="howLongStay" defaultValue={values.howLongStay} onChange={handleChange('howLongStay')} maxLength={200}/>
-    <p>max 200 tecken</p>
+    <p className="maxChar">max 200 tecken</p>
   
 {/*
       <div className="space-col">

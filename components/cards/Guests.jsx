@@ -50,7 +50,7 @@ export class Guests extends Component {
               onChange={handleChange("typeOfGuests")}
               maxLength={200}
             />
-            <p>max 200 tecken</p>
+            <p className="maxChar">max 200 tecken</p>
             <p className='errorRed'>{values.validTypeOfGuest}</p>
             <br />
 
