@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import BackBtnArrow from "../../public/Images/Arrow-left.svg";
 import Image from "next/image";
+import InfoCircle from "../../public/Images/Info-circle.svg";
 
 export class Living extends Component {
   continue = (e) => {
@@ -14,8 +15,26 @@ export class Living extends Component {
   render() {
     const { values, handleChange } = this.props;
     return (
+      <div className='main-container row'>
+        <div className='col-2 sidenavPlacement'>
+        <p className='sidenavStep'>Steg 2/5</p>
+        <div className="sidenav">
+        
+        <p id="side-p0">Personlig information</p>
+        <p id="side-p1" style={{fontWeight: "Bold"}}>Boende</p>
+        <p id="side-p2">Gäster</p>
+        <p id="side-p3">Längd</p>
+        <p id="side-p4">Skicka</p>
+      </div>
+      </div>
+        <div className="col-1"></div>
       <form className="guest-where-info form-template col-6" id="guestWhereInfo">
+        <div className="formTitle flex-row d-flex">
         <h4 className="form-header ">Boende</h4>
+        <div className="infoCircle">
+        <Image src={InfoCircle}></Image>
+        </div>
+        </div>
         
         <div className="space-col utrymme">
           <h6 style={{ fontWeight: "Bold" }}>Typ av boende</h6>
@@ -72,7 +91,7 @@ export class Living extends Component {
               className="w-100"
               maxLength={200}
             />
-            <p>Max 200 tecken</p>
+            <p className="maxChar">Max 200 tecken</p>
             <p className='errorRed'>{values.validLivingAlone}</p>
           
           {/* <div className="col-6 checkBoxarMedText">
@@ -103,6 +122,7 @@ export class Living extends Component {
           </button>
         </div>
       </form>
+      </div>
     );
   }
 }
