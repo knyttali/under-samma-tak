@@ -20,11 +20,10 @@ function Footer() {
           <div>
             <h4>Hitta snabbt</h4>
             <div className="footer-links">
-              <a>Sitmap link 1</a>
-              <a>Sitmap link 2</a>
-              <a>Sitmap link 3</a>
-              <a>Sitmap link 4</a>
-              <a>Sitmap link 5</a>
+              <a>Så fungerar det</a>
+              <a>Vårt uppdrag</a>
+              <a>Vanliga frågor</a>
+              <a>Anmäl ditt intresse</a>
             </div>
           </div>
           <div>
@@ -39,23 +38,23 @@ function Footer() {
           <div className="col-2 footer-item">
             <h4>KOMMUNER</h4>
             <div className="footer-links">
-              <a>Sitmap link 1</a>
-              <a>Sitmap link 2</a>
-              <a>Sitmap link 3</a>
-              <a>Sitmap link 4</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>             
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
-              <a>Sitmap link 5</a>
+              <a>Stockholms kommun</a>
+              <a>Göteborgs kommun</a>
+              <a>Malmö kommun</a>
+              <a>Uppsala kommun</a>
+              <a>Linköpings kommun</a>
+              <a>Örebro kommun</a>
+              <a>Västerås kommun</a>
+              <a>Helsingborgs kommun</a>
+              <a>Norrköpings kommun</a>
+              <a>Jönköpings kommun</a>
+              <a>Umeå kommun</a>
+              <a>Lunds kommun</a>
+              <a>Borås kommun</a>             
+              <a>Huddinge kommun</a>
+              <a>Eskilstuna kommun</a>
+              <a>Gävle kommun</a>
+              <a>Halmstads kommun</a>
             </div>
           </div>
           <div className="col-2 footer-item">
