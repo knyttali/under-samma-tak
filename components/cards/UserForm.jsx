@@ -20,11 +20,6 @@ export class UserForm extends Component {
         postNum: "",
         phone: "",
         email: "",
-        /* apartment: "",
-        house: "",
-        secondarySpace: "",
-        selfOwned: "",
-        sharedSpace: "", */
         kindOfHouse:"",
         livingAlone:"",
         typeOfGuests: "",
@@ -52,31 +47,8 @@ export class UserForm extends Component {
                if (this.validationPersonalInfo()) {
                 this.setState({
                     step: step + 1,
-                    // validKindOfHouse: "",
-                    // validLivingAlone: "",
                 })
-               }
-              
-            //    else if (this.validationLiving() && step == 2) {
-            //        this.setState({
-            //            step: step + 1,
-            //            validTypeOfGuest: ""
-
-            //        })
-            //    }
-            //    else if (this.validationGuests() && step == 3) {
-            //        this.setState({
-            //            step: step + 1,
-            //            validHowLongStay: ""
-                    
-            //        })
-            //    }
-            //    else if (this.validationLivingAmount() && step == 4) {
-            //        this.setState({
-            //            step: step + 1
-            //        })
-            //    }
-  
+               }  
     }
 
     validationPersonalInfo(){
@@ -178,79 +150,7 @@ export class UserForm extends Component {
             else return false
     }
 
-    // validationLiving(){
-    //     const { kindOfHouse, livingAlone } = this.state
-    //     var validation = "good"
-    //     //Typ av boende
-    //     if(kindOfHouse == ""){
-    //         this.setState({validKindOfHouse: "Fyll i här!"})
-    //         validation = "bad"
-    //     }
-    //     else if (this.isNum(kindOfHouse)) {
-    //         this.setState({validKindOfHouse: "skriv en valid hus sort!"})
-    //         validation = "bad"
-    //     }
-    //     else{
-    //         this.setState({validKindOfHouse: ""})
-    //     }
-    //     //bor du ensam
-    //     if (livingAlone == "") {
-    //         this.setState({validLivingAlone: "Fyll i här!"})
-    //         validation = "bad"
-    //     }
-    //     else if (livingAlone.toLowerCase() == "ja" || livingAlone.toLowerCase() == "nej") {
-    //         this.setState({validLivingAlone: ""})
-    //     }
-    //     else{
-    //         this.setState({validLivingAlone: 'Svara "ja" eller "nej"'})
-    //         validation = "bad"
-    //     }
 
-    //     if (validation === "good") {
-    //         return true
-    //     }
-    //     else return false
-
-    // }
-
-    // validationGuests(){
-    //     const { typeOfGuests } = this.state
-    //     var validation = "good"
-    //     if (typeOfGuests == "") {
-    //         this.setState({validTypeOfGuest: "Fyll i här!"})
-    //         validation = "bad"
-    //     }
-    //     else if (this.isNum(typeOfGuests)) {
-    //         this.setState({validTypeOfGuest: "skriv inte med siffror!"})
-    //         validation = "bad"
-    //     }
-    //     else{
-    //         this.setState({validTypeOfGuest: ""})
-    //     }
-
-    //     if (validation === "good") {
-    //         return true
-    //     }
-    //     else return false
-    // }
-    // validationLivingAmount(){
-    //     const{howLongStay} = this.state
-    //     var validation = "good"
-    //     if (howLongStay == "") {
-    //         this.setState({validHowLongStay: "Fyll i här!"})
-    //         validation = "bad"
-    //     }
-    //     else{
-    //         this.setState({validHowLongStay: ""})
-    //     }
-
-    //     if (validation === "good") {
-    //         return true
-    //     }
-    //     else return false
-
-
-    // }
     //go back one step
     prevStep = () => {
         const {step} = this.state;
@@ -276,7 +176,6 @@ export class UserForm extends Component {
         }
         else{
             this.setState({[input]: e.target.value});
-                            // firstname: 'andreas'
         }
     }
 
