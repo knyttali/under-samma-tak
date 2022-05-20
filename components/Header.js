@@ -24,7 +24,7 @@ const Header = () => {
             <p className="how-it-works">Så fungerar det</p>
           </a>
         </Link>
-        <Link href="/">
+        <Link href="/OurMission">
           <a>
             <p id="our-mission">Vårt uppdrag</p>
           </a>
