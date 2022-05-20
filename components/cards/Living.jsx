@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import BackBtnArrow from "../../public/Images/Arrow-left.svg";
 import Image from "next/image";
-import InfoCircle from "../../public/Images/Info-circle.svg";
+import InfoCircle from "../../public/Images/info-circle.svg";
 
 export class Living extends Component {
   continue = (e) => {
