@@ -3,8 +3,18 @@ import Header from "../components/Header";
 import Footer from "../components/homepage/Footer"
 import Image from "next/image";
 import Kommunloggor from "../public/Images/Kommunloggor.svg";
+import { useEffect } from "react";
 
 export default function OurMission () {
+
+    useEffect(()=>{
+        var test = document.getElementById("our-mission")
+        test.style.textDecorationThickness="3px"
+        test.style.textDecorationColor="#489CB7"
+        test.style.textUnderlineOffset="10px"
+        test.style.textDecorationLine="underline"
+      });
+
   return (
     <div className="our-mission">
       <Header />
