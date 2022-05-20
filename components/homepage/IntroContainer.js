@@ -28,7 +28,7 @@ const IntroContainer = () => {
               parter.{" "}
             </p>
           </div>
-
+      
           <IntroButton />
         </div>
       </div>

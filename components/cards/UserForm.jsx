@@ -31,11 +31,7 @@ export class UserForm extends Component {
         validKommun:"",
         validPostNum: "",
         validPhone: "",
-        validEmail:"",
-        validKindOfHouse:"",
-        validLivingAlone:"",
-        validTypeOfGuest:"",
-        validHowLongStay:"",
+        validEmail:""    
     }
     //next step
     nextStep = () => {
@@ -247,13 +243,11 @@ export class UserForm extends Component {
       const {fname, lname, adress, ort, kommun, postNum, phone, email, apartment,
         house, secondarySpace, selfOwned, sharedSpace, howLongStay, kindOfHouse,
         livingAlone, typeOfGuests, howManyGuests, validFname, validLname, validAdress, validKommun,
-        validOrt, validPostNum, validPhone, validEmail, validKindOfHouse,
-        validTypeOfGuest, validLivingAlone, validHowLongStay } = this.state;
+        validOrt, validPostNum, validPhone, validEmail } = this.state;
       const values = {fname, lname, adress, ort, kommun, postNum, phone, email,
         apartment, house, secondarySpace, selfOwned, sharedSpace, howLongStay,
         kindOfHouse, livingAlone, typeOfGuests, howManyGuests, validFname, validLname, validAdress,
-        validKommun, validOrt, validPostNum, validPhone, validEmail, validKindOfHouse,
-        validTypeOfGuest, validLivingAlone, validHowLongStay }
+        validKommun, validOrt, validPostNum, validPhone, validEmail }
     switch(step){
         case 1:
             return(

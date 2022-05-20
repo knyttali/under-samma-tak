@@ -1,6 +1,11 @@
+import Link from "next/dist/client/link";
+
 const IntroButton = () => {
     return (
-      <button className="introBtn">Anmäl ditt intresse</button>
+      <Link href={"/FormPage"}>
+        <button className="introBtn" >Anmäl ditt intresse</button>
+      </Link>
+      
     )
   }
   
