@@ -6,7 +6,6 @@ import Guests from './Guests'
 import LivingAmountOfTime from './LivingAmountOfTime'
 import CollectedInfo from './CollectedInfo'
 import SentIntrest from './SentIntrest'
-import SideNav from '../SideNav'
 
 
 export class UserForm extends Component {

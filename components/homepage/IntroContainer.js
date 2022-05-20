@@ -1,6 +1,4 @@
-import Link from "next/link";
 import IntroButton from "../IntroButton";
-import family from "../../public/Images/family.png";
 
 const IntroContainer = () => {
   return (
