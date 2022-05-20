@@ -251,8 +251,8 @@ p {
 .introContainer {
   /* background-repeat: no-repeat;
   background-size: cover;  */
-  min-height: 50vh;
-  padding-bottom: 6%;
+  min-height: 55vh;
+  /* padding-bottom: 6%; */
   padding-top: -1%;
 }
 
@@ -791,6 +791,32 @@ textarea{
   padding: 1rem 0 1rem 0;
 }
 
+/********** OUR MISSION PAGE *****************/
+.our-mission-title{
+  margin-left: 10%;
+  color: white;
+}
+.our-mission-title h1{
+  font-weight: bold;
+}
+.our-mission-content{
+  color:#004664;
+  margin-top: 5%;
+}
+.our-mission-content p {
+  font-size: medium;
+  margin-bottom: 2.5%;
+}
+.our-mission-content h5{
+
+}
+.our-mission-h2{
+  font-weight: bold;
+  font-size: 40px;
+}
+.kommunlogga{
+  margin-left: -2%;
+}
 
 /**********MEDIA ************************/
 @media screen and (max-width: 800px) {
