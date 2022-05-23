@@ -35,7 +35,7 @@ export class Guests extends Component {
         >
           <div className="formTitle flex-row d-flex">
             <h4 className="form-header ">Gäster</h4>
-            <div className="infoCircle">
+            <div className="infoCircle"><p className ="MoreInfo"> Mer information</p>
               <Image src={InfoCircle}></Image>
             </div>
           </div>

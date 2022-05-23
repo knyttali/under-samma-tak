@@ -720,6 +720,9 @@ p {
   float: right;
   margin-top: 3%;
   min-width: 25px;
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .form-template {
