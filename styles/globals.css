@@ -714,16 +714,24 @@ p {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .infoCircle {
-  float: right;
-  margin-top: 3%;
+  margin-top: 4%;
   min-width: 25px;
   width: 160px;
   display: flex;
-  justify-content: space-between;
+  float: right;
+  color: #003850;
+  text-decoration: underline;
+
 }
+
+.MoreInfo {
+margin-left: 5px;
+}
+
 
 .form-template {
   box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
