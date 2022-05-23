@@ -15,7 +15,7 @@ export class PersonalInfo extends Component {
       <div id='intresseAnmalan'>
       
       <h1 className='form-header'>Intresseanmälan</h1>
-        <p>Via Under Samma Tak kan du skicka din intresseanmälan till din kommun om att du vill erbjuda boende till människor i nödsituationer, som t.ex. den nu rådande flyktingkris på grund av kriget i Ukraina. Intresseanmälan hittar du nedan och den har 5 enkla steg. 
+        <p>IntresseAnmälan hittar du nedan och den har 5 enkla steg. 
         <br /> <br />Fält markerade med en asterisk (*) är obligatoriska.
         </p>
       </div>
