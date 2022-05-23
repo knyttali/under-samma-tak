@@ -22,7 +22,7 @@ export default function OurMission() {
       <Header />
       <div
         style={{
-          backgroundImage: 'url("https://i.imgur.com/tTpxOdk.png")',
+          backgroundImage: 'url("https://i.imgur.com/ZqJ3pYj.png")',
           backgroundRepeat: "none",
           backgroundSize: "cover",
         }}
