@@ -745,10 +745,12 @@ form input {
 }
 
 .form-header {
-  margin-top: 15%;
   font-weight: bold;
   padding: 4% 0 0 0;
   color: #004664
+}
+.form-header-main{
+  margin-top: 15%;
 }
 .form-header-landing{
   font-weight: bold;
