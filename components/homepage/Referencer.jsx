@@ -2,7 +2,7 @@ import Image from "next/image";
 import family1 from "../../public/Images/FamilyOnStair.png";
 import family2 from "../../public/Images/GirlByHouse.png";
 import family3 from "../../public/Images/Girls4.png";
-import family4 from "../../public/Images/ByWater.png";
+import family4 from "../../public/Images/LenaVera.png";
 
 function Referencer() {
   return (
