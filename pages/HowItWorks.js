@@ -10,7 +10,7 @@ import IntroButton from "../components/IntroButton";
 
 export default function OurMission() {
   useEffect(() => {
-    var test = document.getElementById("our-mission");
+    var test = document.getElementById("how-it-works");
     test.style.textDecorationThickness = "3px";
     test.style.textDecorationColor = "#489CB7";
     test.style.textUnderlineOffset = "10px";
