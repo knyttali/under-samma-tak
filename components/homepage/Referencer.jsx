@@ -1,8 +1,8 @@
 import Image from "next/image";
-import family1 from "../../public/Images/family (1).svg";
-import family2 from "../../public/Images/family (2).svg";
-import family3 from "../../public/Images/family (3).svg";
-import family4 from "../../public/Images/family (4).svg";
+import family1 from "../../public/Images/FamilyOnStair.png";
+import family2 from "../../public/Images/GirlByHouse.png";
+import family3 from "../../public/Images/Girls4.png";
+import family4 from "../../public/Images/ByWater.png";
 
 function Referencer() {
   return (
@@ -29,7 +29,7 @@ function Referencer() {
             <div className="referencer-family">
               <Image src={family2} style={{ width: "100%" }}></Image>
               <div className="familyInfo">
-                <p className="familyNames">Familjen Hansson</p>
+                <p className="familyNames">Emma Hansson</p>
                 <p className="familyKommun">Nacka kommun</p>
               </div>
             </div>
@@ -43,14 +43,14 @@ function Referencer() {
             <div className="referencer-family">
               <Image src={family4}></Image>
               <div className="familyInfo">
-                <p className="familyNames">Lena och Per</p>
+                <p className="familyNames">Lena och Vera</p>
                 <p className="familyKommun">Ludvika kommun</p>
               </div>
             </div>
             <div className="referencer-family">
               <Image src={family1}></Image>
               <div className="familyInfo">
-                <p className="familyNames">Omar Yasofi</p>
+                <p className="familyNames">Irina, Svetlana och Sasha</p>
                 <p className="familyKommun">Kristinehamns kommun</p>
               </div>
             </div>
