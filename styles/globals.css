@@ -472,6 +472,31 @@ p {
   border-color: #FFF9F4;
 }
 
+/***********CommonQuestions**************/
+
+.faq-div .row{
+  margin-top: 5%;
+
+}
+
+.faq-row-header{
+  font-weight: bold;
+  color: #004664;
+  font-size: 24px;
+  text-decoration: underline;
+  margin-bottom: 3%;
+
+}
+.faq-p{
+  color: #004664;
+}
+
+.ReadMore {
+  font-weight: bold;
+  text-decoration: underline solid 1px blue;
+  display: inline-block;
+}
+
 /************NewsLetter********************/
 .newsLetter {
   background-color: #004664;

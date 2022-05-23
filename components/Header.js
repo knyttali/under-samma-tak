@@ -29,7 +29,7 @@ const Header = () => {
             <p id="our-mission">Vårt uppdrag</p>
           </a>
         </Link>
-        <Link href="/">
+        <Link href="/CommonQuestions">
           <a>
             <p id="usual-questions">Vanliga frågor</p>
           </a>
@@ -177,7 +177,7 @@ const Header = () => {
               <p id="our-mission">Vårt uppdrag</p>
             </a>
           </Link>
-          <Link href="/">
+          <Link href="/CommonQuestions">
             <a>
               <p id="usual-questions">Vanliga frågor</p>
             </a>
