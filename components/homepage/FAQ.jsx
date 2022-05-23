@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 function FAQ() {
   return (
     <div className="sameSides">
@@ -56,10 +58,11 @@ function FAQ() {
             </div>
           </div>
         </div>
-        
+        <Link href={"/CommonQuestions"}>
         <button type="button" className="seAllaBtnActualBtn FAQBtn">
           Läs alla vanliga frågor
         </button>
+        </Link>
       </div>
       <div className="sida">sida</div>
     </div>
