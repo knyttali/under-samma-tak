@@ -43,7 +43,7 @@ const CommonQuestions = () => {
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Asperiores, reprehenderit? Hic optio voluptatem odit? Quia velit
               voluptatem amet commodi optio officia deleniti, culpa provident,
-              accusamus voluptatum pariatur asperiores facilis perferendis?<p className="ReadMore" onClick={readMoreQ1}>Läs mer</p>
+              accusamus voluptatum pariatur asperiores facilis perferendis?<p className="ReadMore" onClick={readMoreQ1}> Läs mer</p>
             </p>
           </div>
           <div className="col-1" />
@@ -55,7 +55,7 @@ const CommonQuestions = () => {
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Asperiores, reprehenderit? Hic optio voluptatem odit? Quia velit
               voluptatem amet commodi optio officia deleniti, culpa provident,
-              accusamus voluptatum pariatur asperiores facilis perferendis?
+              accusamus voluptatum pariatur asperiores facilis perferendis?<p className="ReadMore" onClick={readMoreQ1}> Läs mer</p>
             </p>
           </div>
           <div className="col-2" />
@@ -70,9 +70,9 @@ const CommonQuestions = () => {
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Asperiores, reprehenderit? Hic optio voluptatem odit? Quia velit
               voluptatem amet commodi optio officia deleniti, culpa provident,
-              accusamus voluptatum pariatur asperiores facilis perferendis?
+              accusamus voluptatum pariatur asperiores facilis perferendis?<p className="ReadMore" onClick={readMoreQ1}> Läs mer</p>
             </p>
-            <button onClick={readMoreQ1}>ReadMore</button>
+            
           </div>
           <div className="col-1" />
           <div className="col-4">
@@ -83,7 +83,7 @@ const CommonQuestions = () => {
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Asperiores, reprehenderit? Hic optio voluptatem odit? Quia velit
               voluptatem amet commodi optio officia deleniti, culpa provident,
-              accusamus voluptatum pariatur asperiores facilis perferendis?
+              accusamus voluptatum pariatur asperiores facilis perferendis?<p className="ReadMore" onClick={readMoreQ1}> Läs mer</p>
             </p>
           </div>
           <div className="col-2" />
@@ -97,9 +97,9 @@ const CommonQuestions = () => {
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Asperiores, reprehenderit? Hic optio voluptatem odit? Quia velit
               voluptatem amet commodi optio officia deleniti, culpa provident,
-              accusamus voluptatum pariatur asperiores facilis perferendis?
+              accusamus voluptatum pariatur asperiores facilis perferendis?<p className="ReadMore" onClick={readMoreQ1}> Läs mer</p>
             </p>
-            <button onClick={readMoreQ1}>ReadMore</button>
+           
           </div>
           <div className="col-1" />
           <div className="col-4">
@@ -110,7 +110,7 @@ const CommonQuestions = () => {
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Asperiores, reprehenderit? Hic optio voluptatem odit? Quia velit
               voluptatem amet commodi optio officia deleniti, culpa provident,
-              accusamus voluptatum pariatur asperiores facilis perferendis?
+              accusamus voluptatum pariatur asperiores facilis perferendis?<p className="ReadMore" onClick={readMoreQ1}> Läs mer</p>
             </p>
           </div>
           <div className="col-2" />
@@ -124,9 +124,9 @@ const CommonQuestions = () => {
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Asperiores, reprehenderit? Hic optio voluptatem odit? Quia velit
               voluptatem amet commodi optio officia deleniti, culpa provident,
-              accusamus voluptatum pariatur asperiores facilis perferendis?
+              accusamus voluptatum pariatur asperiores facilis perferendis?<p className="ReadMore" onClick={readMoreQ1}> Läs mer</p>
             </p>
-            <button onClick={readMoreQ1}>ReadMore</button>
+            
           </div>
           <div className="col-1" />
           <div className="col-4">
@@ -137,7 +137,7 @@ const CommonQuestions = () => {
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Asperiores, reprehenderit? Hic optio voluptatem odit? Quia velit
               voluptatem amet commodi optio officia deleniti, culpa provident,
-              accusamus voluptatum pariatur asperiores facilis perferendis?
+              accusamus voluptatum pariatur asperiores facilis perferendis?<p className="ReadMore" onClick={readMoreQ1}> Läs mer</p>
             </p>
           </div>
           <div className="col-2" />
@@ -151,9 +151,8 @@ const CommonQuestions = () => {
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Asperiores, reprehenderit? Hic optio voluptatem odit? Quia velit
               voluptatem amet commodi optio officia deleniti, culpa provident,
-              accusamus voluptatum pariatur asperiores facilis perferendis?
+              accusamus voluptatum pariatur asperiores facilis perferendis?<p className="ReadMore" onClick={readMoreQ1}> Läs mer</p>
             </p>
-            <button onClick={readMoreQ1}>ReadMore</button>
           </div>
           <div className="col-1" />
           <div className="col-4">
@@ -164,7 +163,7 @@ const CommonQuestions = () => {
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Asperiores, reprehenderit? Hic optio voluptatem odit? Quia velit
               voluptatem amet commodi optio officia deleniti, culpa provident,
-              accusamus voluptatum pariatur asperiores facilis perferendis?
+              accusamus voluptatum pariatur asperiores facilis perferendis?<p className="ReadMore" onClick={readMoreQ1}> Läs mer</p>
             </p>
           </div>
           <div className="col-2" />

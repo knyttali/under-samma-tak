@@ -487,9 +487,9 @@ p {
 /***********CommonQuestions**************/
 
 .faq-div .row {
-  margin-top: 5%;
-
+  margin: 100px 60px;
 }
+
 
 .faq-row-header {
   font-weight: bold;
@@ -508,6 +508,7 @@ p {
   font-weight: bold;
   text-decoration: underline solid 1px blue;
   display: inline-block;
+  margin-left: 7px;
 }
 
 /************NewsLetter********************/
