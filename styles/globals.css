@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chivo&family=Fredoka&family=Karla:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chivo&family=Fredoka&family=Karla:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chivo:wght@300;400;700&family=Fredoka&family=Karla:wght@500&display=swap');
 
 * {
   font-family: 'Chivo';
@@ -53,8 +54,11 @@ p {
 #header {
   background-color: white;
   height: 90px;
-  position: relative;
+  position: fixed;
+  width: 100%;
   align-items: center;
+  z-index: 1000;
+  top: 0;
 }
 
 .menuItems {
@@ -253,9 +257,10 @@ p {
 .introContainer {
   /* background-repeat: no-repeat;
   background-size: cover;  */
-  min-height: 55vh;
+  min-height: 50vh;
   /* padding-bottom: 6%; */
   padding-top: -1%;
+  margin-top: 90px;
 }
 
 .introTextContent {
@@ -474,12 +479,12 @@ p {
 
 /***********CommonQuestions**************/
 
-.faq-div .row{
+.faq-div .row {
   margin-top: 5%;
 
 }
 
-.faq-row-header{
+.faq-row-header {
   font-weight: bold;
   color: #004664;
   font-size: 24px;
@@ -487,7 +492,8 @@ p {
   margin-bottom: 3%;
 
 }
-.faq-p{
+
+.faq-p {
   color: #004664;
 }
 
@@ -855,7 +861,12 @@ textarea {
   margin-bottom: 2.5%;
 }
 
-.our-mission-content h5 {}
+.ingressen {}
+
+.our-mission-content h5 {
+  line-height: 1.5;
+  font-weight: lighter;
+}
 
 .our-mission-h2 {
   font-weight: bold;
@@ -871,6 +882,7 @@ textarea {
   color: #004664;
   margin-top: 100px;
 }
+
 .how-it-works h2 {
   font-size: 40px;
   line-height: 48px;
@@ -897,6 +909,7 @@ textarea {
   font-weight: 700;
 
 }
+
 .how-it-works-text {
   grid-column: 2;
 }
@@ -904,15 +917,18 @@ textarea {
 .steg {
   grid-column: 2;
 }
+
 .how-it-works-btn {
   grid-column: 2;
   width: 390px;
   height: 61px;
   margin-bottom: 100px;
 }
+
 .how-it-works-text {
   margin-bottom: 50px;
 }
+
 .how-it-works-img {
   display: flex;
   justify-content: right;

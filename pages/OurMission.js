@@ -40,7 +40,7 @@ export default function OurMission () {
     <div className="row our-mission-content" >
     <div className="col-1"/>
 
-    <div className="col-8">
+    <div className="col-8 ingressen">
         <h5>Under Samma Tak har som uppdrag att hjälpa privatpersoner att kunna erbjuda sitt boende till inkommande flyktingar.
              Vi samlar tydlig och uppdaterad information och  samarbetar med kommuner och andra aktörer för att säkerställa en trygg upplevelse för båda parter.
                har som uppdrag att hjälpa privatpersoner att kunna erbjuda sitt boende till inkommande flyktingar. Vi samlar </h5> <br/>
