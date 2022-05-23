@@ -21,7 +21,7 @@ const CommonQuestions = () => {
   
         <div
           style={{
-            backgroundImage: 'url("https://i.imgur.com/jWMxJdK_d.webp?maxwidth=760&fidelity=grand")',
+            backgroundImage: 'url("https://i.imgur.com/ZqJ3pYj.png")',
             backgroundRepeat: "none",
             backgroundSize: "cover",
           }}
