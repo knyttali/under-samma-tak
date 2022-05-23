@@ -506,9 +506,13 @@ p {
 
 .ReadMore {
   font-weight: bold;
-  text-decoration: underline solid 1px blue;
+  text-decoration: underline solid 1px #004664;
   display: inline-block;
   margin-left: 7px;
+}
+
+.ReadMore:hover {
+  cursor: pointer;
 }
 
 /************NewsLetter********************/
