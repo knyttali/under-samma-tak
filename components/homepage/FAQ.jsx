@@ -3,7 +3,7 @@ function FAQ() {
     <div className="sameSides">
       <div className="sida">sida</div>
       <div className="FAQ-content">
-        <div className="FAQToTheSide">
+        <div className="FAQToTheSide homepageH6">
           <h6>VANLIGA FRÅGOR</h6>
           <h2 className="smaller-headline">Alla undrar, vad undrar du?</h2>
         </div>

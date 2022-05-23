@@ -310,9 +310,13 @@ p {
 .homepageH6 {
   color: #004664;
   text-align: center;
-  padding-bottom: 1%;
   font-weight: 400;
-  font-size: smaller;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+.homepageH6 {
+  text-align: left;
 }
 
 .toBeHoast-container h2 {
@@ -444,6 +448,8 @@ p {
 
 .FAQToTheSide {
   padding-bottom: 10px;
+  font-weight: 400;
+  font-size: smaller;
 }
 
 .FAQ-content {
