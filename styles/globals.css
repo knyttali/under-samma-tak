@@ -82,6 +82,7 @@ p {
 
 #logoimg :hover {
   background-image: linear-gradient(to bottom right, #489CB7, #004664);
+  cursor: pointer;
 }
 
 #logoimg {
