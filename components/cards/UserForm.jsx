@@ -6,7 +6,7 @@ import Guests from './Guests'
 import LivingAmountOfTime from './LivingAmountOfTime'
 import CollectedInfo from './CollectedInfo'
 import SentIntrest from './SentIntrest'
-
+import LandingPage from './LandingPage';
 
 export class UserForm extends Component {
     state = {
@@ -44,6 +44,12 @@ export class UserForm extends Component {
                     step: step + 1,
                 })
                }  
+    }
+    firstStep = () =>{
+        const {step} = this.state;
+        this.setState({
+            step: step + 1,
+        })
     }
 
     validationPersonalInfo(){
@@ -250,42 +256,50 @@ export class UserForm extends Component {
         validKommun, validOrt, validPostNum, validPhone, validEmail }
     switch(step){
         case 1:
-            return(
-                <PersonalInfo 
-                nextStep={this.nextStep}
-                handleChange= {this.handleChange}
-                values = {values}
-                />
-            )
+            return <LandingPage 
+                    firstStep={this.firstStep}
+                    />
+                    
         case 2:
+            return <PersonalInfo 
+                    nextStep={this.nextStep}
+                    handleChange= {this.handleChange}
+                    values = {values}
+                    prevStep={this.prevStep}
+                    />
+               
+            
+        case 3:
             return <Living 
                     nextStep={this.nextStep}
                     handleChange= {this.handleChange}
                     values = {values}
                     prevStep={this.prevStep}
                     />
-        case 3: 
+        case 4: 
             return <Guests
                     nextStep={this.nextStep}
                     handleChange= {this.handleChange}
                     values = {values}
                     prevStep={this.prevStep}
                     />
-        case 4: 
+        case 5: 
             return <LivingAmountOfTime
                     nextStep={this.nextStep}
                     handleChange= {this.handleChange}
                     values = {values}
                     prevStep={this.prevStep}
                     />
-        case 5: 
+        case 6: 
             return <CollectedInfo 
                     prevStep={this.prevStep}
                     values = {values}
                     nextStep={this.nextStep}
                     />
-        case 6:
+        case 7:
             return <SentIntrest />
+
+        
     }
   }
 }
