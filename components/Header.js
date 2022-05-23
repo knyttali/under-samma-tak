@@ -19,7 +19,7 @@ const Header = () => {
       </div>
 
       <div className="menuItems justify-content-between d-flex">
-        <Link href="/">
+        <Link href="/HowItWorks">
           <a>
             <p className="how-it-works">Så fungerar det</p>
           </a>
