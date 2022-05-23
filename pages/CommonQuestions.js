@@ -4,6 +4,7 @@ import Footer from "../components/homepage/Footer"
 const CommonQuestions = () => {
     var counter = 0
     const[qna, setQna] = useState(
+      //HOMEPAGE
         <div className="faq-div">
         <Header />
   
@@ -58,6 +59,7 @@ const CommonQuestions = () => {
       </div>
     )
     function readMoreQ1(){
+      //DETAIL PAGE
         setQna(
             <div className="faq-div">
         <Header />
@@ -97,6 +99,7 @@ const CommonQuestions = () => {
     }
 
     function homePage(){
+      //HOME PAGE
         setQna(
             <div className="faq-div">
         <Header />
