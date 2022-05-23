@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import Footer from '../homepage/Footer';
 
 export class LandingPage extends Component {
   continue = e => {
@@ -9,10 +9,11 @@ export class LandingPage extends Component {
   render() {
     const { values, handleChange } = this.props;
     return (
+        <>
         <div className='main-container row'>
         <div className="col-3"></div>
       <form className="length-info form-template col-6" id="landingPage" >
-      <h1 className="form-header">
+      <h1 className="form-header-landing">
         IntresseAnmälan
       </h1>
       <h4 style={{fontWeight: "lighter"}}>Här gör du en intresseanmälan för att erbjuda boende till
@@ -30,12 +31,14 @@ export class LandingPage extends Component {
       </p>
       <br />
       <br />
-      <p style={{fontWeight: "Bold"}}>Så här går det till</p>
+      <p style={{fontWeight: "Bold"}}>OBS! Anmälan är ej bindande.</p><br /><br />
       
-      <button onClick={this.continue}>Gör en intresseanmälan</button>
+      <button className='IntressAnmalan' onClick={this.continue}>Gör en intresseanmälan</button>
      
     </form>
     </div>
+    <Footer></Footer>
+    </>
     )
   }
 }
