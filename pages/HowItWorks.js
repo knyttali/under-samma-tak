@@ -28,6 +28,7 @@ export default function OurMission() {
         }}
       >
         <div className="introContainer d-flex align-items-center">
+          <div className="col-1"></div>
           <div className="our-mission-title">
             <h1>Så fungerar det</h1>
           </div>
@@ -38,9 +39,6 @@ export default function OurMission() {
         <div className="col-1" />
 
         <div className="col-8 how-it-works-content">
-          <h2 className="how-it-works-h2">
-            Så här fungerar det att erbjuda sitt boende till en människa i nöd
-          </h2>
           <h4 className="how-it-works-h4">
             Under Samma Tak har som uppdrag att hjälpa privatpersoner att kunna
             erbjuda sitt boende till inkommande flyktingar. Vi samlar tydlig och

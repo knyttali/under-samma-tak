@@ -897,12 +897,14 @@ textarea {
 
 /********** OUR MISSION PAGE *****************/
 .our-mission-title {
-  margin-left: 10%;
   color: white;
 }
 
 .our-mission-title h1 {
   font-weight: bold;
+}
+.our-mission-title-faq {
+  padding-left: 40px;
 }
 
 .our-mission-content {
@@ -913,13 +915,6 @@ textarea {
 .our-mission-content p {
   font-size: medium;
   margin-bottom: 2.5%;
-}
-
-.ingressen {}
-
-.our-mission-content h5 {
-  line-height: 1.5;
-  font-weight: lighter;
 }
 
 .our-mission-h2 {
@@ -934,7 +929,7 @@ textarea {
 /********** OUR MISSION PAGE *****************/
 .how-it-works-content {
   color: #004664;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .how-it-works h2 {
