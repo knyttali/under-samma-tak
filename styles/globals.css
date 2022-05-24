@@ -269,6 +269,12 @@ p {
   padding-top: -1%;
   margin-top: 90px;
 }
+#introtext{
+  font-weight: 700;
+}
+.youHelp{
+  font-weight: 700;
+}
 
 .introTextContent {
   max-width: 420px;

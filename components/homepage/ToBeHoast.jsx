@@ -6,7 +6,7 @@ function ToBeHoast() {
         <div className="sida">sida</div>
         <div className="toBeHoastContent">
           <h6 className="homepageH6">ATT VARA VÄRDFAMILJ</h6>
-        <h2 className="">Du hjälper utifrån dina villkor</h2>
+        <h2 className="youHelp">Du hjälper utifrån dina villkor</h2>
         <div className="listan">
             <p>1. Anmäl ditt intresse genom att fylla i dina villkor</p>
             <p>2. Få en bekräftelse på att dina uppgifter är sparade</p>
