@@ -36,7 +36,7 @@ const CommonQuestions = () => {
         <div className="faq-row1 row">
           <div className="col-1" />
           <div className="col-4">
-            <p className="faq-row-header">
+            <p className="faq-row-header" onClick={readMoreQ1}>
               Kan jag välja att avsluta när jag vill?
             </p>
             <p className="faq-p">
@@ -48,7 +48,7 @@ const CommonQuestions = () => {
           </div>
           <div className="col-1" />
           <div className="col-4">
-            <p className="faq-row-header">
+            <p className="faq-row-header" onClick={readMoreQ1}>
             Är de som kommer försäkrade?
             </p>
             <p className="faq-p">
@@ -63,7 +63,7 @@ const CommonQuestions = () => {
   
         <div className="faq-row2 row"> <div className="col-1" />
           <div className="col-4">
-            <p className="faq-row-header">
+            <p className="faq-row-header" onClick={readMoreQ1}>
             Vad händer med flyktingarna sen?
             </p>
             <p className="faq-p">
@@ -76,7 +76,7 @@ const CommonQuestions = () => {
           </div>
           <div className="col-1" />
           <div className="col-4">
-            <p className="faq-row-header">
+            <p className="faq-row-header" onClick={readMoreQ1}>
             Gäller min hemförsäkring?
             </p>
             <p className="faq-p">
@@ -90,7 +90,7 @@ const CommonQuestions = () => {
         </div>
         <div className="faq-row3 row"> <div className="col-1" />
           <div className="col-4">
-            <p className="faq-row-header">
+            <p className="faq-row-header" onClick={readMoreQ1}>
             Får man ersättning?
             </p>
             <p className="faq-p">
@@ -103,7 +103,7 @@ const CommonQuestions = () => {
           </div>
           <div className="col-1" />
           <div className="col-4">
-            <p className="faq-row-header">
+            <p className="faq-row-header" onClick={readMoreQ1}>
             Kan man välja vilka som kommer?
             </p>
             <p className="faq-p">
@@ -117,7 +117,7 @@ const CommonQuestions = () => {
         </div>
         <div className="faq-row4 row"> <div className="col-1" />
           <div className="col-4">
-            <p className="faq-row-header">
+            <p className="faq-row-header" onClick={readMoreQ1}>
             Vem betalar för vad?
             </p>
             <p className="faq-p">
@@ -130,7 +130,7 @@ const CommonQuestions = () => {
           </div>
           <div className="col-1" />
           <div className="col-4">
-            <p className="faq-row-header">
+            <p className="faq-row-header" onClick={readMoreQ1}>
             Vilka kontroller görs?
             </p>
             <p className="faq-p">
@@ -144,7 +144,7 @@ const CommonQuestions = () => {
         </div>
         <div className="faq-row5 row"> <div className="col-1" />
           <div className="col-4">
-            <p className="faq-row-header">
+            <p className="faq-row-header" onClick={readMoreQ1}>
             Får de som kommer annat stöd?
             </p>
             <p className="faq-p">
@@ -156,7 +156,7 @@ const CommonQuestions = () => {
           </div>
           <div className="col-1" />
           <div className="col-4">
-            <p className="faq-row-header">
+            <p className="faq-row-header" onClick={readMoreQ1}>
             När kommer de?
             </p>
             <p className="faq-p">
@@ -219,7 +219,7 @@ const CommonQuestions = () => {
     
           <div
             style={{
-              backgroundImage: 'url("https://i.imgur.com/ZqJ3pYj.png")',
+              backgroundImage: 'url("https://i.imgur.com/jWMxJdK_d.webp?maxwidth=760&fidelity=grand")',
               backgroundRepeat: "none",
               backgroundSize: "cover",
             }}
@@ -234,7 +234,7 @@ const CommonQuestions = () => {
           <div className="faq-row1 row">
             <div className="col-1" />
             <div className="col-4">
-              <p className="faq-row-header">
+              <p className="faq-row-header" onClick={readMoreQ1}>
                 Kan jag välja att avsluta när jag vill?
               </p>
               <p className="faq-p">
@@ -246,7 +246,7 @@ const CommonQuestions = () => {
             </div>
             <div className="col-1" />
             <div className="col-4">
-              <p className="faq-row-header">
+              <p className="faq-row-header" onClick={readMoreQ1}>
               Är de som kommer försäkrade?
               </p>
               <p className="faq-p">
@@ -261,7 +261,7 @@ const CommonQuestions = () => {
     
           <div className="faq-row2 row"> <div className="col-1" />
             <div className="col-4">
-              <p className="faq-row-header">
+              <p className="faq-row-header" onClick={readMoreQ1}>
               Vad händer med flyktingarna sen?
               </p>
               <p className="faq-p">
@@ -274,7 +274,7 @@ const CommonQuestions = () => {
             </div>
             <div className="col-1" />
             <div className="col-4">
-              <p className="faq-row-header">
+              <p className="faq-row-header" onClick={readMoreQ1}>
               Gäller min hemförsäkring?
               </p>
               <p className="faq-p">
@@ -288,7 +288,7 @@ const CommonQuestions = () => {
           </div>
           <div className="faq-row3 row"> <div className="col-1" />
             <div className="col-4">
-              <p className="faq-row-header">
+              <p className="faq-row-header" onClick={readMoreQ1}>
               Får man ersättning?
               </p>
               <p className="faq-p">
@@ -301,7 +301,7 @@ const CommonQuestions = () => {
             </div>
             <div className="col-1" />
             <div className="col-4">
-              <p className="faq-row-header">
+              <p className="faq-row-header" onClick={readMoreQ1}>
               Kan man välja vilka som kommer?
               </p>
               <p className="faq-p">
@@ -315,7 +315,7 @@ const CommonQuestions = () => {
           </div>
           <div className="faq-row4 row"> <div className="col-1" />
             <div className="col-4">
-              <p className="faq-row-header">
+              <p className="faq-row-header" onClick={readMoreQ1}>
               Vem betalar för vad?
               </p>
               <p className="faq-p">
@@ -328,7 +328,7 @@ const CommonQuestions = () => {
             </div>
             <div className="col-1" />
             <div className="col-4">
-              <p className="faq-row-header">
+              <p className="faq-row-header" onClick={readMoreQ1}>
               Vilka kontroller görs?
               </p>
               <p className="faq-p">
@@ -342,7 +342,7 @@ const CommonQuestions = () => {
           </div>
           <div className="faq-row5 row"> <div className="col-1" />
             <div className="col-4">
-              <p className="faq-row-header">
+              <p className="faq-row-header" onClick={readMoreQ1}>
               Får de som kommer annat stöd?
               </p>
               <p className="faq-p">
@@ -354,8 +354,8 @@ const CommonQuestions = () => {
             </div>
             <div className="col-1" />
             <div className="col-4">
-              <p className="faq-row-header">
-              När kommer de?
+              <p className="faq-row-header" onClick={readMoreQ1}>
+              När kommer de? 
               </p>
               <p className="faq-p">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
