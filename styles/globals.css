@@ -986,7 +986,89 @@ textarea {
   justify-content: right;
   padding-right: 10px;
 }
+/************* Cancel detail page ****************/
+.back-button-row{
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+}
+.cancel-back-button{
+  border-radius: 8px;
+  border: 1px #004664 solid;
+  padding: 8px 12px;
+  color: #004664;
+}
+.cancel-back-button:hover{
+  cursor: pointer;
+}
+.cancel-content h1 {
+  font-weight: bold;
+  color: #004664;
+  margin-bottom: 32px;
+}
+.cancel-content-row{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-top: 3%;
+  margin-right: 4%;
+}
+.cancel-related{
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  background-color: #FFFFFF;
+  width: 300px;
+  margin-left: 36px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.cancel-related-header{
+  background-color: #004664;
+  color: #FFFFFF;
+  padding-left: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.cancel-related-p{
+  margin-top: 16px;
+  margin-left: 16px;
+  text-decoration: underline;
+}
+.p-bottom{
+  margin-bottom: 16px;
+}
+.social-share{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 32px;
+}
+.share-button{
+  width: 94px;
+  height: 40px;
+}
+.share-mail{
+  background-image: url("https://i.imgur.com/dVFsIqn.png");
 
+}
+.share-mail:hover{
+  background-image: url("https://i.imgur.com/t0p5XJu.png");
+}
+.share-fb{
+  background-image: url("https://i.imgur.com/eW4b5TE.png");
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.share-fb:hover{
+  background-image: url("https://i.imgur.com/mK4JJQE.png");
+}
+.share-twtr{
+  background-image: url("https://i.imgur.com/8ayB4pD.png");
+}
+.share-twtr:hover{
+  background-image: url("https://i.imgur.com/V4PQTxu.png");
+}
 
 /**********MEDIA ************************/
 @media screen and (max-width: 800px) {
