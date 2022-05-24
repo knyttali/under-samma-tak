@@ -35,10 +35,10 @@ export class Living extends Component {
         >
           <div className="formTitle flex-row d-flex">
             <h4 className="form-header ">Boende</h4>
-            <div className="infoCircle">
-              <Image src={InfoCircle}></Image>
-            </div>
-          </div>
+            <div className="infoCircle flex-row d-flex">
+              <div><Image src={InfoCircle}></Image></div>
+              <div><p className ="MoreInfo"> Mer information</p></div>
+            </div></div>
 
           <div className="space-col utrymme">
             <h6 style={{ fontWeight: "Bold" }}>Typ av boende</h6>

@@ -1,5 +1,5 @@
 import IntroButton from "../IntroButton"
-
+import Link from "next/link"
 function ToBeHoast() {
   return (
     <div className="sameSides">
@@ -12,7 +12,9 @@ function ToBeHoast() {
             <p>2. Få en bekräftelse på att dina uppgifter är sparade</p>
             <p>3. Invänta eventuell återkoppling från din kommun</p>
         </div>
+        <Link href={"/HowItWorks"}>
         <button className="btn-primary">Så fungerar det</button>
+        </Link>
         </div>
         
         <div className="sida">sida</div>

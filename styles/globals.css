@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chivo&family=Fredoka&family=Karla:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chivo&family=Fredoka&family=Karla:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chivo:wght@300;400;700&family=Fredoka&family=Karla:wght@500&display=swap');
 
 * {
   font-family: 'Chivo';
@@ -38,9 +39,11 @@ p {
   display: flex;
   justify-content: space-between;
 }
+
 .placement {
   width: 48%;
 }
+
 .placement input {
   width: 100%;
 }
@@ -51,9 +54,14 @@ p {
 #header {
   background-color: white;
   height: 90px;
-  position: relative;
+  position: fixed;
+  width: 100%;
   align-items: center;
+  z-index: 1000;
+  top: 0;
+ 
 }
+
 
 .menuItems {
   width: 53%;
@@ -76,6 +84,7 @@ p {
 
 #logoimg :hover {
   background-image: linear-gradient(to bottom right, #489CB7, #004664);
+  cursor: pointer;
 }
 
 #logoimg {
@@ -125,9 +134,13 @@ p {
 
 .searchbar {
   height: 90px;
-  background-color: #004664;
-  padding-left: 4%;
+  position: fixed;
   width: 100%;
+  align-items: center;
+  background-color: #004664;
+  z-index: 1000;
+  top: 0;
+  padding-left: 3%;
   animation-name: test;
   animation-duration: 0.1s;
 }
@@ -251,9 +264,10 @@ p {
 .introContainer {
   /* background-repeat: no-repeat;
   background-size: cover;  */
-  min-height: 55vh;
+  min-height: 50vh;
   /* padding-bottom: 6%; */
   padding-top: -1%;
+  margin-top: 90px;
 }
 
 .introTextContent {
@@ -302,9 +316,13 @@ p {
 .homepageH6 {
   color: #004664;
   text-align: center;
-  padding-bottom: 1%;
   font-weight: 400;
-  font-size: smaller;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+.homepageH6 {
+  text-align: left;
 }
 
 .toBeHoast-container h2 {
@@ -423,7 +441,7 @@ p {
   color: white;
   border: #004664 solid 1px;
   border-radius: 8px;
-  background-color:#004664;
+  background-color: #004664;
   width: 83px;
   height: 40px;
 }
@@ -436,6 +454,8 @@ p {
 
 .FAQToTheSide {
   padding-bottom: 10px;
+  font-weight: 400;
+  font-size: smaller;
 }
 
 .FAQ-content {
@@ -470,17 +490,37 @@ p {
   border-color: #FFF9F4;
 }
 
-/************FAQ Page**********************/
-.faq-div .row{
-  margin-top: 5%;
+/***********CommonQuestions**************/
+
+.faq-div .row {
+  margin: 100px 60px;
 }
-.faq-row-header{
+
+
+.faq-row-header {
   font-weight: bold;
   color: #004664;
   font-size: 24px;
   text-decoration: underline;
   margin-bottom: 3%;
+
 }
+
+.faq-p {
+  color: #004664;
+}
+
+.ReadMore {
+  font-weight: bold;
+  text-decoration: underline solid 1px #004664;
+  display: inline-block;
+  margin-left: 7px;
+}
+
+.ReadMore:hover {
+  cursor: pointer;
+}
+
 /************NewsLetter********************/
 .newsLetter {
   background-color: #004664;
@@ -492,14 +532,17 @@ p {
   height: 330px;
   padding: 30px;
 }
-.newsLetter h3{
+
+.newsLetter h3 {
   font-weight: 900;
-  height: 40px ;
+  height: 40px;
   font-size: 32px;
 }
+
 .newsLetter p {
   font-size: 16px;
 }
+
 .newsLetter input {
   width: 336px;
   height: 48px;
@@ -507,14 +550,16 @@ p {
   font-size: 13px;
   padding-left: 16px;
 }
+
 .newsLetter button {
   width: 94px;
-height: 40px;
-border-style: none;
-background-color: white;
-border-radius: 8px;
-color: #004664;
+  height: 40px;
+  border-style: none;
+  background-color: white;
+  border-radius: 8px;
+  color: #004664;
 }
+
 .newsLetter button:hover {
   color: white;
   background-color: #489CB7;
@@ -540,27 +585,30 @@ color: #004664;
 .footer-left p {
   padding-right: 20px;
 }
+
 .footer-left {
   background-color: #003850;
   padding-left: 50px;
   padding-top: 30px;
   padding-bottom: 50px;
 }
+
 .mellanrum {
   background-color: #489CB7;
   height: 700px;
 }
 
 .footer-right {
-  background-color:#004664;
+  background-color: #004664;
   padding-top: 30px;
   padding-bottom: 50px;
   display: flex;
 }
+
 .footer-right .footer-item {
   margin-left: 40px;
   margin-right: 40px;
-} 
+}
 
 .footer-bottom {
   z-index: 9;
@@ -572,11 +620,11 @@ color: #004664;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 50px; 
+  margin: 0 50px;
   border-bottom: #FFFFFF 1px solid;
 }
 
-.footer-bottom-top h3{
+.footer-bottom-top h3 {
   font-weight: 900;
 }
 
@@ -585,7 +633,7 @@ color: #004664;
   font-size: small;
 }
 
-.footer-image{
+.footer-image {
   margin-bottom: 8px;
 }
 
@@ -627,7 +675,7 @@ color: #004664;
 
 /*Intruduction text */
 
-#intresseAnmalan{
+#intresseAnmalan {
   width: 40%;
   align-items: center;
   margin-left: 3%;
@@ -645,22 +693,25 @@ color: #004664;
 
 
 .main-container {
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-.main-container-Personal{
+  margin-top: 12%;
   margin-bottom: 5%;
 }
 
-.sidenavPlacement{
+.main-container-Personal {
+  margin-bottom: 5%;
+}
+
+.sidenavPlacement {
   margin-left: 3%;
 }
+
 .sidenav {
   border-left: 1px solid black;
   margin-left: 3%;
   padding-left: 5%;
 }
-.sidenavStep{
+
+.sidenavStep {
   margin-left: 3%;
   margin-bottom: 5%;
   font-weight: bold;
@@ -673,17 +724,33 @@ color: #004664;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.infoCircle{
-  float: right;
-  margin-top: 3%;
+.infoCircle {
+  margin-top: 4%;
   min-width: 25px;
+  width: 160px;
+  display: flex;
+  float: right;
+  color: #003850;
+  text-decoration: underline;
+
 }
+
+.MoreInfo {
+margin-left: 5px;
+}
+
+
 .form-template {
   box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
   border-radius: 11px;
   padding: 3% 3% 1% 3%;
+}
+#landingPage{
+  background-color: #FFF9F4;;
+  box-shadow: none;
 }
 
 form input {
@@ -699,6 +766,14 @@ form input {
 }
 
 .form-header {
+  font-weight: bold;
+  padding: 4% 0 0 0;
+  color: #004664
+}
+.form-header-main{
+  margin-top: 15%;
+}
+.form-header-landing{
   font-weight: bold;
   padding: 4% 0 0 0;
   color: #004664
@@ -738,18 +813,21 @@ small {
   width: 90%;
 }
 
-textarea{
+textarea {
   width: 100%;
-  height: 150px;
+  line-height: 36px;
+  height: 100px;
   border-radius: 5px;
   border: 1px solid rgb(219, 219, 219);
   padding: 1%;
   resize: none;
 }
-.maxChar{
+
+.maxChar {
   text-align: end;
   color: #999999;
 }
+
 /*Button*/
 #buttonRow {
   margin: 4% 0%;
@@ -765,7 +843,17 @@ textarea{
   color: white;
   float: right;
 }
-.sendInInformation{
+.IntressAnmalan{
+  padding: 1%;
+  width: 250px;
+  border-radius: 8px;
+  border-style: hidden;
+  margin-bottom: 3%;
+  background-color: #004664;
+  color: white;
+}
+
+.sendInInformation {
   padding: 1%;
   width: 250px;
   border-radius: 8px;
@@ -780,6 +868,7 @@ textarea{
   background-color: #489CB7;
   color: #FFFFFF;
 }
+
 .sendInInformation:hover {
   background-color: #489CB7;
   color: #FFFFFF;
@@ -804,31 +893,99 @@ textarea{
 }
 
 /********** OUR MISSION PAGE *****************/
-.our-mission-title{
+.our-mission-title {
   margin-left: 10%;
   color: white;
 }
-.our-mission-title h1{
+
+.our-mission-title h1 {
   font-weight: bold;
 }
-.our-mission-content{
-  color:#004664;
+
+.our-mission-content {
+  color: #004664;
   margin-top: 5%;
 }
+
 .our-mission-content p {
   font-size: medium;
   margin-bottom: 2.5%;
 }
-.our-mission-content h5{
 
+.ingressen {}
+
+.our-mission-content h5 {
+  line-height: 1.5;
+  font-weight: lighter;
 }
-.our-mission-h2{
+
+.our-mission-h2 {
   font-weight: bold;
   font-size: 40px;
 }
-.kommunlogga{
+
+.kommunlogga {
   margin-left: -2%;
 }
+
+/********** OUR MISSION PAGE *****************/
+.how-it-works-content {
+  color: #004664;
+  margin-top: 100px;
+}
+
+.how-it-works h2 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.how-it-works-h4 {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 60px;
+  margin-top: 30px;
+}
+
+.stegen {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+}
+
+.how-it-works-h3 {
+  display: flex;
+  align-items: center;
+  grid-column: 2;
+  margin-bottom: 0;
+  font-weight: 700;
+
+}
+
+.how-it-works-text {
+  grid-column: 2;
+}
+
+.steg {
+  grid-column: 2;
+}
+
+.how-it-works-btn {
+  grid-column: 2;
+  width: 390px;
+  height: 61px;
+  margin-bottom: 100px;
+}
+
+.how-it-works-text {
+  margin-bottom: 50px;
+}
+
+.how-it-works-img {
+  display: flex;
+  justify-content: right;
+  padding-right: 10px;
+}
+
 
 /**********MEDIA ************************/
 @media screen and (max-width: 800px) {

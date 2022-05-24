@@ -1,9 +1,11 @@
+import Link from "next/link"
+
 function FAQ() {
   return (
     <div className="sameSides">
       <div className="sida">sida</div>
       <div className="FAQ-content">
-        <div className="FAQToTheSide">
+        <div className="FAQToTheSide homepageH6">
           <h6>VANLIGA FRÅGOR</h6>
           <h2 className="smaller-headline">Alla undrar, vad undrar du?</h2>
         </div>
@@ -56,10 +58,11 @@ function FAQ() {
             </div>
           </div>
         </div>
-        
+        <Link href={"/CommonQuestions"}>
         <button type="button" className="seAllaBtnActualBtn FAQBtn">
           Läs alla vanliga frågor
         </button>
+        </Link>
       </div>
       <div className="sida">sida</div>
     </div>

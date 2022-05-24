@@ -35,9 +35,11 @@ export class Guests extends Component {
         >
           <div className="formTitle flex-row d-flex">
             <h4 className="form-header ">Gäster</h4>
-            <div className="infoCircle">
-              <Image src={InfoCircle}></Image>
+            <div className="infoCircle flex-row d-flex">
+              <div><Image src={InfoCircle}></Image></div>
+              <div><p className ="MoreInfo"> Mer information</p></div>
             </div>
+            
           </div>
           <h6 style={{ fontWeight: "Bold" }}>
             Har du några preferense angående vilka gäster du vill ta emot?

@@ -35,11 +35,11 @@ export class LivingAmountOfTime extends Component {
         >
           <div className="formTitle flex-row d-flex">
             <h4 className="form-header ">Längd</h4>
-            <div className="infoCircle">
-              <Image src={InfoCircle}></Image>
-            </div>
-          </div>
-          <br />
+            <div className="infoCircle flex-row d-flex">
+              <div><Image src={InfoCircle}></Image></div>
+              <div><p className ="MoreInfo"> Mer information</p></div>
+            </div></div>
+         
           <h6 style={{ fontWeight: "Bold" }}>
             Ungefär hur länge skulle du kunna erbjuda ditt boende?
           </h6>
