@@ -754,6 +754,7 @@ margin-left: 5px;
 #landingPage{
   background-color: #FFF9F4;;
   box-shadow: none;
+  margin-top: -50px;
 }
 
 form input {
@@ -778,7 +779,6 @@ form input {
 }
 .form-header-landing{
   font-weight: bold;
-  padding: 4% 0 0 0;
   color: #004664
 }
 
@@ -854,6 +854,9 @@ textarea {
   margin-bottom: 3%;
   background-color: #004664;
   color: white;
+}
+.IntressAnmalan:hover {
+  background-color: #489CB7;
 }
 
 .sendInInformation {
