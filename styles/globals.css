@@ -505,6 +505,9 @@ p {
   margin-bottom: 3%;
 
 }
+.faq-row-header:hover {
+  cursor: pointer;
+}
 
 .faq-p {
   color: #004664;
