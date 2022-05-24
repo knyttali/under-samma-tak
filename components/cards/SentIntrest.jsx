@@ -19,7 +19,7 @@ export class SentIntrest extends Component {
       <p>
         1. Din kommun kommer att se över din intresseanmälan. <br />
         2. Din kommun bjuder in dig till en orienterande träff med berörda parter. <br />
-        3. Du väljer själv om du vill gå vidate och bli en bärdfamilj
+        3. Du väljer själv om du vill gå vidare och bli en värdfamilj
       </p>
       <br />
       <br />
